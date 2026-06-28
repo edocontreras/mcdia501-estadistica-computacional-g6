@@ -25,7 +25,6 @@ semana1/
 │       └── weatherAUS_formativa1_variables_clave.csv
 ├── docs/
 │   ├── informe_formativa1_rain_australia.pdf
-│   ├── informe_formativa1_rain_australia.tex
 │   ├── inventario_outputs_formativa1.csv
 │   ├── figures/
 │   └── tables/
