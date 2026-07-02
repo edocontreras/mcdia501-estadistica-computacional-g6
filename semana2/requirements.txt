@@ -1,5 +1,6 @@
-# Dependencias principales del proyecto para MCDIA500 - Programación Ciencia de Datos
-# Fase 1: diagnóstico y auditoría inicial de calidad de datos clínicos
+# Dependencias principales del proyecto para MCDI501 - Estadística Computacional para la Toma de Decisiones
+# Sumativa 2 Fase 3: validación, simulación y métodos de remuestreo
+# Proyecto: Rain in Australia
 # Python recomendado: 3.12.4
 
 # Entorno Jupyter
@@ -10,3 +11,16 @@ ipykernel==6.28.0
 # Análisis y manipulación de datos
 pandas==2.2.2
 numpy==1.26.4
+
+# Estadística aplicada, inferencia y remuestreo
+scipy==1.13.1
+
+# Visualización de resultados
+matplotlib==3.8.4
+
+# Ejecución y validación de notebooks
+nbformat==5.10.4
+nbclient==0.10.0
+
+# Generación y edición de informes
+python-docx==1.1.2
