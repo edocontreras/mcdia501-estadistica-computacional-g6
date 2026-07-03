@@ -256,13 +256,15 @@ Este procedimiento permite contrastar el resultado principal sin depender exclus
 
 ### 8.3 Estabilidad de correlaciones
 
-Se evalúan cinco correlaciones relevantes con `RainTomorrow_bin` mediante intervalos bootstrap al 95 %:
+Se evalúan correlaciones relevantes con `RainTomorrow_bin` mediante intervalos bootstrap al 95 %, considerando variables meteorológicas y variables binarias derivadas del análisis previo:
 
 - `Humidity3pm`.
 - `RainToday_bin`.
 - `Rainfall`.
 - `Pressure3pm`.
 - `MaxTemp`.
+
+En este análisis, `MaxTemp` se considera como una variable exploratoria de apoyo. Aunque presenta una asociación negativa estable, su magnitud es menor respecto de las variables principales, por lo que no se incorpora como insumo prioritario en el consolidado final de resultados validados para la Sumativa 3.
 
 Este análisis permite identificar qué asociaciones mantienen dirección estable y cuáles deben ser tratadas con mayor cautela en la etapa predictiva.
 
@@ -361,15 +363,7 @@ Este resultado es coherente con el comportamiento meteorológico esperado, ya qu
 
 ---
 
-### 10.5 `MaxTemp` como variable complementaria de menor magnitud
-
-`MaxTemp` presenta una asociación negativa estable, aunque con menor fuerza relativa frente a `Humidity3pm`, `RainToday_bin`, `Rainfall` y `Pressure3pm`.
-
-Por ello, puede considerarse como variable complementaria, pero no como predictor principal.
-
----
-
-### 10.6 Control de localidad para modelamiento posterior
+### 10.5 Control de localidad para modelamiento posterior
 
 La sensibilidad por exclusión de localidades muestra que el resultado principal no depende exclusivamente de una estación meteorológica específica.
 
@@ -636,8 +630,8 @@ La Sumativa 3 debe utilizar los resultados validados de la Semana 2 como insumo 
 En particular, se recomienda:
 
 1. Priorizar `Humidity3pm` como variable predictora principal.
-2. Incluir `RainToday_bin`, `Rainfall` y `Pressure3pm` como variables candidatas.
-3. Considerar `MaxTemp` como variable complementaria.
+2. Incluir `RainToday_bin`, `Rainfall` y `Pressure3pm` como variables candidatas principales.
+3. Revisar `MaxTemp` solo como variable exploratoria de apoyo, debido a que fue evaluada en el análisis de correlaciones, pero no quedó incorporada como insumo prioritario en el consolidado final de resultados validados.
 4. Evaluar el rol de `Location` en el diseño predictivo.
 5. Definir un tratamiento formal de valores faltantes dentro del flujo de modelamiento.
 6. Separar adecuadamente los datos en entrenamiento, validación y prueba.
@@ -652,6 +646,6 @@ La Semana 2 confirma que `Humidity3pm` presenta una diferencia robusta entre los
 
 El resultado principal se mantiene bajo distintos enfoques de validación computacional, incluyendo bootstrap, intervalos clásicos, intervalos bootstrap percentil, intervalos bootstrap BCa, prueba de permutación, simulación Monte Carlo y análisis de robustez.
 
-La evidencia obtenida respalda que `Humidity3pm` debe mantenerse como variable prioritaria para la Sumativa 3. Además, variables como `RainToday_bin`, `Rainfall`, `Pressure3pm` y `MaxTemp` pueden ser consideradas como variables complementarias en la etapa posterior de modelamiento predictivo.
+La evidencia obtenida respalda que `Humidity3pm` debe mantenerse como variable prioritaria para la Sumativa 3. Además, variables como `RainToday_bin`, `Rainfall` y `Pressure3pm` pueden ser consideradas como variables complementarias principales en la etapa posterior de modelamiento predictivo. La variable `MaxTemp` fue evaluada dentro del análisis de correlaciones, pero se mantiene solo como antecedente exploratorio de apoyo, debido a su menor magnitud relativa y a que no forma parte del consolidado principal de resultados validados.
 
 La Semana 2 queda documentada como una etapa metodológicamente trazable, computacionalmente reproducible y estadísticamente coherente con los resultados obtenidos en la Sumativa 1.
