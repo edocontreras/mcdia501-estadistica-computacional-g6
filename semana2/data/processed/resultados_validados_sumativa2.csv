@@ -6,4 +6,5 @@ Correlación estable,RainToday_bin como señal antecedente,r = 0.3131,Incluir co
 Correlación estable,Rainfall como señal meteorológica antecedente,r = 0.2390,"Incluir como variable candidata, considerando asimetría y posible transformación",Medio
 Correlación estable,Pressure3pm con asociación inversa,r = -0.2260,Incluir por interpretación meteorológica y relación estable,Medio
 Robustez frente a outliers y supuestos,Robustez del contraste principal,Diferencia original = 22.2894; diferencia winsorizada = 22.3699; diferencia de medianas = 23.0000,No se requiere descartar el hallazgo principal por sensibilidad a extremos,Alto
+Sensibilidad Monte Carlo,Sensibilidad de parámetros de entrada del escenario simulado,"Rango de variación media delta vs base [-3.2588, 3.1557]",Usar el análisis de sensibilidad para priorizar evaluación de estabilidad de variables en modelos predictivos,Medio-alto
 Observaciones o subconjuntos influyentes,Sensibilidad por exclusión de localidad,Mayor variación al excluir AliceSprings: -0.5548,Controlar Location como variable categórica o mediante validación estratificada si se incorpora al modelo,Medio-alto
