@@ -1,5 +1,0 @@
-escenario,tipo_estimador,n_yes,n_no,estimador_yes,estimador_no,diferencia_estimador_yes_no,cohens_d,p_value_welch_unilateral,p_value_welch_formato,ic95_li_diferencia_mediana,ic95_ls_diferencia_mediana
-Original,media,30913,107670,68.80001940931,46.51062505804774,22.28939435126226,1.1975113856655384,0.0,"p < 0,001",,
-Filtro IQR por grupo,media,30694,107670,69.20130970222193,46.51062505804774,22.690684644174198,1.2270852576526852,0.0,"p < 0,001",,
-Winsorización 1 %-99 % por grupo,media,30913,107670,68.84941610325752,46.479474319680506,22.36994178357702,1.2129906307873162,0.0,"p < 0,001",,
-Diferencia de medianas bootstrap,mediana,30913,107670,70.0,47.0,23.0,,,,22.0,23.0

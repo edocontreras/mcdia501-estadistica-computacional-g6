@@ -1,2 +1,0 @@
-configuracion,n_bootstrap,n_permutaciones,n_montecarlo,sample_size_bootstrap_media,sample_size_bootstrap_correlacion,sample_size_permutacion,sample_size_bootstrap_mediana,batch_size_bootstrap,semilla_aleatoria,observacion_metodologica
-Remuestreo y simulación con tamaño muestral válido completo,10000,10000,100000,n_valido_completo,n_valido_completo,n_valido_completo,n_valido_completo,20,5012026,"Los procedimientos se ejecutan con 10.000 réplicas para bootstrap y permutación, y 100.000 iteraciones para Monte Carlo."

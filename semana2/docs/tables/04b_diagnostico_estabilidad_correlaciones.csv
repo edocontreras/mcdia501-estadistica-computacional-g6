@@ -1,6 +1,0 @@
-variable,variable_objetivo,correlacion_pearson_s1,ic_bootstrap_95_li,ic_bootstrap_95_ls,ancho_ic_bootstrap,incluye_cero_95,variabilidad_bootstrap,estable_95,diagnostico_correlacion
-Humidity3pm,RainTomorrow_bin,0.44616037879132964,0.4418265989047093,0.45056501834387164,0.008738419439162315,False,baja,True,Estable: el IC bootstrap 95 % no incluye cero y conserva dirección positiva.
-RainToday_bin,RainTomorrow_bin,0.3130967455088831,0.307410894275017,0.3187166097691894,0.01130571549417242,False,baja,True,Estable: el IC bootstrap 95 % no incluye cero y conserva dirección positiva.
-Rainfall,RainTomorrow_bin,0.23903180145061284,0.23200946944169068,0.24631548624759997,0.014306016805909288,False,baja,True,Estable: el IC bootstrap 95 % no incluye cero y conserva dirección positiva.
-Pressure3pm,RainTomorrow_bin,-0.22603114552541187,-0.2312974635331441,-0.2206487578511436,0.010648705682000492,False,baja,True,Estable: el IC bootstrap 95 % no incluye cero y conserva dirección negativa.
-MaxTemp,RainTomorrow_bin,-0.1592366641493436,-0.1641951063088122,-0.15420973542981517,0.009985370878997035,False,baja,True,Estable: el IC bootstrap 95 % no incluye cero y conserva dirección negativa.

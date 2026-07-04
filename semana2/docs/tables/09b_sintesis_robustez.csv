@@ -1,5 +1,0 @@
-dimension_evaluada,metodo,resultado,interpretacion
-Valores extremos,Filtro IQR por grupo,Diferencia = 22.6907,El resultado se mantiene positivo y de magnitud alta después de excluir extremos por grupo.
-Valores extremos,Winsorización 1 %-99 %,Diferencia = 22.3699,"El resultado se mantiene positivo después de limitar valores extremos, lo que respalda estabilidad del estimador."
-Métrica del centro,Diferencia de medianas con bootstrap,"Diferencia de medianas = 23.0000; IC 95 % [22.0000, 23.0000]",La separación entre grupos persiste al usar una métrica robusta frente a asimetría y extremos.
-Subconjuntos influyentes,Exclusión de una localidad a la vez,Mayor variación: AliceSprings = -0.5548,La conclusión principal no depende de una única localidad si la diferencia mantiene signo y magnitud comparables.
