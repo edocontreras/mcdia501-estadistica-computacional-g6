@@ -2,8 +2,6 @@
 
 ## Validación computacional mediante remuestreo, simulación Monte Carlo y análisis de robustez
 
----
-
 ## 1. Descripción general
 
 La carpeta `semana2/` contiene el desarrollo completo de la **Evaluación Sumativa 2** del curso **MCDI501 - Estadística Computacional para la Toma de Decisiones**.
@@ -24,18 +22,18 @@ A partir de esta base, la Semana 2 profundiza el análisis mediante técnicas co
 
 ## 2. Objetivo de la Semana 2
 
-El objetivo de la Semana 2 es **validar, profundizar y evaluar la robustez de los resultados obtenidos en la Sumativa 1 mediante métodos computacionales de simulación y remuestreo**, con el fin de generar insumos estadísticamente respaldados para la etapa posterior de modelamiento predictivo.
+El objetivo de la Semana 2 es validar, profundizar y evaluar la robustez de los resultados obtenidos en la Sumativa 1 mediante métodos computacionales de simulación y remuestreo, con el fin de generar insumos estadísticamente respaldados para la etapa posterior de modelamiento predictivo.
 
 De manera específica, la Semana 2 busca:
 
-* Validar los parámetros principales obtenidos en la Sumativa 1 mediante bootstrap no paramétrico.
-* Estimar intervalos de confianza clásicos, bootstrap percentil y bootstrap BCa.
-* Evaluar la diferencia de `Humidity3pm` entre los grupos `RainTomorrow = Yes` y `RainTomorrow = No`.
-* Contrastar el resultado principal mediante una prueba de permutación.
-* Evaluar la estabilidad de correlaciones entre variables meteorológicas y `RainTomorrow`.
-* Explorar escenarios probabilísticos mediante simulación Monte Carlo.
-* Analizar la robustez del hallazgo principal frente a valores extremos, winsorización, diferencias de medianas y sensibilidad por localidad.
-* Consolidar resultados validados para orientar la Sumativa 3.
+- Validar los parámetros principales obtenidos en la Sumativa 1 mediante bootstrap no paramétrico.
+- Estimar intervalos de confianza clásicos, bootstrap percentil y bootstrap BCa.
+- Evaluar la diferencia de `Humidity3pm` entre los grupos `RainTomorrow = Yes` y `RainTomorrow = No`.
+- Contrastar el resultado principal mediante una prueba de permutación.
+- Evaluar la estabilidad de correlaciones entre variables meteorológicas y `RainTomorrow`.
+- Explorar escenarios probabilísticos mediante simulación Monte Carlo.
+- Analizar la robustez del hallazgo principal frente a valores extremos, winsorización, diferencias de medianas y sensibilidad por localidad.
+- Consolidar resultados validados para orientar la Sumativa 3.
 
 ---
 
@@ -114,6 +112,7 @@ semana2/
 │   │   ├── fig_07b_distribuciones_bootstrap_correlaciones.png
 │   │   ├── fig_08_montecarlo_distribucion_delta.png
 │   │   ├── fig_09_convergencia_montecarlo.png
+│   │   ├── fig_09b_sensibilidad_montecarlo.png
 │   │   └── fig_10_robustez_diferencia_medias.png
 │   │
 │   └── tables/
@@ -122,6 +121,7 @@ semana2/
 │       ├── 00c_criterio_tratamiento_nan_sumativa2.csv
 │       ├── 00d_resumen_casos_validos_por_analisis.csv
 │       ├── 00e_configuracion_remuestreo_sumativa2.csv
+│       ├── 00f_control_trazabilidad_s1_s2.csv
 │       ├── 01_parametros_s1_utilizados.csv
 │       ├── 02_bootstrap_parametros_s1.csv
 │       ├── 02b_comparacion_intervalos_bootstrap.csv
@@ -129,9 +129,11 @@ semana2/
 │       ├── 04_bootstrap_correlaciones.csv
 │       ├── 04b_diagnostico_estabilidad_correlaciones.csv
 │       ├── 05_resultados_montecarlo_resumen.csv
+│       ├── 05b_sensibilidad_montecarlo.csv
 │       ├── 06_resultados_montecarlo_umbrales.csv
 │       ├── 07_convergencia_montecarlo.csv
 │       ├── 08_robustez_outliers_supuestos.csv
+│       ├── 08b_diagnostico_outliers_iqr.csv
 │       ├── 09_sensibilidad_por_localidad.csv
 │       ├── 09b_sintesis_robustez.csv
 │       ├── 10_resultados_validados_para_s3.csv
@@ -196,21 +198,22 @@ notebooks/Sumativa2_Rain_Australia_G6.ipynb
 
 El notebook desarrolla el flujo completo de validación computacional, incluyendo:
 
-* Carga y verificación de la base proveniente de Sumativa 1.
-* Auditoría de valores faltantes.
-* Definición de casos válidos por análisis.
-* Recuperación de parámetros estimados en Sumativa 1.
-* Bootstrap no paramétrico para parámetros seleccionados.
-* Cálculo de intervalos clásicos, bootstrap percentil y bootstrap BCa.
-* Prueba de permutación para la diferencia de medias de `Humidity3pm`.
-* Evaluación de estabilidad de correlaciones mediante bootstrap.
-* Simulación Monte Carlo basada en parámetros de Sumativa 1.
-* Evaluación de convergencia Monte Carlo.
-* Análisis de robustez frente a outliers, winsorización, medianas y localidad.
-* Generación de resultados validados para Sumativa 3.
-* Generación de tablas, figuras e inventario de salidas.
-* Control de integridad de archivos generados.
-* Conclusión técnica del proceso de validación.
+- Carga y verificación de la base proveniente de Sumativa 1.
+- Auditoría de valores faltantes.
+- Definición de casos válidos por análisis.
+- Recuperación de parámetros estimados en Sumativa 1.
+- Bootstrap no paramétrico para parámetros seleccionados.
+- Cálculo de intervalos clásicos, bootstrap percentil y bootstrap BCa.
+- Prueba de permutación para la diferencia de medias de `Humidity3pm`.
+- Evaluación de estabilidad de correlaciones mediante bootstrap.
+- Simulación Monte Carlo basada en parámetros de Sumativa 1.
+- Evaluación de convergencia Monte Carlo.
+- Análisis de sensibilidad Monte Carlo.
+- Análisis de robustez frente a outliers, winsorización, medianas y localidad.
+- Generación de resultados validados para Sumativa 3.
+- Generación de tablas, figuras e inventario de salidas.
+- Control de integridad de archivos generados.
+- Conclusión técnica del proceso de validación.
 
 ---
 
@@ -224,18 +227,19 @@ src/remuestreo_utils.py
 
 Este módulo contiene funciones para:
 
-* Intervalos de confianza clásicos.
-* Bootstrap de medias.
-* Bootstrap de proporciones.
-* Bootstrap de diferencias de medias.
-* Bootstrap de correlaciones.
-* Intervalos bootstrap percentil.
-* Intervalos bootstrap BCa.
-* Jackknife para corrección BCa.
-* Prueba de permutación.
-* Filtro IQR.
-* Winsorización.
-* Diferencia de medianas mediante bootstrap.
+- Intervalos de confianza clásicos para medias y proporciones.
+- Intervalo de confianza Wilson para proporciones.
+- Bootstrap de medias.
+- Bootstrap de proporciones.
+- Bootstrap de diferencias de medias.
+- Bootstrap de correlaciones.
+- Intervalos bootstrap percentil.
+- Intervalos bootstrap BCa.
+- Jackknife para corrección BCa.
+- Prueba de permutación.
+- Filtro IQR.
+- Winsorización.
+- Diferencia de medianas mediante bootstrap.
 
 La separación entre el notebook y el módulo auxiliar permite mantener un flujo de trabajo más limpio, modular, reproducible y reutilizable.
 
@@ -247,17 +251,17 @@ La separación entre el notebook y el módulo auxiliar permite mantener un flujo
 
 Se aplican 10.000 remuestras bootstrap para validar parámetros derivados de la Sumativa 1, incluyendo:
 
-* Media global de `Humidity3pm`.
-* Media de `Humidity3pm` para `RainTomorrow = No`.
-* Media de `Humidity3pm` para `RainTomorrow = Yes`.
-* Diferencia de medias de `Humidity3pm` entre ambos grupos.
-* Proporción de `RainTomorrow = Yes`.
+- Media global de `Humidity3pm`.
+- Media de `Humidity3pm` para `RainTomorrow = No`.
+- Media de `Humidity3pm` para `RainTomorrow = Yes`.
+- Diferencia de medias de `Humidity3pm` entre ambos grupos.
+- Proporción de `RainTomorrow = Yes`.
 
 Para cada parámetro se calculan:
 
-* Intervalos clásicos.
-* Intervalos bootstrap percentil.
-* Intervalos bootstrap BCa.
+- Intervalos clásicos.
+- Intervalos bootstrap percentil.
+- Intervalos bootstrap BCa.
 
 La comparación entre estos enfoques permite evaluar la estabilidad de las estimaciones y reducir la dependencia de un único supuesto inferencial.
 
@@ -278,11 +282,11 @@ Este procedimiento permite contrastar el resultado principal sin depender exclus
 
 Se evalúan correlaciones relevantes con `RainTomorrow_bin` mediante intervalos bootstrap al 95 %, considerando variables meteorológicas y variables binarias derivadas del análisis previo:
 
-* `Humidity3pm`
-* `RainToday_bin`
-* `Rainfall`
-* `Pressure3pm`
-* `MaxTemp`
+- `Humidity3pm`
+- `RainToday_bin`
+- `Rainfall`
+- `Pressure3pm`
+- `MaxTemp`
 
 En este análisis, `MaxTemp` se considera como una variable exploratoria de apoyo. Aunque presenta una asociación negativa estable, su magnitud es menor respecto de las variables principales, por lo que no se incorpora como insumo prioritario en el consolidado final de resultados validados para la Sumativa 3.
 
@@ -302,14 +306,21 @@ Se evalúa la convergencia de la simulación Monte Carlo para verificar la estab
 
 Este control permite comprobar que los resultados no dependen de una cantidad insuficiente de simulaciones y que la estimación final es estable.
 
-### 8.6 Análisis de robustez
+### 8.6 Sensibilidad Monte Carlo
+
+Se incorpora un análisis de sensibilidad Monte Carlo para evaluar cómo cambia la interpretación de los escenarios simulados frente a modificaciones en los supuestos de entrada.
+
+Este análisis permite identificar la estabilidad de los resultados simulados y distinguir conclusiones robustas de aquellas que requieren cautela cuando se modifican parámetros relevantes del escenario.
+
+### 8.7 Análisis de robustez
 
 Se evalúa la sensibilidad del resultado principal frente a:
 
-* Filtro IQR por grupo.
-* Winsorización 1 %-99 %.
-* Diferencia de medianas mediante bootstrap.
-* Exclusión individual de localidades.
+- Filtro IQR por grupo.
+- Diagnóstico de outliers mediante regla IQR.
+- Winsorización 1 %-99 %.
+- Diferencia de medianas mediante bootstrap.
+- Exclusión individual de localidades.
 
 Este análisis permite verificar si la diferencia de `Humidity3pm` entre grupos se mantiene ante cambios en el tratamiento de valores extremos, supuestos estadísticos y composición espacial de la muestra.
 
@@ -321,19 +332,19 @@ La Semana 2 valida que `Humidity3pm` presenta una diferencia robusta entre los r
 
 El resultado principal corresponde a:
 
-* Media de `Humidity3pm` mayor cuando `RainTomorrow = Yes`.
-* Diferencia positiva, estable y estadísticamente significativa entre ambos grupos.
+- Media de `Humidity3pm` mayor cuando `RainTomorrow = Yes`.
+- Diferencia positiva, estable y estadísticamente significativa entre ambos grupos.
 
 La diferencia observada se mantiene bajo:
 
-* Intervalos clásicos.
-* Bootstrap percentil.
-* Bootstrap BCa.
-* Prueba de permutación.
-* Análisis de robustez frente a outliers.
-* Winsorización.
-* Diferencia de medianas.
-* Sensibilidad por localidad.
+- Intervalos clásicos.
+- Bootstrap percentil.
+- Bootstrap BCa.
+- Prueba de permutación.
+- Análisis de robustez frente a outliers.
+- Winsorización.
+- Diferencia de medianas.
+- Sensibilidad por localidad.
 
 En consecuencia, `Humidity3pm` se consolida como la variable meteorológica prioritaria para la etapa posterior de modelamiento predictivo.
 
@@ -343,25 +354,25 @@ En consecuencia, `Humidity3pm` se consolida como la variable meteorológica prio
 
 Los resultados principales validados para la Sumativa 3 son los siguientes.
 
-### 10.1 `Humidity3pm` como predictor prioritario
+### 10.1 Humidity3pm como predictor prioritario
 
 `Humidity3pm` presenta la mayor asociación con `RainTomorrow_bin` y una diferencia robusta entre días con y sin lluvia al día siguiente.
 
 Por esta razón, debe ser considerada como una variable prioritaria en la etapa de modelamiento predictivo.
 
-### 10.2 `RainToday_bin` como variable antecedente relevante
+### 10.2 RainToday_bin como variable antecedente relevante
 
 `RainToday_bin` mantiene una correlación positiva y estable con `RainTomorrow_bin`.
 
 Esto indica que la ocurrencia de lluvia el día actual constituye un antecedente relevante para estudiar la probabilidad de lluvia al día siguiente.
 
-### 10.3 `Rainfall` como variable meteorológica candidata
+### 10.3 Rainfall como variable meteorológica candidata
 
 `Rainfall` presenta una asociación positiva con `RainTomorrow_bin`.
 
 Sin embargo, debe tratarse con cautela debido a su posible asimetría, presencia de valores bajos o nulos y concentración de registros sin precipitación.
 
-### 10.4 `Pressure3pm` como variable complementaria
+### 10.4 Pressure3pm como variable complementaria
 
 `Pressure3pm` presenta una asociación negativa estable con `RainTomorrow_bin`.
 
@@ -373,10 +384,10 @@ La sensibilidad por exclusión de localidades muestra que el resultado principal
 
 Sin embargo, `Location` debe considerarse en la etapa predictiva, ya sea como:
 
-* Variable categórica.
-* Agrupación territorial.
-* Criterio de validación espacial.
-* Variable de control para evaluar estabilidad del modelo.
+- Variable categórica.
+- Agrupación territorial.
+- Criterio de validación espacial.
+- Variable de control para evaluar estabilidad del modelo.
 
 ---
 
@@ -394,11 +405,11 @@ La imputación debe incorporarse en la Sumativa 3 dentro del flujo predictivo. C
 
 La ejecución del notebook genera las siguientes salidas:
 
-* Bases procesadas en `data/processed/`.
-* Tablas en `docs/tables/`.
-* Figuras en `docs/figures/`.
-* Inventario de salidas en `docs/inventario_outputs_sumativa2.csv`.
-* Control de integridad en `docs/tables/11_control_integridad_salidas_sumativa2.csv`.
+- Bases procesadas en `data/processed/`.
+- Tablas en `docs/tables/`.
+- Figuras en `docs/figures/`.
+- Inventario de salidas en `docs/inventario_outputs_sumativa2.csv`.
+- Control de integridad en `docs/tables/11_control_integridad_salidas_sumativa2.csv`.
 
 El control de integridad permite verificar que las salidas analíticas esperadas fueron generadas correctamente.
 
@@ -420,6 +431,7 @@ Las tablas disponibles son:
 00c_criterio_tratamiento_nan_sumativa2.csv
 00d_resumen_casos_validos_por_analisis.csv
 00e_configuracion_remuestreo_sumativa2.csv
+00f_control_trazabilidad_s1_s2.csv
 01_parametros_s1_utilizados.csv
 02_bootstrap_parametros_s1.csv
 02b_comparacion_intervalos_bootstrap.csv
@@ -427,9 +439,11 @@ Las tablas disponibles son:
 04_bootstrap_correlaciones.csv
 04b_diagnostico_estabilidad_correlaciones.csv
 05_resultados_montecarlo_resumen.csv
+05b_sensibilidad_montecarlo.csv
 06_resultados_montecarlo_umbrales.csv
 07_convergencia_montecarlo.csv
 08_robustez_outliers_supuestos.csv
+08b_diagnostico_outliers_iqr.csv
 09_sensibilidad_por_localidad.csv
 09b_sintesis_robustez.csv
 10_resultados_validados_para_s3.csv
@@ -461,6 +475,7 @@ fig_07_bootstrap_correlaciones.png
 fig_07b_distribuciones_bootstrap_correlaciones.png
 fig_08_montecarlo_distribucion_delta.png
 fig_09_convergencia_montecarlo.png
+fig_09b_sensibilidad_montecarlo.png
 fig_10_robustez_diferencia_medias.png
 ```
 
@@ -509,32 +524,32 @@ docs/informe_sumativa2_rain_australia_g6.docx
 docs/informe_sumativa2_rain_australia_g6.pdf
 ```
 
-El archivo `.docx` corresponde a la versión editable del informe técnico.
-El archivo `.pdf` corresponde a la versión final de entrega.
+El archivo `.docx` corresponde a la versión editable del informe técnico. El archivo `.pdf` corresponde a la versión final de entrega.
 
 Ambos documentos se elaboran a partir de:
 
-* El notebook principal.
-* Las tablas generadas en `docs/tables/`.
-* Las figuras generadas en `docs/figures/`.
-* El inventario de outputs.
-* El archivo de resultados validados para la Sumativa 3.
-* El control de integridad de salidas.
+- El notebook principal.
+- Las tablas generadas en `docs/tables/`.
+- Las figuras generadas en `docs/figures/`.
+- El inventario de outputs.
+- El archivo de resultados validados para la Sumativa 3.
+- El control de integridad de salidas.
 
 El informe técnico sintetiza:
 
-* Contexto del problema.
-* Relación con la Sumativa 1.
-* Datos utilizados.
-* Tratamiento de valores faltantes.
-* Metodología de remuestreo.
-* Resultados bootstrap.
-* Prueba de permutación.
-* Bootstrap de correlaciones.
-* Simulación Monte Carlo.
-* Análisis de robustez.
-* Resultados validados para la Sumativa 3.
-* Conclusiones técnicas.
+- Contexto del problema.
+- Relación con la Sumativa 1.
+- Datos utilizados.
+- Tratamiento de valores faltantes.
+- Metodología de remuestreo.
+- Resultados bootstrap.
+- Prueba de permutación.
+- Bootstrap de correlaciones.
+- Simulación Monte Carlo.
+- Sensibilidad Monte Carlo.
+- Análisis de robustez.
+- Resultados validados para la Sumativa 3.
+- Conclusiones técnicas.
 
 ---
 
@@ -616,12 +631,12 @@ requirements.txt
 
 Las principales librerías utilizadas son:
 
-* `numpy`
-* `pandas`
-* `scipy`
-* `matplotlib`
-* `jupyterlab`
-* `ipykernel`
+- `numpy`
+- `pandas`
+- `scipy`
+- `matplotlib`
+- `jupyterlab`
+- `ipykernel`
 
 ---
 
@@ -631,14 +646,14 @@ La Sumativa 3 debe utilizar los resultados validados de la Semana 2 como insumo 
 
 En particular, se recomienda:
 
-* Priorizar `Humidity3pm` como variable predictora principal.
-* Incluir `RainToday_bin`, `Rainfall` y `Pressure3pm` como variables candidatas principales.
-* Revisar `MaxTemp` solo como variable exploratoria de apoyo, debido a que fue evaluada en el análisis de correlaciones, pero no quedó incorporada como insumo prioritario en el consolidado final de resultados validados.
-* Evaluar el rol de `Location` en el diseño predictivo.
-* Definir un tratamiento formal de valores faltantes dentro del flujo de modelamiento.
-* Separar adecuadamente los datos en entrenamiento, validación y prueba.
-* Evitar fuga de información al aplicar imputación, transformación o escalamiento.
-* Evaluar métricas de desempeño predictivo apropiadas para una variable binaria.
+- Priorizar `Humidity3pm` como variable predictora principal.
+- Incluir `RainToday_bin`, `Rainfall` y `Pressure3pm` como variables candidatas principales.
+- Revisar `MaxTemp` solo como variable exploratoria de apoyo, debido a que fue evaluada en el análisis de correlaciones, pero no quedó incorporada como insumo prioritario en el consolidado final de resultados validados.
+- Evaluar el rol de `Location` en el diseño predictivo.
+- Definir un tratamiento formal de valores faltantes dentro del flujo de modelamiento.
+- Separar adecuadamente los datos en entrenamiento, validación y prueba.
+- Evitar fuga de información al aplicar imputación, transformación o escalamiento.
+- Evaluar métricas de desempeño predictivo apropiadas para una variable binaria.
 
 ---
 
@@ -646,7 +661,7 @@ En particular, se recomienda:
 
 La Semana 2 confirma que `Humidity3pm` presenta una diferencia robusta entre los registros con lluvia al día siguiente y los registros sin lluvia posterior.
 
-El resultado principal se mantiene bajo distintos enfoques de validación computacional, incluyendo bootstrap, intervalos clásicos, intervalos bootstrap percentil, intervalos bootstrap BCa, prueba de permutación, simulación Monte Carlo y análisis de robustez.
+El resultado principal se mantiene bajo distintos enfoques de validación computacional, incluyendo bootstrap, intervalos clásicos, intervalos bootstrap percentil, intervalos bootstrap BCa, prueba de permutación, simulación Monte Carlo, sensibilidad Monte Carlo y análisis de robustez.
 
 La evidencia obtenida respalda que `Humidity3pm` debe mantenerse como variable prioritaria para la Sumativa 3. Además, variables como `RainToday_bin`, `Rainfall` y `Pressure3pm` pueden ser consideradas como variables complementarias principales en la etapa posterior de modelamiento predictivo. La variable `MaxTemp` fue evaluada dentro del análisis de correlaciones, pero se mantiene solo como antecedente exploratorio de apoyo, debido a su menor magnitud relativa y a que no forma parte del consolidado principal de resultados validados.
 
