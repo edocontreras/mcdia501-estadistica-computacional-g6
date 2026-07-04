@@ -1,0 +1,21 @@
+tipo_resultado_s1,resultado_validado,fuente_tabla_s1,valor_reportado_s1,valor_recalculado_o_utilizado_s2,diferencia_absoluta,tolerancia_control,estado_trazabilidad,unidad
+Parámetro,Media global de Humidity3pm,10_ic_humidity3pm_95_99.csv,51.5391158755046,51.5391158755046,0.0,1e-06,Consistente,Porcentaje
+Intervalo clásico,IC95 inferior media global Humidity3pm,10_ic_humidity3pm_95_99.csv,51.43055023135653,51.43055023135653,0.0,1e-06,Consistente,Porcentaje
+Intervalo clásico,IC95 superior media global Humidity3pm,10_ic_humidity3pm_95_99.csv,51.64768151965267,51.64768151965267,0.0,1e-06,Consistente,Porcentaje
+Parámetro,Media Humidity3pm | RainTomorrow = No,11_ic_humidity3pm_por_grupo_95_99.csv,46.51062505804774,46.51062505804774,0.0,1e-06,Consistente,Porcentaje
+Parámetro,Media Humidity3pm | RainTomorrow = Yes,11_ic_humidity3pm_por_grupo_95_99.csv,68.80001940931,68.80001940931,0.0,1e-06,Consistente,Porcentaje
+Intervalo clásico,IC95 inferior Humidity3pm | RainTomorrow = No,11_ic_humidity3pm_por_grupo_95_99.csv,46.40018408735813,46.40018408735813,0.0,1e-06,Consistente,Porcentaje
+Intervalo clásico,IC95 superior Humidity3pm | RainTomorrow = No,11_ic_humidity3pm_por_grupo_95_99.csv,46.62106602873735,46.621066028737346,7.105427357601002e-15,1e-06,Consistente,Porcentaje
+Intervalo clásico,IC95 inferior Humidity3pm | RainTomorrow = Yes,11_ic_humidity3pm_por_grupo_95_99.csv,68.5877915688446,68.5877915688446,0.0,1e-06,Consistente,Porcentaje
+Intervalo clásico,IC95 superior Humidity3pm | RainTomorrow = Yes,11_ic_humidity3pm_por_grupo_95_99.csv,69.0122472497754,69.0122472497754,0.0,1e-06,Consistente,Porcentaje
+Parámetro,Proporción RainTomorrow = Yes,12_ic_wilson_proporcion_rain_tomorrow_yes.csv,0.2241812184847355,0.22418121848473554,5.551115123125783e-17,1e-09,Consistente,Proporción
+Intervalo Wilson,IC95 Wilson inferior proporción RainTomorrow = Yes,12_ic_wilson_proporcion_rain_tomorrow_yes.csv,0.2220210383219324,0.22202103832193243,2.7755575615628914e-17,1e-09,Consistente,Proporción
+Intervalo Wilson,IC95 Wilson superior proporción RainTomorrow = Yes,12_ic_wilson_proporcion_rain_tomorrow_yes.csv,0.226356301179554,0.22635630117955402,2.7755575615628914e-17,1e-09,Consistente,Proporción
+Prueba de hipótesis,Diferencia de medias Humidity3pm Yes - No,13_prueba_t_welch_humidity3pm_unilateral.csv,22.28939435126226,22.28939435126226,0.0,1e-06,Consistente,Puntos porcentuales
+Prueba de hipótesis,Estadístico t de Welch unilateral,13_prueba_t_welch_humidity3pm_unilateral.csv,182.6076932982492,182.60769329824922,2.842170943040401e-14,1e-06,Consistente,Estadístico t
+Prueba de hipótesis,Cohen d diferencia Humidity3pm,13_prueba_t_welch_humidity3pm_unilateral.csv,1.1975113856655228,1.1975113856655384,1.554312234475219e-14,1e-06,Consistente,Tamaño de efecto
+Correlación,Correlación Humidity3pm con RainTomorrow_bin,06_matriz_correlacion_pearson.csv,0.446,0.44616037879132964,0.0001603787913296295,0.005,Consistente,Coeficiente r
+Correlación,Correlación RainToday_bin con RainTomorrow_bin,06_matriz_correlacion_pearson.csv,0.313,0.3130967455088831,9.674550888311151e-05,0.005,Consistente,Coeficiente r
+Correlación,Correlación Rainfall con RainTomorrow_bin,06_matriz_correlacion_pearson.csv,0.239,0.23903180145061284,3.180145061285056e-05,0.005,Consistente,Coeficiente r
+Correlación,Correlación Pressure3pm con RainTomorrow_bin,06_matriz_correlacion_pearson.csv,-0.226,-0.22603114552541187,3.1145525411863106e-05,0.005,Consistente,Coeficiente r
+Correlación,Correlación MaxTemp con RainTomorrow_bin,06_matriz_correlacion_pearson.csv,-0.159,-0.1592366641493436,0.0002366641493435906,0.005,Consistente,Coeficiente r
