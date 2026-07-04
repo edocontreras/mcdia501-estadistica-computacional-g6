@@ -45,6 +45,22 @@ def normal_ci_proportion(x: np.ndarray, alpha: float = 0.05) -> tuple[float, flo
     return p, max(0.0, p - zcrit * se), min(1.0, p + zcrit * se)
 
 
+def wilson_ci_proportion(x: np.ndarray, alpha: float = 0.05) -> tuple[float, float, float]:
+    """Calcula estimación puntual e intervalo de confianza Wilson para una proporción binaria 0/1."""
+    x = _clean_numeric(x)
+    _validate_min_size(x, 1, 'wilson_ci_proportion')
+
+    n = x.size
+    p = float(np.mean(x))
+    zcrit = float(stats.norm.ppf(1 - alpha / 2))
+
+    denominator = 1 + zcrit ** 2 / n
+    center = (p + zcrit ** 2 / (2 * n)) / denominator
+    half_width = zcrit * math.sqrt((p * (1 - p) / n) + (zcrit ** 2 / (4 * n ** 2))) / denominator
+
+    return p, max(0.0, float(center - half_width)), min(1.0, float(center + half_width))
+
+
 def welch_ci_difference(
     x_yes: np.ndarray,
     x_no: np.ndarray,
