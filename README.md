@@ -15,7 +15,7 @@ El repositorio está diseñado para favorecer la reproducibilidad computacional,
 ## Estructura general del repositorio
 
 ```text
-mcdia500-estadistica-computacional-g6/
+mcdia501-estadistica-computacional-g6/
 │
 ├── semana1/
 │   ├── data/
