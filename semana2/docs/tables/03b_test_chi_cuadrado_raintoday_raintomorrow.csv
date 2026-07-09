@@ -1,0 +1,2 @@
+prueba_complementaria_s1,hipotesis_nula,hipotesis_alternativa,chi_cuadrado,grados_libertad,p_value,p_value_formato,v_cramer,n_valido,lectura
+Chi-cuadrado de independencia RainToday vs RainTomorrow,RainToday y RainTomorrow son independientes,RainToday y RainTomorrow no son independientes,13801.289359964967,1,0.0,"p < 0,001",0.3130967455089669,140787,Asociación categórica significativa y de magnitud relevante; se incorpora como antecedente complementario para S3.

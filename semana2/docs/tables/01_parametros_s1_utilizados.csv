@@ -1,6 +1,8 @@
-parametro_s1,estimacion_utilizada_s2,desviacion_estandar,n_valido,unidad
-Media global de Humidity3pm,51.5391158755046,20.79590165602115,140953,Porcentaje
-Media de Humidity3pm | RainTomorrow = No,46.51062505804774,18.489475795722328,107670,Porcentaje
-Media de Humidity3pm | RainTomorrow = Yes,68.80001940931,19.03740879133072,30913,Porcentaje
-Diferencia de medias Humidity3pm: Yes - No,22.28939435126226,,138583,Puntos porcentuales
-Proporción de RainTomorrow = Yes,0.22418121848473554,,142193,Proporción
+parametro_s1,estimacion_s1,desviacion_estandar,n_valido,unidad,origen_uso_s2
+Media global de Humidity3pm,51.5391158755046,20.79590165602115,140953,Porcentaje,Media principal analizada en S1
+Media de Humidity3pm | RainTomorrow = No,46.51062505804774,18.489475795722328,107670,Porcentaje,Media condicional S1
+Media de Humidity3pm | RainTomorrow = Yes,68.80001940931,19.03740879133072,30913,Porcentaje,Media condicional S1
+Diferencia de medias Humidity3pm: Yes - No,22.28939435126226,,138583,Puntos porcentuales,Contraste principal S1
+Proporción de RainTomorrow = Yes,0.22418121848473554,,142193,Proporción,"Proporción S1 con Wilson 95 % [0.2220, 0.2264]"
+Media de Pressure3pm,1015.2558888309616,7.037413808167776,130432,hPa,Parámetro adicional sugerido por retroalimentación S1
+Media de MaxTemp,23.22134827564685,7.119048845979133,144199,Grados Celsius,Parámetro adicional sugerido por retroalimentación S1

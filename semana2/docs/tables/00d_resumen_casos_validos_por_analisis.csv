@@ -1,7 +1,10 @@
 analisis,variables,n_valido,n_excluido_por_nan
 Media global Humidity3pm,Humidity3pm,140953,4507
+Media Pressure3pm,Pressure3pm,130432,15028
+Media MaxTemp,MaxTemp,144199,1261
 Diferencia de medias Humidity3pm por RainTomorrow,Humidity3pm; RainTomorrow; RainTomorrow_bin,138583,6877
 Proporción RainTomorrow = Yes,RainTomorrow_bin,142193,3267
+Chi-cuadrado RainToday vs RainTomorrow,RainToday; RainTomorrow,140787,4673
 Correlación Humidity3pm vs RainTomorrow_bin,Humidity3pm; RainTomorrow_bin,138583,6877
 Correlación RainToday_bin vs RainTomorrow_bin,RainToday_bin; RainTomorrow_bin,140787,4673
 Correlación Rainfall vs RainTomorrow_bin,Rainfall; RainTomorrow_bin,140787,4673

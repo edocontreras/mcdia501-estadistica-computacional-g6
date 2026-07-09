@@ -1,0 +1,2 @@
+parametro,estimacion_s1,ic_wilson_95_li,ic_wilson_95_ls,n_valido,lectura
+Proporción de RainTomorrow = Yes,0.22418121848473554,0.22202103832193243,0.22635630117955402,142193,Intervalo Wilson calculado en S1 y utilizado como referencia adicional para la validación bootstrap de S2.
