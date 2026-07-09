@@ -45,21 +45,72 @@ def normal_ci_proportion(x: np.ndarray, alpha: float = 0.05) -> tuple[float, flo
     return p, max(0.0, p - zcrit * se), min(1.0, p + zcrit * se)
 
 
+
+
 def wilson_ci_proportion(x: np.ndarray, alpha: float = 0.05) -> tuple[float, float, float]:
-    """Calcula estimación puntual e intervalo de confianza Wilson para una proporción binaria 0/1."""
+    """Calcula estimación puntual e intervalo de confianza Wilson para una proporción 0/1."""
     x = _clean_numeric(x)
-    _validate_min_size(x, 1, 'wilson_ci_proportion')
+    _validate_min_size(x, 2, 'wilson_ci_proportion')
 
     n = x.size
     p = float(np.mean(x))
     zcrit = float(stats.norm.ppf(1 - alpha / 2))
+    denom = 1 + (zcrit**2 / n)
+    center = p + (zcrit**2 / (2 * n))
+    margin = zcrit * math.sqrt((p * (1 - p) / n) + (zcrit**2 / (4 * n**2)))
+    return p, max(0.0, (center - margin) / denom), min(1.0, (center + margin) / denom)
 
-    denominator = 1 + zcrit ** 2 / n
-    center = (p + zcrit ** 2 / (2 * n)) / denominator
-    half_width = zcrit * math.sqrt((p * (1 - p) / n) + (zcrit ** 2 / (4 * n ** 2))) / denominator
 
-    return p, max(0.0, float(center - half_width)), min(1.0, float(center + half_width))
+def exact_duplicate_audit(df: pd.DataFrame) -> pd.DataFrame:
+    """Resume duplicados exactos de filas para trazabilidad de calidad de datos."""
+    n_total = int(len(df))
+    n_duplicados = int(df.duplicated().sum())
+    return pd.DataFrame([{
+        'n_total': n_total,
+        'duplicados_exactos': n_duplicados,
+        'porcentaje_duplicados': 0.0 if n_total == 0 else 100 * n_duplicados / n_total,
+        'lectura': 'No se detectan filas duplicadas exactas.' if n_duplicados == 0 else 'Existen filas duplicadas exactas; revisar antes de modelar.'
+    }])
 
+
+def cramers_v_from_table(tabla: pd.DataFrame | np.ndarray) -> float:
+    """Calcula V de Cramer a partir de una tabla de contingencia."""
+    arr = np.asarray(tabla, dtype=float)
+    chi2 = stats.chi2_contingency(arr, correction=False)[0]
+    n = arr.sum()
+    if n == 0:
+        return np.nan
+    r, k = arr.shape
+    denom = n * max(1, min(k - 1, r - 1))
+    return float(math.sqrt(chi2 / denom)) if denom > 0 else np.nan
+
+
+def top_abs_correlation_pairs(df: pd.DataFrame, columns: list[str] | None = None, min_abs: float = 0.80) -> pd.DataFrame:
+    """Retorna pares de variables numéricas con correlación absoluta mayor o igual a min_abs."""
+    if columns is None:
+        numeric = df.select_dtypes(include=[np.number]).copy()
+    else:
+        available = [c for c in columns if c in df.columns]
+        numeric = df[available].select_dtypes(include=[np.number]).copy()
+
+    if numeric.shape[1] < 2:
+        return pd.DataFrame(columns=['variable_1', 'variable_2', 'correlacion_pearson', 'abs_correlacion', 'lectura'])
+
+    corr = numeric.corr(method='pearson')
+    records = []
+    cols = list(corr.columns)
+    for i, c1 in enumerate(cols):
+        for c2 in cols[i + 1:]:
+            value = corr.loc[c1, c2]
+            if pd.notna(value) and abs(value) >= min_abs:
+                records.append({
+                    'variable_1': c1,
+                    'variable_2': c2,
+                    'correlacion_pearson': float(value),
+                    'abs_correlacion': float(abs(value)),
+                    'lectura': 'Alta colinealidad potencial; evitar redundancia sin revisión en S3.'
+                })
+    return pd.DataFrame(records).sort_values('abs_correlacion', ascending=False).reset_index(drop=True) if records else pd.DataFrame(columns=['variable_1', 'variable_2', 'correlacion_pearson', 'abs_correlacion', 'lectura'])
 
 def welch_ci_difference(
     x_yes: np.ndarray,
