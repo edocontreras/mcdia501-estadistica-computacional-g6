@@ -2,13 +2,15 @@ salida_esperada,existe,tamano_bytes
 README.md,True,24271
 requirements.txt,True,623
 src/remuestreo_utils.py,True,16139
-notebooks/Sumativa2_Rain_Australia_G6.ipynb,True,1104907
+notebooks/Sumativa2_Rain_Australia_G6.ipynb,True,154523
 data/input/weatherAUS_sumativa1_variables_clave.csv,True,11343050
 data/processed/resultados_validados_sumativa2.csv,True,2627
 data/processed/weatherAUS_sumativa2_base_validacion.csv,True,11343047
 docs/inventario_outputs_sumativa2.csv,True,3928
-docs/sumativa2_validacion_simulacion_remuestreo.docx,True,618876
-docs/sumativa2_validacion_simulacion_remuestreo.pdf,True,758389
+docs/informe_sumativa2_rain_australia_g6.docx,True,619002
+docs/informe_sumativa2_rain_australia_g6.pdf,True,758250
+docs/reporte_validacion_resultados.docx,True,102562
+docs/reporte_validacion_resultados.pdf,True,353757
 docs/tables/00_resumen_base_sumativa2.csv,True,240
 docs/tables/00b_auditoria_nan_sumativa2.csv,True,695
 docs/tables/00c_criterio_tratamiento_nan_sumativa2.csv,True,1873
@@ -34,7 +36,7 @@ docs/tables/08b_diagnostico_outliers_iqr.csv,True,164
 docs/tables/09_sensibilidad_por_localidad.csv,True,2875
 docs/tables/09b_sintesis_robustez.csv,True,824
 docs/tables/10_resultados_validados_para_s3.csv,True,2627
-docs/tables/11_control_integridad_salidas_sumativa2.csv,True,2975
+docs/tables/11_control_integridad_salidas_sumativa2.csv,True,3063
 docs/figures/fig_01_bootstrap_media_global_humidity3pm.png,True,51643
 docs/figures/fig_02_bootstrap_media_humidity3pm_no.png,True,54248
 docs/figures/fig_03_bootstrap_media_humidity3pm_yes.png,True,56147
