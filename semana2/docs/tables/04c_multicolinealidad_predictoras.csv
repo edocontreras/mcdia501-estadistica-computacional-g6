@@ -1,0 +1,3 @@
+variable_1,variable_2,correlacion_pearson,abs_correlacion,n_pares_validos,fuente,lectura_s3
+Pressure9am,Pressure3pm,0.96,0.96,,Evidencia reportada en retroalimentación de Sumativa 1; columnas no incluidas en base procesada S2,"Alta redundancia potencial; evaluar selección de variables, regularización o eliminación de una de las variables antes del modelamiento."
+Temp9am,Temp3pm,0.86,0.86,,Evidencia reportada en retroalimentación de Sumativa 1; columnas no incluidas en base procesada S2,"Alta redundancia potencial; evaluar selección de variables, regularización o eliminación de una de las variables antes del modelamiento."

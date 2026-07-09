@@ -1,10 +1,14 @@
 tipo_insumo_s3,resultado_validado,evidencia_sumativa2,decision_para_s3,nivel_confianza
 Parámetro robustamente estimado,Separación de Humidity3pm entre RainTomorrow Yes y No,"Diferencia bootstrap BCa 95 % [22.0584, 22.5317]",Mantener Humidity3pm como predictor prioritario,Alto
+Parámetro robustamente estimado,Media de Pressure3pm,"IC bootstrap BCa 95 % [1015.2181, 1015.2947]","Incluir como variable candidata, controlando redundancia con Pressure9am si se incorpora la base completa",Medio-alto
+Parámetro robustamente estimado,Media de MaxTemp,"IC bootstrap BCa 95 % [23.1845, 23.2580]","Incluir como variable candidata, controlando redundancia con Temp9am/Temp3pm si se incorpora la base completa",Medio
+Proporción validada,Proporción RainTomorrow = Yes,"Wilson S1 95 % [0.2220, 0.2264]; BCa 95 % [0.2221, 0.2264]",Usar como prevalencia base y considerar desbalance de clases,Alto
 Prueba de hipótesis validada,Prueba de hipótesis sobre Humidity3pm,"p permutación unilateral = 0.000100; p < 0,001",Usar la diferencia de humedad como relación estadística validada,Alto
+Prueba complementaria documentada,Chi-cuadrado RainToday vs RainTomorrow,"chi2 = 13801.29; V de Cramer = 0.3131; p < 0,001",Incluir RainToday_bin como predictor categórico relevante,Alto
 Correlación estable,Correlación Humidity3pm con RainTomorrow_bin,r = 0.4462,Priorizar en modelos explicativos y predictivos,Alto
 Correlación estable,RainToday_bin como señal antecedente,r = 0.3131,Incluir como variable categórica binaria,Medio-alto
 Correlación estable,Rainfall como señal meteorológica antecedente,r = 0.2390,"Incluir como variable candidata, considerando asimetría y posible transformación",Medio
-Correlación estable,Pressure3pm con asociación inversa,r = -0.2260,Incluir por interpretación meteorológica y relación estable,Medio
+Correlación estable,Pressure3pm con asociación inversa,r = -0.2260,"Incluir por interpretación meteorológica, revisando multicolinealidad con Pressure9am si está disponible",Medio
+Multicolinealidad para S3,Pares redundantes detectados en S1,Pressure9am-Pressure3pm r≈0.96; Temp9am-Temp3pm r≈0.86,"Evitar ingresar predictores redundantes sin selección de variables, regularización o análisis VIF",Medio-alto
 Robustez frente a outliers y supuestos,Robustez del contraste principal,Diferencia original = 22.2894; diferencia winsorizada = 22.3699; diferencia de medianas = 23.0000,No se requiere descartar el hallazgo principal por sensibilidad a extremos,Alto
-Sensibilidad Monte Carlo,Sensibilidad de parámetros de entrada del escenario simulado,"Rango de variación media delta vs base [-3.2588, 3.1557]",Usar el análisis de sensibilidad para priorizar evaluación de estabilidad de variables en modelos predictivos,Medio-alto
 Observaciones o subconjuntos influyentes,Sensibilidad por exclusión de localidad,Mayor variación al excluir AliceSprings: -0.5548,Controlar Location como variable categórica o mediante validación estratificada si se incorpora al modelo,Medio-alto
