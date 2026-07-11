@@ -1,0 +1,15 @@
+{
+    "dataset": "Weather Australia",
+    "variable_objetivo": "RainTomorrow",
+    "estrategia_na": "Imputación por mediana",
+    "variables_predictoras": "Humidity3pm, RainToday, Pressure3pm",
+    "numero_variables": 3,
+    "registros_finales": 140787,
+    "accuracy": 0.8379,
+    "precision": 0.7136,
+    "recall": 0.4483,
+    "f1": 0.5507,
+    "auc": 0.837,
+    "variables_significativas": 3,
+    "vif_maximo": 1.18
+}

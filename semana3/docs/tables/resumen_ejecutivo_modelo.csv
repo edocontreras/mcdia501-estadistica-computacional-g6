@@ -1,0 +1,13 @@
+Aspecto,Resultado
+Dataset utilizado,weatherAUS
+Variable objetivo,RainTomorrow
+Estrategia de tratamiento de valores faltantes,Imputación por mediana
+Variables predictoras,3
+Registros utilizados,140787
+Accuracy,0.8379
+Precision,0.7136
+Recall,0.4483
+F1-Score,0.5507
+AUC,0.837
+Variables estadísticamente significativas,3
+Mayor VIF observado,1.18
