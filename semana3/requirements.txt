@@ -1,5 +1,6 @@
-# Dependencias principales del proyecto para MCDIA500 - Programación Ciencia de Datos
-# Fase 1: diagnóstico y auditoría inicial de calidad de datos clínicos
+# Dependencias principales del proyecto MCDIA501 - Estadística Computacional
+# Evaluación Formativa 2: modelamiento predictivo mediante regresión logística
+# Dataset: Weather Australia
 # Python recomendado: 3.12.4
 
 # Entorno Jupyter
@@ -10,3 +11,13 @@ ipykernel==6.28.0
 # Análisis y manipulación de datos
 pandas==2.2.2
 numpy==1.26.4
+
+# Visualización de datos
+matplotlib==3.9.1
+seaborn==0.13.2
+
+# Modelamiento predictivo y evaluación
+scikit-learn==1.5.1
+
+# Modelamiento estadístico e inferencia
+statsmodels==0.14.6
