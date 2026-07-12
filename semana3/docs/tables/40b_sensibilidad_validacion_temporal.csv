@@ -1,0 +1,2 @@
+escenario,fecha_corte_validacion,fecha_inicio_fit,fecha_fin_fit,fecha_inicio_validacion,fecha_fin_validacion,n_fit,n_validacion,configuracion_predictiva,umbral,n,threshold,TN,FP,FN,TP,accuracy,balanced_accuracy,precision,recall,F1,ROC_AUC,PR_AUC,Brier
+validacion_temporal_20pct_fechas_mas_recientes_train,2015-08-16,2007-11-01,2015-08-15,2015-08-16,2017-06-25,76706,22829,balanceada,0.6,22829,0.6,15544,2242,1824,3219,0.8218932060098997,0.7561281647571134,0.5894524812305438,0.6383105294467579,0.6129093678598629,0.845339698518525,0.6594821042996093,0.14984029619725517
