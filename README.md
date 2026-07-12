@@ -1,54 +1,95 @@
 # MCDI501 - Estadística Computacional para la Toma de Decisiones
 
-## Descripción del proyecto
+## Proyecto integrado: *Rain in Australia*
 
-Este repositorio contiene el desarrollo incremental del proyecto grupal asociado al curso **MCDI501 - Estadística Computacional para la Toma de Decisiones**.
-
-El proyecto utiliza el dataset **Rain in Australia** (`weatherAUS`), el cual contiene aproximadamente 10 años de observaciones meteorológicas diarias registradas en distintas estaciones climáticas de Australia. El objetivo general del análisis es estudiar variables meteorológicas relevantes y evaluar su relación con la ocurrencia de lluvia al día siguiente, representada por la variable objetivo `RainTomorrow`.
-
-El trabajo se organiza por semanas, manteniendo trazabilidad entre datos originales, datos procesados, notebooks, funciones auxiliares, tablas, figuras, informes técnicos e insumos para etapas posteriores. La **Semana 1** desarrolla el análisis exploratorio, descriptivo e inferencial inicial; la **Semana 2** valida y profundiza esos resultados mediante métodos computacionales de remuestreo, simulación Monte Carlo y análisis de robustez; y la **Semana 3** queda preparada para la fase posterior de modelamiento, consolidación y comunicación final del proyecto.
-
-El repositorio está diseñado para favorecer la reproducibilidad computacional, la documentación metodológica, el control de versiones mediante GitHub y la continuidad entre las distintas evaluaciones del curso.
+**Grupo 6**  
+**Integrantes:** Eduardo Contreras · Gonzalo Bouldres · Luis Díaz Giral  
+**Docente:** Dr. Jean Paul Maidana González
 
 ---
 
-## Estructura general del repositorio
+## 1. Descripción general
+
+Este repositorio contiene el desarrollo completo y progresivo de las tres evaluaciones sumativas del curso **MCDI501 - Estadística Computacional para la Toma de Decisiones**, aplicadas al conjunto de datos meteorológicos *Rain in Australia* (`weatherAUS.csv`).
+
+El objetivo general del proyecto es estudiar y predecir la ocurrencia de lluvia al día siguiente, representada por la variable objetivo `RainTomorrow`, mediante una secuencia analítica integrada:
+
+1. **Semana 1:** análisis exploratorio, estadística descriptiva, estimación e inferencia.
+2. **Semana 2:** validación computacional mediante remuestreo, simulación Monte Carlo y análisis de robustez.
+3. **Semana 3:** imputación mediante regresión, clasificación logística, diagnóstico, evaluación predictiva, bootstrap y comunicación final integrada.
+
+La estructura del repositorio mantiene trazabilidad entre datos originales, bases procesadas, notebooks ejecutados, módulos auxiliares, tablas, figuras, controles de integridad e informes técnicos. La Semana 3 utiliza explícitamente los resultados obtenidos en las semanas anteriores; por tanto, las fases no se presentan como análisis independientes.
+
+---
+
+## 2. Objetivo del proyecto
+
+Desarrollar una solución estadística reproducible para apoyar la predicción de `RainTomorrow`, integrando:
+
+- análisis exploratorio e inferencial;
+- validación mediante bootstrap y simulación;
+- manejo trazable de datos faltantes;
+- regresión lineal múltiple para imputación;
+- regresión logística para clasificación;
+- selección y diagnóstico de modelos;
+- evaluación del desempeño predictivo;
+- análisis de estabilidad y sensibilidad;
+- comunicación técnica de resultados.
+
+---
+
+## 3. Estructura del repositorio
 
 ```text
 mcdia501-estadistica-computacional-g6/
-│
 ├── semana1/
 │   ├── data/
 │   │   ├── raw/
 │   │   └── processed/
 │   ├── docs/
 │   │   ├── figures/
-│   │   └── tables/
+│   │   ├── tables/
+│   │   ├── inventario_outputs_sumativa1.csv
+│   │   ├── informe_sumativa1_rain_australia_g6.docx
+│   │   └── informe_sumativa1_rain_australia_g6.pdf
 │   ├── notebooks/
+│   │   └── Sumativa1_Rain_Australia_G6.ipynb
 │   ├── src/
+│   │   └── estadistica_utils.py
 │   ├── README.md
 │   ├── LICENSE
 │   └── requirements.txt
 │
 ├── semana2/
 │   ├── data/
-│   │   ├── raw/
 │   │   ├── input/
 │   │   └── processed/
 │   ├── docs/
 │   │   ├── figures/
-│   │   └── tables/
+│   │   ├── tables/
+│   │   ├── inventario_outputs_sumativa2.csv
+│   │   ├── informe_sumativa2_rain_australia_g6.docx
+│   │   └── informe_sumativa2_rain_australia_g6.pdf
 │   ├── notebooks/
+│   │   └── Sumativa2_Rain_Australia_G6.ipynb
 │   ├── src/
+│   │   └── remuestreo_utils.py
 │   ├── README.md
 │   ├── LICENSE
 │   └── requirements.txt
 │
 ├── semana3/
 │   ├── data/
+│   │   ├── raw/
+│   │   └── processed/
+│   │       └── weatherAUS_sumativa3_modelamiento.csv
 │   ├── docs/
+│   │   ├── figures/
+│   │   ├── tables/
+│   │   ├── informe_sumativa3_rain_australia_g6.docx
+│   │   └── informe_sumativa3_rain_australia_g6.pdf
 │   ├── notebooks/
-│   ├── src/
+│   │   └── Sumativa3_Rain_Australia_G6.ipynb
 │   ├── README.md
 │   ├── LICENSE
 │   └── requirements.txt
@@ -58,444 +99,38 @@ mcdia501-estadistica-computacional-g6/
 └── .gitignore
 ```
 
----
-
-## Descripción de carpetas
-
-Cada carpeta semanal mantiene una estructura orientada a asegurar orden, trazabilidad y reproducibilidad.
-
-* `data/raw/`: contiene los datos originales o crudos del proyecto.
-* `data/input/`: contiene datos provenientes de una etapa anterior y utilizados como entrada metodológica de una nueva fase.
-* `data/processed/`: contiene datasets procesados, depurados, transformados o consolidados.
-* `docs/`: contiene documentación complementaria, inventarios, informes técnicos, tablas y figuras.
-* `docs/figures/`: contiene gráficos y visualizaciones exportadas desde los notebooks.
-* `docs/tables/`: contiene tablas de resultados generadas durante el análisis.
-* `notebooks/`: contiene los notebooks principales de análisis, validación, simulación o modelamiento.
-* `src/`: contiene funciones reutilizables, módulos auxiliares y código Python del proyecto.
-* `requirements.txt`: contiene las dependencias necesarias para reproducir cada entrega semanal.
+Cada semana posee documentación y dependencias propias. Los notebooks utilizan rutas relativas y resuelven la raíz del repositorio para conservar la portabilidad del proyecto.
 
 ---
 
-## Avance por semana
+## 4. Estado verificado de las entregas
 
-### Semana 1 - Evaluación Sumativa 1
+| Fase | Estado | Producto principal |
+|---|---|---|
+| Semana 1 | Ejecutada y documentada | `semana1/notebooks/Sumativa1_Rain_Australia_G6.ipynb` |
+| Semana 2 | Ejecutada y documentada | `semana2/notebooks/Sumativa2_Rain_Australia_G6.ipynb` |
+| Semana 3 | Finalizada, ejecutada, verificada y documentada | `semana3/notebooks/Sumativa3_Rain_Australia_G6.ipynb` |
 
-La Semana 1 desarrolla la primera etapa analítica del proyecto. Incluye limpieza inicial, análisis exploratorio, estadística descriptiva, inferencia estadística, pruebas de hipótesis, análisis de asociación y generación de resultados base para las siguientes etapas.
-
-El foco principal de esta etapa es estudiar el comportamiento de variables meteorológicas relevantes y su relación con `RainTomorrow`, identificando especialmente el rol de variables como `Humidity3pm`, `RainToday`, `Rainfall`, `Pressure3pm` y `MaxTemp`.
-
-Productos principales de Semana 1:
-
-```text
-semana1/
-├── data/
-│   ├── raw/
-│   │   └── weatherAUS.csv
-│   └── processed/
-│       └── weatherAUS_sumativa1_variables_clave.csv
-│
-├── docs/
-│   ├── figures/
-│   ├── tables/
-│   ├── inventario_outputs_sumativa1.csv
-│   ├── informe_sumativa1_rain_australia_g6.docx
-│   └── informe_sumativa1_rain_australia_g6.pdf
-│
-├── notebooks/
-│   └── Sumativa1_Rain_Australia_G6.ipynb
-│
-├── src/
-│   └── estadistica_utils.py
-│
-├── README.md
-├── LICENSE
-└── requirements.txt
-```
-
-La Semana 1 contiene:
-
-* 1 dataset original en `data/raw/`.
-* 1 dataset procesado en `data/processed/`.
-* 1 notebook principal en `notebooks/Sumativa1_Rain_Australia_G6.ipynb`.
-* 1 módulo auxiliar en `src/estadistica_utils.py`.
-* Tablas de resultados exportadas en `docs/tables/`.
-* Figuras exportadas en `docs/figures/`.
-* 1 inventario de salidas en `docs/inventario_outputs_sumativa1.csv`.
-* 1 informe técnico en formato Word.
-* 1 informe técnico en formato PDF.
+Los informes técnicos finales de las tres semanas se encuentran incorporados en formato Word y PDF dentro de sus respectivas carpetas `docs/`.
 
 ---
 
-### Semana 2 - Evaluación Sumativa 2
+## 5. Semana 1 - Evaluación Sumativa 1
 
-La Semana 2 corresponde a la validación computacional de los resultados obtenidos en la Semana 1. Esta etapa no constituye un análisis independiente, sino una continuación directa de la Sumativa 1.
+La Semana 1 desarrolla la caracterización exploratoria e inferencial inicial del dataset.
 
-El objetivo de la Semana 2 es validar, profundizar y evaluar la robustez de los resultados estadísticos obtenidos previamente, mediante técnicas de simulación y remuestreo. Para ello, se utilizan métodos como bootstrap no paramétrico, intervalos bootstrap percentil y BCa, prueba de permutación, bootstrap de correlaciones, simulación Monte Carlo y análisis de sensibilidad frente a outliers y supuestos estadísticos.
+### Metodologías principales
 
-La base principal utilizada en Semana 2 proviene directamente de la Semana 1:
+- auditoría de calidad y valores faltantes;
+- tipificación de variables;
+- estadística descriptiva;
+- intervalos de confianza;
+- prueba t de Welch;
+- análisis de correlación;
+- análisis de asociación entre `RainToday` y `RainTomorrow`;
+- generación de una base procesada para continuidad metodológica.
 
-```text
-semana1/data/processed/weatherAUS_sumativa1_variables_clave.csv
-```
-
-y se incorpora como archivo de entrada en:
-
-```text
-semana2/data/input/weatherAUS_sumativa1_variables_clave.csv
-```
-
-Productos principales de Semana 2:
-
-```text
-semana2/
-├── data/
-│   ├── input/
-│   │   └── weatherAUS_sumativa1_variables_clave.csv
-│   └── processed/
-│       ├── weatherAUS_sumativa2_base_validacion.csv
-│       └── resultados_validados_sumativa2.csv
-│
-├── docs/
-│   ├── figures/
-│   ├── tables/
-│   ├── inventario_outputs_sumativa2.csv
-│   ├── informe_sumativa2_rain_australia_g6.docx
-│   └── informe_sumativa2_rain_australia_g6.pdf
-│
-├── notebooks/
-│   └── Sumativa2_Rain_Australia_G6.ipynb
-│
-├── src/
-│   └── remuestreo_utils.py
-│
-├── README.md
-├── LICENSE
-└── requirements.txt
-```
-
-La Semana 2 contiene:
-
-* 1 dataset de entrada proveniente de la Sumativa 1.
-* 1 dataset procesado para validación computacional.
-* 1 archivo consolidado de resultados validados para la Sumativa 3.
-* 1 notebook principal en `notebooks/Sumativa2_Rain_Australia_G6.ipynb`.
-* 1 módulo auxiliar en `src/remuestreo_utils.py`.
-* Tablas de resultados exportadas en `docs/tables/`.
-* Figuras exportadas en `docs/figures/`.
-* 1 inventario de salidas en `docs/inventario_outputs_sumativa2.csv`.
-* 1 informe técnico en formato Word.
-* 1 informe técnico en formato PDF.
-
-El informe técnico de Semana 2 documenta los resultados obtenidos mediante bootstrap no paramétrico, intervalos percentil y BCa, prueba de permutación, estabilidad de correlaciones, simulación Monte Carlo, análisis de robustez y recomendaciones metodológicas para la Sumativa 3.
-
----
-
-### Semana 3 - Preparación para Evaluación Sumativa 3
-
-La Semana 3 se mantiene preparada para la fase posterior del proyecto. Esta etapa utiliza como insumo directo los resultados validados de la Semana 2, especialmente:
-
-* Parámetros robustamente estimados.
-* Correlaciones estables.
-* Variables meteorológicas con mayor respaldo estadístico.
-* Observaciones influyentes o sensibles.
-* Recomendaciones metodológicas derivadas del análisis de robustez.
-* Archivo consolidado `resultados_validados_sumativa2.csv`.
-
-La Semana 3 se orienta al desarrollo de la siguiente fase analítica, asociada a modelamiento predictivo, consolidación de resultados, comunicación técnica y cierre del proyecto.
-
----
-
-## Trazabilidad metodológica entre Semana 1 y Semana 2
-
-La continuidad entre Semana 1 y Semana 2 es un aspecto central del proyecto.
-
-La Semana 1 genera los resultados estadísticos iniciales:
-
-* Estadística descriptiva de variables meteorológicas.
-* Intervalos de confianza clásicos.
-* Pruebas de hipótesis paramétricas.
-* Matriz de correlación de Pearson.
-* Análisis de asociación entre `RainToday` y `RainTomorrow`.
-* Identificación de variables relevantes para explicar la lluvia al día siguiente.
-
-La Semana 2 utiliza estos resultados como base para aplicar métodos computacionales de validación:
-
-* Bootstrap no paramétrico para validar intervalos de confianza.
-* Intervalos bootstrap percentil y BCa.
-* Prueba de permutación para validar la prueba t de Welch.
-* Bootstrap de correlaciones para evaluar estabilidad.
-* Simulación Monte Carlo basada en parámetros estimados en la Semana 1.
-* Análisis de robustez frente a outliers, winsorización, medianas y sensibilidad por localidad.
-* Consolidación de resultados validados para la Sumativa 3.
-
-La relación principal entre ambas etapas puede resumirse de la siguiente manera:
-
-```text
-Semana 1
-│
-├── Base procesada:
-│   └── weatherAUS_sumativa1_variables_clave.csv
-│
-├── Resultados inferenciales:
-│   ├── intervalos de confianza
-│   ├── prueba t de Welch
-│   ├── matriz de correlación
-│   └── proporciones asociadas a RainTomorrow
-│
-▼
-Semana 2
-│
-├── Validación bootstrap
-├── Prueba de permutación
-├── Bootstrap de correlaciones
-├── Simulación Monte Carlo
-├── Análisis de robustez
-└── Resultados validados para Semana 3
-```
-
----
-
-## Resultados principales validados en Semana 2
-
-La Semana 2 confirma que `Humidity3pm` mantiene una diferencia relevante entre los días asociados a lluvia al día siguiente y los días sin lluvia posterior.
-
-El hallazgo principal de Semana 1, basado en la diferencia de medias de `Humidity3pm` entre `RainTomorrow = Yes` y `RainTomorrow = No`, es validado mediante:
-
-* Bootstrap no paramétrico.
-* Intervalos bootstrap percentil.
-* Intervalos bootstrap BCa.
-* Prueba de permutación.
-* Análisis de robustez frente a valores extremos.
-* Sensibilidad por localidad.
-
-Además, la Semana 2 identifica variables con estabilidad estadística para ser consideradas en etapas posteriores, entre ellas:
-
-* `Humidity3pm`
-* `RainToday_bin`
-* `Rainfall`
-* `Pressure3pm`
-* `MaxTemp`
-
-Estos resultados sirven como insumo metodológico para la preparación de la Sumativa 3.
-
----
-
-## Requisitos previos
-
-Antes de ejecutar el proyecto, se recomienda contar con:
-
-* Python 3.12.x
-* Git
-* Visual Studio Code, JupyterLab o Jupyter Notebook
-* Sistema operativo Windows, Linux o macOS
-* Acceso local al repositorio clonado desde GitHub
-
----
-
-## Instalación del proyecto
-
-### 1. Clonar el repositorio
-
-```bash
-git clone https://github.com/edocontreras/mcdia500-estadistica-computacional-g6.git
-```
-
-Ingresar a la carpeta del repositorio:
-
-```bash
-cd mcdia500-estadistica-computacional-g6
-```
-
----
-
-### 2. Ingresar a la carpeta semanal
-
-Para ejecutar Semana 1:
-
-```bash
-cd semana1
-```
-
-Para ejecutar Semana 2:
-
-```bash
-cd semana2
-```
-
-Para ejecutar Semana 3:
-
-```bash
-cd semana3
-```
-
-Cada semana posee su propio archivo `requirements.txt`, por lo que se recomienda crear y activar el entorno virtual desde la carpeta semanal que se desea ejecutar.
-
----
-
-### 3. Crear el entorno virtual
-
-Desde la carpeta semanal correspondiente:
-
-```bash
-python -m venv .venv
-```
-
----
-
-### 4. Activar el entorno virtual
-
-En Windows PowerShell:
-
-```bash
-.venv\Scripts\Activate.ps1
-```
-
-En Linux o macOS:
-
-```bash
-source .venv/bin/activate
-```
-
-Si la activación fue correcta, en Windows debería observarse una estructura similar a:
-
-```text
-(.venv) PS C:\ruta\del\proyecto\semana1>
-```
-
-o, según la semana ejecutada:
-
-```text
-(.venv) PS C:\ruta\del\proyecto\semana2>
-```
-
----
-
-### 5. Actualizar pip
-
-```bash
-python -m pip install --upgrade pip
-```
-
----
-
-### 6. Instalar dependencias
-
-```bash
-python -m pip install -r requirements.txt
-```
-
----
-
-### 7. Registrar el entorno virtual como kernel de Jupyter
-
-```bash
-python -m ipykernel install --user --name mcdi501-g6 --display-name "Python 3.12 - MCDI501 G6 Est Comp"
-```
-
----
-
-### 8. Ejecutar JupyterLab
-
-```bash
-python -m jupyterlab --ServerApp.use_redirect_file=False
-```
-
-Dentro de JupyterLab, seleccionar el kernel:
-
-```text
-Kernel → Change Kernel → Python 3.12 - MCDI501 G6 Est Comp
-```
-
----
-
-## Ejecución de notebooks
-
-Los notebooks principales se encuentran en:
-
-```text
-semana1/notebooks/Sumativa1_Rain_Australia_G6.ipynb
-semana2/notebooks/Sumativa2_Rain_Australia_G6.ipynb
-```
-
-Se recomienda ejecutar los notebooks en orden cronológico:
-
-```text
-1. Semana 1
-2. Semana 2
-3. Semana 3
-```
-
-Esto permite mantener la trazabilidad entre los productos generados en cada etapa.
-
----
-
-## Importación de módulos auxiliares
-
-Desde un notebook ubicado en la carpeta `notebooks/`, se pueden importar funciones desde la carpeta `src/` utilizando:
-
-```python
-import sys
-from pathlib import Path
-
-project_root = Path.cwd().parent
-sys.path.append(str(project_root / "src"))
-```
-
-Ejemplo de carga de datos en Semana 1:
-
-```python
-import pandas as pd
-
-df = pd.read_csv("../data/raw/weatherAUS.csv")
-df.head()
-```
-
-Ejemplo de carga de datos en Semana 2:
-
-```python
-import pandas as pd
-
-df = pd.read_csv("../data/input/weatherAUS_sumativa1_variables_clave.csv")
-df.head()
-```
-
----
-
-## Reproducibilidad
-
-Para reproducir la Semana 1 desde cero:
-
-```bash
-git clone https://github.com/edocontreras/mcdia500-estadistica-computacional-g6.git
-cd mcdia500-estadistica-computacional-g6/semana1
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-python -m ipykernel install --user --name mcdi501-g6 --display-name "Python 3.12 - MCDI501 G6 Est Comp"
-python -m jupyterlab --ServerApp.use_redirect_file=False
-```
-
-Para reproducir la Semana 2:
-
-```bash
-git clone https://github.com/edocontreras/mcdia500-estadistica-computacional-g6.git
-cd mcdia500-estadistica-computacional-g6/semana2
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-python -m ipykernel install --user --name mcdi501-g6 --display-name "Python 3.12 - MCDI501 G6 Est Comp"
-python -m jupyterlab --ServerApp.use_redirect_file=False
-```
-
-La ejecución completa de la Semana 2 puede requerir mayor tiempo de procesamiento que la Semana 1, debido a que utiliza procedimientos computacionalmente intensivos como bootstrap, intervalos BCa, prueba de permutación y simulación Monte Carlo con un mínimo de 10.000 iteraciones o remuestras, según corresponda.
-
----
-
-## Archivos principales del proyecto
-
-### Semana 1
+### Productos principales
 
 ```text
 semana1/data/raw/weatherAUS.csv
@@ -507,7 +142,33 @@ semana1/docs/informe_sumativa1_rain_australia_g6.docx
 semana1/docs/informe_sumativa1_rain_australia_g6.pdf
 ```
 
-### Semana 2
+### Hallazgos relevantes
+
+- `Humidity3pm` presenta una diferencia importante entre registros con `RainTomorrow = Yes` y `RainTomorrow = No`.
+- Se identifican asociaciones relevantes de `RainToday`, `Rainfall`, `Pressure3pm`, `Humidity3pm` y otras variables meteorológicas con la lluvia al día siguiente.
+- La matriz de correlación y la auditoría de faltantes constituyen insumos directos para S2 y S3.
+
+---
+
+## 6. Semana 2 - Evaluación Sumativa 2
+
+La Semana 2 valida y profundiza los resultados obtenidos en S1 mediante procedimientos computacionales de remuestreo, simulación y sensibilidad.
+
+### Metodologías principales
+
+- bootstrap no paramétrico;
+- intervalos clásicos, percentil y BCa;
+- prueba de permutación;
+- bootstrap de correlaciones;
+- simulación Monte Carlo;
+- evaluación de convergencia;
+- winsorización 1 % - 99 %;
+- diferencia de medianas;
+- sensibilidad por exclusión de localidades;
+- diagnóstico de outliers;
+- consolidación de resultados validados para S3.
+
+### Productos principales
 
 ```text
 semana2/data/input/weatherAUS_sumativa1_variables_clave.csv
@@ -521,9 +182,295 @@ semana2/docs/informe_sumativa2_rain_australia_g6.docx
 semana2/docs/informe_sumativa2_rain_australia_g6.pdf
 ```
 
+### Hallazgos relevantes
+
+- Se confirma la robustez de la diferencia de `Humidity3pm` entre los grupos definidos por `RainTomorrow`.
+- Se validan relaciones y parámetros utilizados posteriormente en el modelamiento.
+- Se documentan sensibilidad frente a valores extremos, localidad y supuestos estadísticos.
+- Se consolida evidencia para seleccionar variables y justificar decisiones en S3.
+
 ---
 
-## Control de versiones
+## 7. Semana 3 - Evaluación Sumativa 3
+
+La Semana 3 corresponde al cierre integrado del proyecto y aplica los resultados oficiales de S1 y S2 al manejo de faltantes y al modelamiento predictivo.
+
+### Notebook principal
+
+```text
+semana3/notebooks/Sumativa3_Rain_Australia_G6.ipynb
+```
+
+El notebook contiene:
+
+- **60 celdas totales**;
+- **36 celdas de código**;
+- **24 celdas Markdown**;
+- secuencia de ejecución consecutiva de 1 a 36;
+- cero salidas de error almacenadas.
+
+### Metodologías principales
+
+- recuperación trazable de la auditoría de faltantes de S1;
+- selección de predictores informada por correlaciones de S1 y estabilidad de S2;
+- diez regresiones lineales múltiples explícitas para imputación;
+- imputación logística complementaria de `RainToday_bin`;
+- comparación entre casos completos, imputación simple e imputación por regresión;
+- partición 70 % / 30 % estratificada antes de transformar o seleccionar;
+- estandarización estimada exclusivamente con entrenamiento;
+- construcción de tres modelos logísticos:
+  - M1 informado por S1 y S2;
+  - M2 seleccionado mediante procedimiento forward basado en AIC;
+  - M3 parsimonioso seleccionado mediante BIC;
+- validación cruzada anidada;
+- diagnóstico de VIF, linealidad en el logit, residuos e influencia;
+- evaluación de suficiencia muestral y separación;
+- bootstrap de 10.000 réplicas para coeficientes y odds ratios;
+- matrices de confusión, accuracy, precision, recall, F1, ROC-AUC y PR-AUC;
+- evaluación de calibración;
+- análisis comparativo del impacto de la imputación;
+- errores robustos agrupados por `Location`;
+- validación temporal y sensibilidades frente a outliers.
+
+### Entregables principales
+
+```text
+semana3/data/processed/weatherAUS_sumativa3_modelamiento.csv
+semana3/notebooks/Sumativa3_Rain_Australia_G6.ipynb
+semana3/docs/informe_sumativa3_rain_australia_g6.docx
+semana3/docs/informe_sumativa3_rain_australia_g6.pdf
+semana3/docs/tables/43_control_metodologico_rubrica.csv
+semana3/docs/tables/43a_matriz_respuesta_retroalimentacion_S2.csv
+semana3/docs/tables/44_control_integridad_salidas_sumativa3.csv
+```
+
+El informe integrado tiene **10 páginas A4** y desarrolla resumen ejecutivo, introducción, metodología integrada, resultados, discusión, conclusiones y recomendaciones, con progresión explícita S1 → S2 → S3.
+
+---
+
+## 8. Resultados finales de Semana 3
+
+- Estrategia de tratamiento de faltantes seleccionada: `imputacion_regresion`.
+- Procedimiento logístico seleccionado sin utilizar el conjunto de prueba: `M3_BIC_parsimonioso`.
+- Especificación definitiva: `sin_RainToday_bin`.
+- VIF máximo de la especificación definitiva: **4,7897**.
+- Configuración clasificatoria: ponderación balanceada y umbral OOF de **0,60**.
+- Desempeño final en prueba:
+  - accuracy: **0,8183**;
+  - precision: **0,5831**;
+  - recall: **0,6642**;
+  - F1: **0,6210**;
+  - ROC-AUC: **0,8525**;
+  - PR-AUC: **0,6727**.
+- Bootstrap: **10.000 de 10.000 réplicas exitosas**.
+- Validación temporal:
+  - ROC-AUC: **0,8453**;
+  - F1: **0,6129**.
+- Efectos sensibles al tratamiento de faltantes y a errores robustos por localidad:
+  - `MaxTemp`;
+  - `MaxTemp_sq`.
+
+Las probabilidades individuales se comunican a partir del modelo no ponderado por su mejor calibración. La configuración balanceada se utiliza para la decisión binaria orientada a incrementar la detección de lluvia.
+
+---
+
+## 9. Integridad de las salidas de Semana 3
+
+La ejecución final contiene:
+
+- **107 archivos CSV** en `semana3/docs/tables/`;
+- **24 figuras PNG** en `semana3/docs/figures/`;
+- **1 base procesada** en `semana3/data/processed/`;
+- **131 artefactos** registrados y verificados mediante SHA-256.
+
+El archivo:
+
+```text
+semana3/docs/tables/44_control_integridad_salidas_sumativa3.csv
+```
+
+verifica existencia, tamaño y hash SHA-256 de 106 tablas analíticas, 24 figuras y una base procesada. El manifiesto no se incluye a sí mismo para evitar una dependencia circular; por ello, la carpeta `docs/tables/` contiene 107 CSV en total.
+
+---
+
+## 10. Trazabilidad S1 → S2 → S3
+
+```text
+Semana 1
+├── análisis exploratorio e inferencial
+├── auditoría de datos faltantes
+├── matriz de correlaciones
+└── parámetros iniciales
+        │
+        ▼
+Semana 2
+├── bootstrap y permutación
+├── simulación Monte Carlo
+├── validación de correlaciones
+├── análisis de robustez
+└── resultados validados para S3
+        │
+        ▼
+Semana 3
+├── imputación mediante regresión
+├── tres modelos logísticos
+├── selección y diagnóstico
+├── bootstrap de coeficientes
+├── evaluación predictiva
+└── comunicación integrada
+```
+
+Principales archivos de enlace metodológico:
+
+```text
+semana1/docs/tables/03_auditoria_datos_faltantes.csv
+semana1/docs/tables/06_matriz_correlacion_pearson.csv
+semana2/docs/tables/04b_diagnostico_estabilidad_correlaciones.csv
+semana2/docs/tables/08b_diagnostico_outliers_iqr.csv
+semana2/docs/tables/10_resultados_validados_para_s3.csv
+semana3/docs/tables/01_trazabilidad_S1_S2_hacia_S3.csv
+```
+
+---
+
+## 11. Requisitos previos
+
+Se recomienda disponer de:
+
+- Python 3.12.x;
+- Git;
+- JupyterLab o Jupyter Notebook;
+- sistema operativo Windows, Linux o macOS;
+- acceso local al repositorio.
+
+Cada carpeta semanal contiene su propio archivo `requirements.txt`.
+
+---
+
+## 12. Instalación
+
+### 12.1 Clonar el repositorio
+
+```bash
+git clone https://github.com/edocontreras/mcdia501-estadistica-computacional-g6.git
+cd mcdia501-estadistica-computacional-g6
+```
+
+### 12.2 Crear un entorno virtual
+
+Desde la raíz:
+
+```bash
+python -m venv .venv
+```
+
+### 12.3 Activar el entorno
+
+Windows PowerShell:
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+Linux o macOS:
+
+```bash
+source .venv/bin/activate
+```
+
+### 12.4 Instalar las dependencias de la semana
+
+Semana 1:
+
+```bash
+python -m pip install --upgrade pip
+python -m pip install -r semana1/requirements.txt
+```
+
+Semana 2:
+
+```bash
+python -m pip install --upgrade pip
+python -m pip install -r semana2/requirements.txt
+```
+
+Semana 3:
+
+```bash
+python -m pip install --upgrade pip
+python -m pip install -r semana3/requirements.txt
+```
+
+### 12.5 Ejecutar JupyterLab
+
+```bash
+python -m jupyterlab
+```
+
+---
+
+## 13. Orden de ejecución recomendado
+
+Los notebooks deben ejecutarse en orden cronológico:
+
+```text
+1. semana1/notebooks/Sumativa1_Rain_Australia_G6.ipynb
+2. semana2/notebooks/Sumativa2_Rain_Australia_G6.ipynb
+3. semana3/notebooks/Sumativa3_Rain_Australia_G6.ipynb
+```
+
+En JupyterLab:
+
+```text
+Kernel → Restart Kernel and Run All Cells
+```
+
+La validación cruzada anidada y el bootstrap de 10.000 réplicas de S3 concentran la mayor parte del tiempo de ejecución.
+
+---
+
+## 14. Reproducibilidad
+
+El proyecto mantiene los siguientes controles:
+
+- semillas explícitas;
+- rutas relativas;
+- dependencias versionadas;
+- separación entre datos crudos, insumos y bases procesadas;
+- transformaciones estimadas exclusivamente con entrenamiento en S3;
+- conjunto de prueba reservado durante las decisiones propias de modelamiento;
+- tablas y figuras exportadas automáticamente;
+- controles de integridad mediante tamaño y SHA-256;
+- documentación metodológica por semana;
+- historial de cambios en `CHANGELOG.md`.
+
+La fuente original del proyecto se conserva en una única ubicación:
+
+```text
+semana1/data/raw/weatherAUS.csv
+```
+
+S2 y S3 reutilizan este archivo y los productos consolidados de etapas anteriores, evitando copias redundantes.
+
+---
+
+## 15. Alcance interpretativo
+
+Los resultados son predictivos y asociativos; no demuestran relaciones causales.
+
+El conjunto de prueba de S3 se mantuvo reservado durante las decisiones propias de dicha fase. Sin embargo, S1 y S2 analizaron previamente la base completa, por lo que el test no se presenta como una validación externa independiente del proceso exploratorio global.
+
+La dependencia por localidad y tiempo se aborda mediante errores robustos agrupados por `Location`, análisis de sensibilidad y validación temporal. Estos procedimientos no reemplazan una validación externa en nuevas localidades ni un modelo jerárquico espacio-temporal.
+
+---
+
+## 16. Presentación final
+
+La presentación grupal de diez minutos se gestiona mediante el canal de entrega definido en Canvas. El repositorio contiene el notebook, los resultados y los informes que sustentan la exposición, pero el video no se contabiliza como una salida analítica estática.
+
+---
+
+## 17. Control de versiones
 
 Para revisar el estado del repositorio:
 
@@ -540,24 +487,22 @@ git add .
 Para crear un commit:
 
 ```bash
-git commit -m "docs: actualiza README principal del proyecto"
+git commit -m "docs: consolidar documentación final de la Sumativa 3"
 ```
 
-Para subir los cambios a GitHub:
+Para enviar los cambios:
 
 ```bash
-git push
+git push origin main
 ```
 
 ---
 
-## Archivos que no deben subirse al repositorio
+## 18. Archivos que no deben subirse
 
-La carpeta `.venv/` no debe subirse a GitHub, ya que cada integrante debe crear su propio entorno virtual local a partir del archivo `requirements.txt`.
+El archivo `.gitignore` debe excluir al menos:
 
-El archivo `.gitignore` debe considerar al menos:
-
-```text
+```gitignore
 .venv/
 __pycache__/
 .ipynb_checkpoints/
@@ -567,37 +512,24 @@ logs/
 .vscode/
 ```
 
----
-
-## Criterios metodológicos considerados
-
-El proyecto mantiene los siguientes criterios generales:
-
-* Trazabilidad entre datos originales, datos procesados y resultados exportados.
-* Separación entre notebooks, módulos auxiliares, tablas y figuras.
-* Uso de funciones reutilizables para evitar duplicación innecesaria de código.
-* Exportación sistemática de resultados en formato `.csv`.
-* Exportación de figuras para uso en informes técnicos.
-* Documentación de salidas mediante inventarios.
-* Continuidad metodológica entre Semana 1, Semana 2 y Semana 3.
-* Preparación de insumos validados para etapas posteriores del proyecto.
+No deben incorporarse entornos virtuales, checkpoints locales, cachés, credenciales ni archivos de configuración personal.
 
 ---
 
-## Integrantes
+## 19. Documentación complementaria
 
-* Eduardo Contreras
-* Gonzalo Bouldres
-* Luis Díaz Giral
-
----
-
-## Docente
-
-Dr. Jean Paul Maidana González
+- [README de Semana 1](semana1/README.md)
+- [README de Semana 2](semana2/README.md)
+- [README de Semana 3](semana3/README.md)
+- [Historial de cambios](CHANGELOG.md)
 
 ---
 
-## Curso
+## 20. Integrantes
 
-**MCDI501 - Estadística Computacional para la Toma de Decisiones**
+- Eduardo Contreras
+- Gonzalo Bouldres
+- Luis Díaz Giral
+
+**Docente:** Dr. Jean Paul Maidana González  
+**Curso:** MCDI501 - Estadística Computacional para la Toma de Decisiones
