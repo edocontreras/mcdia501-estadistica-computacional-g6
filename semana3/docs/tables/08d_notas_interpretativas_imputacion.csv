@@ -1,6 +1,0 @@
-aspecto,resultado
-Cobertura del conjunto analítico trazable a S1/S2,Se ajustaron 10 regresiones lineales múltiples explícitas: una por cada variable numérica con faltantes retenida en el conjunto analítico trazable a la matriz de S1. Las seis variables excluidas fueron contabilizadas y justificadas antes del tratamiento. RainToday_bin se imputó separadamente mediante regresión logística.
-Capacidad predictiva de las regresiones,"Modelos con R2 CV inferior a 0,30: Rainfall (0.101), WindGustSpeed (0.278)"
-Supuestos inferenciales,"Heterocedasticidad detectada en 10 modelos; no normalidad en 10; forma funcional rechazada por RESET en 10; independencia temporal aproximada no satisfecha en 5. Estos resultados limitan la inferencia clásica, por lo que las regresiones se justifican por su finalidad predictiva de imputación y su desempeño de validación cruzada."
-Retransmisión de objetivos log1p,Rainfall utiliza el factor de smearing de Duan estimado con entrenamiento tanto en validación cruzada como en la imputación definitiva.
-Imputación de RainToday,"El AUC CV obtenido fue 1.0000. RainTomorrow no se utiliza como predictor y el umbral de imputación es 0,50."

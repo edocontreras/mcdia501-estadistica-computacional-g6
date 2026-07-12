@@ -1,2 +1,0 @@
-metodo,estimador,replicas_solicitadas,replicas_exitosas,replicas_sin_coeficientes,tasa_exito,tasa_minima_exigida,cumple_tasa_minima
-bootstrap no parametrico n-out-of-n,LogisticRegression sin ponderacion,10000,10000,0,1.0,0.95,True

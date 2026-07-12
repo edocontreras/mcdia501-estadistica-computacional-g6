@@ -1,2 +1,0 @@
-estrategia_recomendada,rango_ROC_AUC_test_comun,rango_accuracy_test_comun,n_terminos_con_cambio_conclusion_IC,recomendacion
-imputacion_regresion,0.0007030711105214804,0.0008606568755378241,2,"La estrategia de faltantes modifica resultados relevantes. Se recomienda mantener imputacion_regresion como análisis principal, reportar obligatoriamente las tres sensibilidades y evitar interpretar como estable cualquier término cuyo intervalo cambie de conclusión."

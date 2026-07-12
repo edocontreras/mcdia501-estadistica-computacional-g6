@@ -1,8 +1,0 @@
-variable,q01_train,q99_train
-Humidity3pm,9.0,97.0
-Rainfall_log1p,0.0,3.632309102625542
-Pressure3pm,998.8,1031.4
-MaxTemp,9.1,40.1
-MinTemp,-1.9,25.76600000000035
-WindGustSpeed,15.0,80.0
-Humidity9am,18.0,100.0

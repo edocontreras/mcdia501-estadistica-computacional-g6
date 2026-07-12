@@ -1,7 +1,0 @@
-modelo,conjunto,TN,FP,FN,TP
-M1_S1_S2,train,59761,17460,5685,16629
-M1_S1_S2,test,25542,7553,2430,7133
-M2_stepwise_AIC,train,60653,16568,5525,16789
-M2_stepwise_AIC,test,25900,7195,2366,7197
-M3_BIC_parsimonioso,train,60534,16687,5495,16819
-M3_BIC_parsimonioso,test,25869,7226,2366,7197

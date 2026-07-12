@@ -1,4 +1,0 @@
-estrategia,n_train,n_test_disponible,porcentaje_train_retenido
-casos_completos,83683,36019,84.07394383885065
-imputacion_simple,99535,42658,100.0
-imputacion_regresion,99535,42658,100.0

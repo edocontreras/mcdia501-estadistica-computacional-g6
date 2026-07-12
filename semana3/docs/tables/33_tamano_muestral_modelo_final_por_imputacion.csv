@@ -1,4 +1,0 @@
-estrategia,n_train_modelo_final,n_test_nativo,n_test_comun,n_variables_numericas_tratadas,incluye_RainToday_bin,alcance_simetrico
-casos_completos,83683,36019,36019,10,True,True
-imputacion_simple,99535,42658,36019,10,True,True
-imputacion_regresion,99535,42658,36019,10,True,True

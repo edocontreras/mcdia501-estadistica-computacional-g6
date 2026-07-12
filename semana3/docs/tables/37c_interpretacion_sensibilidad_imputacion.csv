@@ -1,2 +1,0 @@
-n_terminos_con_cambio_conclusion_IC,terminos_sensibles,criterio_interpretacion
-2,"MaxTemp, MaxTemp_sq",Los términos con cambios de conclusión entre estrategias deben interpretarse como sensibles al tratamiento de faltantes.
