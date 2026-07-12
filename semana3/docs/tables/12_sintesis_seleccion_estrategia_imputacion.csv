@@ -1,0 +1,4 @@
+estrategia,n_train,n_test_disponible,porcentaje_train_retenido,distancia_distribucion_media,desviacion_correlacion_media,proporcion_signo_preservado,proporcion_orden_magnitud_preservado,rango_retencion,rango_distribucion,rango_correlacion,puntaje_decision,seleccionada,seleccion_robusta_en_todos_los_escenarios
+casos_completos,83683,36019,84.07394383885065,0.020352441405632075,0.003181487976274552,1.0,1.0,3.0,2.0,2.0,2.4000000000000004,False,False
+imputacion_simple,99535,42658,100.0,0.022730522359320725,0.006543361054905964,1.0,1.0,1.0,3.0,3.0,2.1999999999999997,False,False
+imputacion_regresion,99535,42658,100.0,0.016386027192253336,0.0023139138640982174,1.0,1.0,1.0,1.0,1.0,1.0,True,True

@@ -1,0 +1,21 @@
+variable,n_faltantes_base_modelable,porcentaje_faltantes_base_modelable,incluida_en_conjunto_analitico_S3,incluida_en_matriz_correlaciones_S1,rol_S3,fuente_correlacion_predictores,decision
+MinTemp,637,0.44798267143952236,True,True,Imputación explícita y candidata del modelo logístico,Matriz de correlaciones entregada en S1,Imputar mediante regresión lineal múltiple explícita
+MaxTemp,322,0.2264527789694289,True,True,Imputación explícita y candidata del modelo logístico,Matriz de correlaciones entregada en S1,Imputar mediante regresión lineal múltiple explícita
+Rainfall,1406,0.9887969168665124,True,True,Imputación explícita y candidata del modelo logístico,Matriz de correlaciones entregada en S1,Imputar mediante regresión lineal múltiple explícita
+Evaporation,60843,42.78902618272348,False,False,"Variable documentada en S1, excluida del conjunto analítico S3",No disponible en la matriz de S1; no se reconstruye en S3,Excluir antes de comparar estrategias y ajustar modelos
+Sunshine,67816,47.692924405561456,False,False,"Variable documentada en S1, excluida del conjunto analítico S3",No disponible en la matriz de S1; no se reconstruye en S3,Excluir antes de comparar estrategias y ajustar modelos
+WindGustSpeed,9270,6.5193082641198945,True,True,Imputación explícita y candidata del modelo logístico,Matriz de correlaciones entregada en S1,Imputar mediante regresión lineal múltiple explícita
+WindSpeed9am,1348,0.948007285872019,False,False,"Variable documentada en S1, excluida del conjunto analítico S3",No disponible en la matriz de S1; no se reconstruye en S3,Excluir antes de comparar estrategias y ajustar modelos
+WindSpeed3pm,2630,1.8495987847503041,False,False,"Variable documentada en S1, excluida del conjunto analítico S3",No disponible en la matriz de S1; no se reconstruye en S3,Excluir antes de comparar estrategias y ajustar modelos
+Humidity9am,1774,1.247600092831574,True,True,Imputación explícita y candidata del modelo logístico,Matriz de correlaciones entregada en S1,Imputar mediante regresión lineal múltiple explícita
+Humidity3pm,3610,2.5388028946572616,True,True,Imputación explícita y candidata del modelo logístico,Matriz de correlaciones entregada en S1,Imputar mediante regresión lineal múltiple explícita
+Pressure9am,14014,9.85561877166949,True,True,Imputación explícita y candidata del modelo logístico,Matriz de correlaciones entregada en S1,Imputar mediante regresión lineal múltiple explícita
+Pressure3pm,13981,9.832410878172624,True,True,Imputación explícita y candidata del modelo logístico,Matriz de correlaciones entregada en S1,Imputar mediante regresión lineal múltiple explícita
+Cloud9am,53657,37.73533155640573,False,False,"Variable documentada en S1, excluida del conjunto analítico S3",No disponible en la matriz de S1; no se reconstruye en S3,Excluir antes de comparar estrategias y ajustar modelos
+Cloud3pm,57094,40.15246882757942,False,False,"Variable documentada en S1, excluida del conjunto analítico S3",No disponible en la matriz de S1; no se reconstruye en S3,Excluir antes de comparar estrategias y ajustar modelos
+Temp9am,904,0.635755627914173,True,True,Imputación explícita y candidata del modelo logístico,Matriz de correlaciones entregada en S1,Imputar mediante regresión lineal múltiple explícita
+Temp3pm,2726,1.9171126567411898,True,True,Imputación explícita y candidata del modelo logístico,Matriz de correlaciones entregada en S1,Imputar mediante regresión lineal múltiple explícita
+Year,0,0.0,False,False,Variable derivada sin imputación,No aplica,Sin imputación requerida
+Month,0,0.0,False,False,Variable derivada sin imputación,No aplica,Sin imputación requerida
+RainToday_bin,1406,0.9887969168665124,True,True,Imputación logística del predictor binario,S1 y validación de S2,Imputar mediante regresión logística explícita
+RainTomorrow_bin,0,0.0,False,True,Variable objetivo; no se imputa,No aplica,Sin faltantes
