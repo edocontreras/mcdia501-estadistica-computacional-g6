@@ -1,6 +1,0 @@
-observacion_retroalimentacion_S2,evidencia_generada_S3,criterio_verificacion,resultado,cumple
-Profundizar bootstrap con un parámetro asimétrico,02a_bootstrap_Rainfall_asimetria.csv,"10.000 remuestras; IC clásico, percentil y BCa finitos","n_boot=10000; asimetría=9.8362; BCa=[2.3177, 2.4049]",True
-Incorporar el código de sensibilidad Monte Carlo al notebook maestro,02b0_parametros_base_montecarlo_S1.csv; 02b_sensibilidad_montecarlo_regenerada.csv,100.000 iteraciones; escenario base y ocho escenarios de sensibilidad,n_iteraciones=100000; n_escenarios=9; prevalencia_S1=0.224181,True
-Agregar un estimador agregado conectado con la decisión,02b_sensibilidad_montecarlo_regenerada.csv,Tasas y resultados esperados por 1.000 observaciones; distribución por carteras,tamaño_cartera=1000; n_carteras=10000; VPP_base=0.4565,True
-Regenerar el diagnóstico IQR citado en la trazabilidad,02e_diagnostico_outliers_IQR_regenerado.csv,Reproducción exacta de conteos y porcentaje dentro de tolerancia numérica,grupos_reproducidos=2; eliminados_total=219,True
-Recalcular correlaciones redundantes sobre la base completa,02g_recalculo_multicolinealidad_base_completa.csv,Pares observados recalculados con n válido y concordancia con referencias,Pressure9am–Pressure3pm=0.9613; Temp9am–Temp3pm=0.8606,True

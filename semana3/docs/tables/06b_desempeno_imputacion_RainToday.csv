@@ -1,2 +1,0 @@
-variable,modelo,predictores,n_completos_ajuste,ROC_AUC_CV,PR_AUC_CV,Brier_CV
-RainToday_bin,regresión logística sin penalización,"Rainfall, Humidity3pm, Humidity9am, MaxTemp, Pressure3pm",87081,1.0,1.0,2.3033690418273108e-05

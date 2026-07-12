@@ -1,2 +1,0 @@
-escenario,configuracion,tipo_umbral,seleccionada_OOF,n,threshold,TN,FP,FN,TP,accuracy,balanced_accuracy,precision,recall,F1,ROC_AUC,PR_AUC,Brier
-balanceada_umbral_OOF,balanceada,OOF_optimizado,True,42658,0.6,28554,4541,3211,6352,0.8182755872286558,0.7635078240139574,0.5831267786651978,0.6642267071002823,0.6210402815799765,0.852473673643051,0.6727076161204855,0.15249100002029398

@@ -1,2 +1,0 @@
-n_train,n_eventos_RainTomorrow_Yes,n_no_eventos,n_parametros_incluyendo_intercepto,eventos_por_parametro,minima_clase_por_parametro,coeficientes_finitos,errores_estandar_finitos,max_beta_absoluto,max_error_estandar,probabilidad_cercana_a_0_o_1,senal_numerica_separacion,convergio
-99535,22314,77221,14,1593.857142857143,1593.857142857143,True,True,2.111504644505918,0.0328929910714796,False,False,True

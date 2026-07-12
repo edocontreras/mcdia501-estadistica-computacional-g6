@@ -1,2 +1,0 @@
-prevalencia_train,accuracy_clasificador_mayoritario,configuracion_predictiva_seleccionada,class_weight_seleccionado,umbral_operativo_out_of_fold,criterio_configuracion
-0.2241824483849902,0.7758175516150098,balanceada,balanced,0.6,"F1 OOF con tolerancia 0,005; desempate por balanced accuracy, recall, Brier y preferencia por no ponderación."

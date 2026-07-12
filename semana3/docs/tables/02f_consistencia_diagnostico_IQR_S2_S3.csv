@@ -1,3 +1,0 @@
-grupo,q1,q3,IQR,limite_inferior,limite_superior,n_original_regenerado_S3,n_filtrado_iqr_regenerado_S3,datos_eliminados_regenerado_S3,porcentaje_eliminado_regenerado_S3,n_original_archivo_S2,n_filtrado_iqr_archivo_S2,datos_eliminados_archivo_S2,porcentaje_eliminado_archivo_S2,diferencia_n_original,diferencia_n_filtrado_iqr,diferencia_datos_eliminados,diferencia_porcentaje_eliminado,reproduccion_exacta_conteos,reproduccion_porcentaje_tolerancia
-RainTomorrow = Yes,57.0,84.0,27.0,16.5,124.5,30913,30694,219,0.708439814964578,30913,30694,219,0.708439814964578,0,0,0,0.0,True,True
-RainTomorrow = No,33.0,60.0,27.0,-7.5,100.5,107670,107670,0,0.0,107670,107670,0,0.0,0,0,0,0.0,True,True
