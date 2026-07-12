@@ -1,0 +1,14 @@
+dimension,resultado
+Cierre de retroalimentación S2,Observaciones verificadas: 5/5. Todas las evidencias se generan desde el notebook maestro de S3.
+Profundización bootstrap de Rainfall,"Asimetría=9.8362; n_boot=10,000; IC BCa 95 %=[2.3177, 2.4049]."
+Sensibilidad Monte Carlo heredada de S2,"100,000 iteraciones; nueve escenarios; VPP base con Humidity3pm ≥ 60 %=0.4565; alertas esperadas por 1.000=333.8."
+Multicolinealidad recalculada,Pressure9am–Pressure3pm: r=0.9613; Temp9am–Temp3pm: r=0.8606.
+Imputación,Estrategia seleccionada con entrenamiento: imputacion_regresion. Modo de regresión: secuencial_deterministica_con_smearing_Duan_en_objetivos_log1p.
+Modelo inferencial,Procedimiento seleccionado: M3_BIC_parsimonioso. Especificación definitiva: sin_RainToday_bin. VIF máximo: 4.7897.
+Suficiencia muestral y separación,Eventos por parámetro: 1593.86. Señal numérica de separación: False.
+Configuración predictiva,Configuración seleccionada por OOF: balanceada; umbral: 0.6000.
+Evaluación final en test,Accuracy=0.8183; precision=0.5831; recall=0.6642; F1=0.6210; ROC-AUC=0.8525; PR-AUC=0.6727; Brier=0.1525.
+Bootstrap,"Réplicas solicitadas: 10,000; tasa de éxito: 100.00%; parámetros inestables: 0."
+Dependencia por Location,Términos cuya conclusión cambia con errores robustos por cluster: 2.
+Impacto de la imputación,Términos cuya conclusión cambia entre estrategias: 2.
+Alcance,Los resultados son predictivos y asociativos. La estructura temporal y espacial se evalúa mediante diagnósticos y sensibilidades; no se realizan afirmaciones causales.
