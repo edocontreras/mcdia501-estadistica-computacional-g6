@@ -1,0 +1,4 @@
+variable,n_niveles_train,decision,codificacion,fundamento
+Season,4,Incluir en selección,"Dummies Season_Autumn, Season_Winter y Season_Spring; referencia=Summer",Baja cardinalidad y representación directa de la estacionalidad solicitada en la pauta.
+WindDir9am,16,Excluir del modelo principal,No aplica,"Alta cardinalidad, niveles poco poblados y ausencia de validación prioritaria en S1/S2."
+Location,49,Excluir del modelo principal; evaluar sensibilidad,One-hot con categoría de referencia en el análisis complementario,Alta cardinalidad y riesgo de expansión innecesaria de parámetros; su efecto se revisa en sensibilidad.

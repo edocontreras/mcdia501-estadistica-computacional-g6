@@ -1,0 +1,2 @@
+n_train,n_parametros,umbral_leverage_2p_n,umbral_Cook_4_n,n_alto_leverage,n_Cook_superior_umbral,n_residuo_deviance_absoluto_mayor_3
+99535,14,0.00028130808258401566,4.018686894057367e-05,9085,7305,0

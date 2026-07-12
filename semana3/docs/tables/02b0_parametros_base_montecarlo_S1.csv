@@ -1,0 +1,6 @@
+parametro,valor_recalculado_S3_desde_S1,valor_referencia_S2,diferencia_absoluta,n_observaciones_fuente,fuente_calculo,coincide_referencia_S2
+media_yes,68.80001940931,68.80001940931,0.0,30913,S1: Humidity3pm observada en RainTomorrow = Yes,True
+media_no,46.51062505804774,46.51062505804774,0.0,107670,S1: Humidity3pm observada en RainTomorrow = No,True
+sd_yes,19.03740879133072,19.03740879133072,0.0,30913,S1: Humidity3pm observada en RainTomorrow = Yes,True
+sd_no,18.489475795722328,18.489475795722328,0.0,107670,S1: Humidity3pm observada en RainTomorrow = No,True
+proporcion_yes,0.22418121848473554,0.2241812184847355,5.551115123125783e-17,142193,S1: todas las observaciones con RainTomorrow válido,True

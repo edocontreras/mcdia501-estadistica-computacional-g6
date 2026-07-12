@@ -1,0 +1,7 @@
+componente,seleccion,fuente_decision
+Estrategia de imputación,imputacion_regresion,Entrenamiento
+Modelo inferencial,M3_BIC_parsimonioso,AIC/BIC y validación interna sin test
+Especificación inferencial definitiva,sin_RainToday_bin,BIC y VIF con entrenamiento
+Configuración predictiva,balanceada,Comparación simétrica OOF
+Umbral operativo,0.600000,Predicciones OOF
+Probabilidades para interpretación,Modelo inferencial sin ponderación,Coherencia con prevalencia y calibración
