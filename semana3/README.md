@@ -12,27 +12,36 @@
 
 ## 1. Descripción general
 
-La Semana 3 integra los resultados obtenidos en las Sumativas 1 y 2 para construir y evaluar modelos de regresión logística destinados a predecir `RainTomorrow`. El flujo comprende manejo de datos faltantes, comparación de estrategias de imputación, selección de variables, diagnóstico de modelos, evaluación predictiva, bootstrap y análisis de sensibilidad.
+La Semana 3 corresponde a la Fase 4 de cierre y comunicación del proyecto. Integra los resultados obtenidos en S1 y S2 para construir, diagnosticar y evaluar modelos de regresión logística destinados a predecir `RainTomorrow`.
 
-El notebook fue ejecutado completamente, con 33 celdas de código en secuencia consecutiva y sin errores de ejecución.
+El flujo incluye manejo de datos faltantes, imputación mediante regresiones explícitas, comparación de tres estrategias de tratamiento, preparación sin fuga de información, construcción de tres modelos logísticos, selección interna, diagnóstico de supuestos, evaluación predictiva, bootstrap de coeficientes, análisis del impacto de la imputación y sensibilidades espacial, temporal y frente a outliers.
 
----
-
-## 2. Trazabilidad S1 → S2 → S3
-
-La progresión metodológica se sustenta en:
-
-- auditoría y porcentajes de datos faltantes obtenidos en S1;
-- matriz de correlaciones construida en S1;
-- relaciones priorizadas y evaluadas mediante remuestreo en S2;
-- diagnóstico de outliers y análisis de robustez de S2;
-- parámetros y resultados exportados por ambas fases.
-
-S3 no modifica los resultados de S1 o S2. Las decisiones nuevas se estiman exclusivamente con el conjunto de entrenamiento o se presentan como análisis complementarios propios de S3.
+El notebook fue ejecutado completamente. Contiene 60 celdas, de las cuales 36 son de código y 24 de texto; las celdas de código presentan numeración consecutiva 1-36 y no registran errores de ejecución.
 
 ---
 
-## 3. Estructura de Semana 3
+## 2. Objetivo de la entrega
+
+Desarrollar un proyecto final integrado que aplique regresión lineal múltiple para imputación y regresión logística para clasificación, utilizando de manera explícita y trazable los resultados de S1 y S2, y comunicando los hallazgos mediante un notebook reproducible, un informe técnico de máximo diez páginas y un repositorio organizado.
+
+---
+
+## 3. Progresión S1 -> S2 -> S3
+
+La integración metodológica se sustenta en:
+
+- la auditoría y los porcentajes de datos faltantes obtenidos en S1;
+- la matriz de correlaciones construida en S1;
+- las relaciones priorizadas y evaluadas mediante remuestreo en S2;
+- el diagnóstico de outliers y los análisis de robustez de S2;
+- la prevalencia y los parámetros estimados en las fases anteriores;
+- el cierre computacional de la retroalimentación de S2 dentro del notebook maestro de S3.
+
+S3 no modifica retrospectivamente los resultados oficiales de S1 o S2. Las transformaciones, la imputación, la estandarización, la selección y el umbral predictivo se estiman utilizando entrenamiento o predicciones out-of-fold.
+
+---
+
+## 4. Estructura de la carpeta
 
 ```text
 semana3/
@@ -42,8 +51,8 @@ semana3/
 │   └── processed/
 │       └── weatherAUS_sumativa3_modelamiento.csv
 ├── docs/
-│   ├── figures/
-│   ├── tables/
+│   ├── figures/                         # 24 figuras PNG
+│   ├── tables/                          # 107 archivos CSV
 │   ├── informe_sumativa3_rain_australia_g6.docx
 │   └── informe_sumativa3_rain_australia_g6.pdf
 ├── notebooks/
@@ -51,27 +60,30 @@ semana3/
 ├── README.md
 ├── requirements.txt
 ├── LICENSE
-├── .gitignore
-└── data/.gitkeep
+└── .gitignore
 ```
 
-La carpeta `data/raw/` permanece vacía porque Semana 3 no incorpora una fuente de datos nueva. El notebook utiliza el dataset original de S1 y las evidencias generadas en S1 y S2.
+La carpeta `data/raw/` permanece vacía porque S3 no incorpora una fuente nueva. El notebook utiliza el dataset original de S1 y las evidencias exportadas por S1 y S2.
 
 ---
 
-## 4. Datos utilizados
+## 5. Datos utilizados
 
-### 4.1 Insumos
+### 5.1 Insumos
 
 ```text
 semana1/data/raw/weatherAUS.csv
-semana1/data/processed/weatherAUS_sumativa1_variables_clave.csv
-semana1/docs/tables/
-semana2/data/processed/
-semana2/docs/tables/
+semana1/docs/tables/03_auditoria_datos_faltantes.csv
+semana1/docs/tables/06_matriz_correlacion_pearson.csv
+semana2/docs/tables/04b_diagnostico_estabilidad_correlaciones.csv
+semana2/docs/tables/04c_multicolinealidad_predictoras.csv
+semana2/docs/tables/05b_sensibilidad_montecarlo.csv
+semana2/docs/tables/08b_diagnostico_outliers_iqr.csv
+semana2/docs/tables/09b_sintesis_robustez.csv
+semana2/docs/tables/10_resultados_validados_para_s3.csv
 ```
 
-### 4.2 Base procesada
+### 5.2 Base procesada
 
 ```text
 semana3/data/processed/weatherAUS_sumativa3_modelamiento.csv
@@ -79,22 +91,38 @@ semana3/data/processed/weatherAUS_sumativa3_modelamiento.csv
 
 Características verificadas:
 
-- 142.193 observaciones;
-- 34 columnas;
-- 99.535 registros de entrenamiento;
-- 42.658 registros de prueba;
-- cero filas duplicadas;
-- cero identificadores `row_id` duplicados;
+- 142.193 observaciones y 34 columnas;
+- 99.535 registros de entrenamiento y 42.658 de prueba;
+- cero filas duplicadas y cero identificadores `row_id` duplicados;
 - cero faltantes en las variables utilizadas por los modelos;
-- prevalencia de `RainTomorrow = Yes` de 22,418 % en entrenamiento y prueba.
+- prevalencia de `RainTomorrow = Yes` de 22,418 % en ambos conjuntos por estratificación.
 
-La base conserva algunas variables auxiliares excluidas del modelamiento, por lo que estas pueden mantener valores faltantes sin afectar el pipeline final. El archivo no está vacío: contiene la partición `train/test`, las variables imputadas utilizadas por el modelo, las variables estacionales codificadas, `Rainfall_log1p` y los identificadores necesarios para reproducir el análisis.
+La base conserva variables auxiliares excluidas del modelamiento; estas pueden mantener valores faltantes sin afectar el pipeline final.
 
 ---
 
-## 5. Manejo de datos faltantes
+## 6. Notebook principal
 
-S1 identificó dieciséis variables numéricas continuas con valores faltantes. Diez de ellas forman parte de la matriz de correlaciones entregada en S1 y constituyen el conjunto analítico de S3:
+```text
+semana3/notebooks/Sumativa3_Rain_Australia_G6.ipynb
+```
+
+El notebook:
+
+1. resuelve automáticamente la raíz del repositorio;
+2. valida la existencia de los insumos obligatorios de S1 y S2;
+3. elimina y regenera las salidas computacionales de S3;
+4. controla versiones, semillas, tamaños muestrales y ausencia de fuga;
+5. detiene la ejecución ante inconsistencias metodológicas o artefactos faltantes;
+6. genera un manifiesto final con tamaño y SHA-256.
+
+---
+
+## 7. Metodología aplicada
+
+### 7.1 Manejo de datos faltantes
+
+S1 identificó dieciséis variables numéricas continuas con faltantes. Diez forman parte de la matriz correlacional entregada en S1 y constituyen el conjunto analítico trazable de S3:
 
 ```text
 MinTemp, MaxTemp, Rainfall, WindGustSpeed,
@@ -102,66 +130,60 @@ Humidity9am, Humidity3pm, Pressure9am, Pressure3pm,
 Temp9am, Temp3pm
 ```
 
-Para cada variable se ajustó una regresión lineal múltiple explícita con tres a cinco predictores de la matriz de S1. `RainToday_bin` se imputó mediante regresión logística y `RainTomorrow` no se imputó.
+Para cada una se ajustó una regresión lineal múltiple explícita con tres a cinco predictores disponibles en la matriz de S1. `Rainfall` se modeló en escala `log1p` y se retransmitió mediante el factor de *smearing* de Duan. `RainToday_bin` se imputó mediante regresión logística y `RainTomorrow` no se imputó.
 
-Las variables `Evaporation`, `Sunshine`, `WindSpeed9am`, `WindSpeed3pm`, `Cloud9am` y `Cloud3pm` fueron contabilizadas y excluidas antes de la imputación y del modelamiento porque no forman parte de la matriz correlacional de S1 ni de la validación de S2. La decisión queda documentada en las tablas `03b` y `03f`.
+Las seis variables numéricas restantes con faltantes (`Evaporation`, `Sunshine`, `WindSpeed9am`, `WindSpeed3pm`, `Cloud9am` y `Cloud3pm`) se contabilizaron y excluyeron antes de comparar estrategias, porque no integran la matriz correlacional entregada en S1 ni la validación de S2. La cobertura y la justificación se documentan en `03b` y `03f`.
 
-Se compararon tres estrategias con alcance común:
+Se compararon de forma simétrica:
 
 1. casos completos;
-2. imputación simple con parámetros estimados en entrenamiento;
+2. imputación simple con parámetros de entrenamiento;
 3. imputación secuencial determinística mediante regresiones explícitas.
 
----
+### 7.2 Preparación para clasificación
 
-## 6. Modelamiento y validación
-
-### 6.1 Preparación
-
-- división estratificada 70/30 antes de imputar, escalar o seleccionar;
-- transformación `log1p` y corrección de retransmisión para `Rainfall`;
-- tratamiento conservador de outliers y sensibilidad mediante winsorización;
-- estandarización ajustada únicamente con entrenamiento;
+- partición 70/30 estratificada antes de imputar, escalar o seleccionar;
+- conservación de extremos meteorológicamente plausibles;
+- transformación `log1p` de `Rainfall` y sensibilidad por winsorización 1-99 %;
+- estandarización estimada exclusivamente con entrenamiento;
 - codificación dummy de `Season`, con `Summer` como referencia;
-- exclusión justificada de categóricas de alta cardinalidad del modelo principal.
+- exclusión de redundancias fuertes antes de la selección automática;
+- evaluación complementaria de `Location` por su alta cardinalidad.
 
-### 6.2 Modelos logísticos
+### 7.3 Tres modelos logísticos
 
-- **M1 S1/S2:** especificación guiada por evidencia previa;
-- **M2 stepwise AIC:** selección forward por bloques con regla de parada;
-- **M3 BIC parsimonioso:** búsqueda exhaustiva de subconjuntos.
+- **M1 S1/S2:** especificación fija guiada por evidencia previa.
+- **M2 stepwise AIC:** selección *forward* por bloques.
+- **M3 BIC parsimonioso:** búsqueda exhaustiva de subconjuntos jerárquicamente válidos.
 
-La selección inferencial utiliza `statsmodels.Logit` sin ponderación. La evaluación clasificatoria compara configuraciones no ponderadas y balanceadas.
+La comparación interna utiliza validación cruzada anidada. La selección inferencial se realiza con `statsmodels` sin ponderación. La evaluación clasificatoria compara configuraciones no ponderadas y balanceadas mediante predicciones out-of-fold.
 
-### 6.3 Diagnóstico y estabilidad
+### 7.4 Diagnóstico y estabilidad
 
 Se evaluaron:
 
-- VIF;
-- linealidad en el logit mediante Box-Tidwell;
-- residuos de devianza;
-- leverage y distancia de Cook;
-- suficiencia muestral y separación;
+- VIF y resolución explícita de multicolinealidad;
+- linealidad en el logit mediante Box-Tidwell y términos cuadráticos jerárquicos;
+- residuos de devianza, leverage y distancia de Cook;
+- suficiencia muestral y señales numéricas de separación;
 - errores robustos agrupados por `Location`;
-- bootstrap no paramétrico de 10.000 réplicas.
+- bootstrap no paramétrico de 10.000 réplicas para coeficientes y odds ratios.
 
-### 6.4 Sensibilidades
+### 7.5 Sensibilidades
 
-Se analizaron:
-
-- las tres estrategias de imputación;
+- tres estrategias de imputación;
 - winsorización;
 - ponderación de clases y umbral;
 - incorporación de `Location`;
 - validación temporal;
-- observaciones influyentes.
+- eliminación de observaciones influyentes.
 
 ---
 
-## 7. Resultados principales
+## 8. Resultados principales
 
 - Estrategia seleccionada: `imputacion_regresion`.
-- Modelo inferencial: `M3_BIC_parsimonioso`.
+- Modelo inferencial seleccionado sin test: `M3_BIC_parsimonioso`.
 - Especificación definitiva: `sin_RainToday_bin`.
 - VIF máximo definitivo: 4,7897.
 - Configuración clasificatoria: balanceada, con umbral OOF 0,60.
@@ -172,70 +194,60 @@ Se analizaron:
 - Efectos cuya conclusión cambia entre imputaciones: `MaxTemp` y `MaxTemp_sq`.
 - Validación temporal: ROC-AUC 0,8453 y F1 0,6129.
 
-Las probabilidades interpretables proceden del modelo inferencial sin ponderación, que presenta mejor calibración. La configuración balanceada se utiliza para la clasificación y su umbral operativo.
+El modelo no ponderado se utiliza para interpretar probabilidades y odds ratios, debido a su mejor calibración. La configuración balanceada se utiliza para clasificación y para aplicar el umbral operativo.
 
 ---
 
-## 8. Salidas generadas por el notebook
+## 9. Salidas generadas
 
 La ejecución produjo:
 
-- 97 tablas CSV en `docs/tables/`;
-- 22 figuras PNG en `docs/figures/`;
-- una base procesada en `data/processed/`;
-- el notebook ejecutado y guardado.
+- **107 CSV** en `docs/tables/`: 106 tablas previas al manifiesto y el propio control `44`;
+- **24 figuras PNG** en `docs/figures/`;
+- **una base procesada** en `data/processed/`;
+- **un notebook ejecutado** con 36 celdas de código consecutivas y sin errores.
 
-Las tablas se organizan por bloque:
+Las tablas se agrupan de la siguiente forma:
 
 | Rango | Contenido |
 |---|---|
-| `00`–`12b` | entorno, trazabilidad, faltantes e imputación |
-| `13`–`23b` | preparación, selección y evaluación de modelos |
-| `24`–`30b` | diagnóstico, calibración, multicolinealidad e influencia |
-| `31a`–`32b` | bootstrap y estabilidad |
-| `33`–`41b` | impacto de imputación y sensibilidades |
-| `42`–`44` | síntesis y controles finales |
+| `00`-`12b` | entorno, trazabilidad, faltantes e imputación |
+| `13`-`23b` | preparación, selección y evaluación interna |
+| `24`-`30b` | umbral, calibración, diagnóstico e influencia |
+| `31a`-`32b` | bootstrap y estabilidad |
+| `33`-`41b` | impacto de imputación y sensibilidades |
+| `42`-`44` | síntesis, cobertura e integridad |
 
-Las tablas de advertencias `08c`, `15b`, `20d` y `31b` contienen sus encabezados y cero registros porque no se produjeron incidencias en esos procedimientos.
+Las tablas `08c`, `15b`, `20d` y `31b` conservan sus encabezados y cero registros porque no se produjeron advertencias o fallos en esos procedimientos.
 
 ---
 
-## 9. Control de integridad
-
-```text
-semana3/docs/tables/44_control_integridad_salidas_sumativa3.csv
-```
-
-El control registra 119 artefactos computacionales:
-
-- 96 tablas adicionales al propio control;
-- 22 figuras;
-- una base procesada.
-
-El control metodológico de cobertura se encuentra en:
+## 10. Control metodológico e integridad
 
 ```text
 semana3/docs/tables/43_control_metodologico_rubrica.csv
+semana3/docs/tables/43a_matriz_respuesta_retroalimentacion_S2.csv
+semana3/docs/tables/44_control_integridad_salidas_sumativa3.csv
 ```
+
+El manifiesto `44` registra **131 artefactos**: 106 tablas, 24 figuras y una base procesada. Para cada archivo verifica existencia, tamaño y SHA-256. El manifiesto no se auto-incluye, por lo que el directorio `docs/tables/` contiene 107 CSV en total.
 
 ---
 
-## 10. Informe integrado
-
-Los productos documentales de Semana 3 se encuentran en:
+## 11. Informe final integrado
 
 ```text
 semana3/docs/informe_sumativa3_rain_australia_g6.docx
 semana3/docs/informe_sumativa3_rain_australia_g6.pdf
 ```
 
-El informe consolida la trazabilidad S1-S2-S3, la comparación de estrategias de imputación, los tres modelos logísticos, los diagnósticos, el bootstrap, el análisis de sensibilidad y las conclusiones técnicas.
+El informe tiene diez páginas y sintetiza la evidencia decisional sin duplicar las 107 tablas del repositorio. Incluye resumen ejecutivo, introducción, metodología integrada, resultados, discusión, conclusiones, recomendaciones y correspondencia con la rúbrica.
 
 ---
 
-## 11. Ejecución
+## 12. Ejecución
 
-Desde la raíz del repositorio:
+Desde la raíz del repositorio, en PowerShell:
 
 ```powershell
 python -m venv .venv
@@ -254,31 +266,29 @@ semana3/notebooks/Sumativa3_Rain_Australia_G6.ipynb
 Ejecutar:
 
 ```text
-Kernel → Restart Kernel and Run All Cells
+Kernel -> Restart Kernel and Run All Cells
 ```
 
-La validación anidada y el bootstrap de 10.000 réplicas concentran la mayor parte del tiempo de ejecución.
+La validación cruzada anidada y el bootstrap de 10.000 réplicas concentran la mayor parte del tiempo de ejecución.
 
 ---
 
-## 12. Dependencias principales
+## 13. Dependencias principales
 
-| Componente | Versión validada |
-|---|---:|
-| Python | 3.12.4 |
-| NumPy | 1.26.4 |
-| pandas | 2.2.2 |
-| SciPy | 1.13.1 |
-| scikit-learn | 1.4.2 |
-| statsmodels | 0.14.2 |
-| Matplotlib | 3.8.4 |
+Las versiones exactas se encuentran en `requirements.txt` y corresponden al entorno validado:
 
-El detalle completo se encuentra en `requirements.txt`.
+- Python 3.12.4;
+- NumPy 1.26.4;
+- pandas 2.2.2;
+- SciPy 1.13.1;
+- scikit-learn 1.4.2;
+- statsmodels 0.14.2;
+- Matplotlib 3.8.4.
 
 ---
 
-## 13. Alcance interpretativo
+## 14. Reproducibilidad y alcance
 
-Los resultados son predictivos y asociativos; no permiten establecer causalidad. La dependencia espacial y temporal se examina mediante errores robustos por localidad, desempeño por `Location` y validación temporal.
+El conjunto de prueba se mantiene reservado durante las decisiones propias de S3. No obstante, S1 y S2 analizaron la base completa antes de definir dicha partición; por ello, el test no se interpreta como validación externa independiente del proceso exploratorio global.
 
-La estabilidad bootstrap corresponde al modelo y al pipeline seleccionados. Los efectos asociados a `MaxTemp` deben interpretarse con cautela porque presentan sensibilidad tanto a la dependencia por localidad como al tratamiento de datos faltantes.
+Los resultados son predictivos y asociativos. La repetición por localidad y fecha se aborda mediante diagnósticos y sensibilidades, pero no sustituye una validación externa en nuevas localidades ni un modelo jerárquico espacio-temporal.
