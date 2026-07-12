@@ -1,23 +1,25 @@
-# Dependencias principales del proyecto MCDIA501 - Estadística Computacional
-# Evaluación Formativa 2: modelamiento predictivo mediante regresión logística
-# Dataset: Weather Australia
-# Python recomendado: 3.12.4
+# Dependencias principales del proyecto MCDI501
+# Sumativa 3: imputación, regresión logística, bootstrap y análisis de sensibilidad
+# Proyecto: Rain in Australia
+# Python validado: 3.12.4
 
 # Entorno Jupyter
-jupyterlab==4.0.11
-notebook==7.0.8
-ipykernel==6.28.0
+jupyterlab==4.2.5
+notebook==7.2.2
+ipykernel==6.29.5
 
 # Análisis y manipulación de datos
 pandas==2.2.2
 numpy==1.26.4
 
-# Visualización de datos
-matplotlib==3.9.1
-seaborn==0.13.2
+# Estadística y modelamiento
+scipy==1.13.1
+scikit-learn==1.4.2
+statsmodels==0.14.2
 
-# Modelamiento predictivo y evaluación
-scikit-learn==1.5.1
+# Visualización
+matplotlib==3.8.4
 
-# Modelamiento estadístico e inferencia
-statsmodels==0.14.6
+# Validación y ejecución programática de notebooks
+nbformat==5.10.4
+nbclient==0.10.0
