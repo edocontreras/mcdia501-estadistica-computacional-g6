@@ -1,0 +1,11 @@
+variable_S1,correlacion_S1_con_RainTomorrow,validada_estable_en_S2,decision_universo_logistico,representada_o_retenida_por,correlacion_redundancia_relevante_S1,fundamento
+MinTemp,0.084,False,Incluir como bloque candidato,MinTemp,,Variable disponible en la matriz de S1; su aporte ajustado se evalúa mediante stepwise AIC y búsqueda BIC.
+MaxTemp,-0.159,True,Incluir como bloque candidato,MaxTemp,,Variable disponible en la matriz de S1; su aporte ajustado se evalúa mediante stepwise AIC y búsqueda BIC. Su relación con RainTomorrow fue estable en S2.
+Rainfall,0.239,True,Incluir como bloque candidato,Rainfall,,Variable disponible en la matriz de S1; su aporte ajustado se evalúa mediante stepwise AIC y búsqueda BIC. Su relación con RainTomorrow fue estable en S2.
+WindGustSpeed,0.234,False,Incluir como bloque candidato,WindGustSpeed,,Variable disponible en la matriz de S1; su aporte ajustado se evalúa mediante stepwise AIC y búsqueda BIC.
+Humidity9am,0.257,False,Incluir como bloque candidato,Humidity9am,,Variable disponible en la matriz de S1; su aporte ajustado se evalúa mediante stepwise AIC y búsqueda BIC.
+Humidity3pm,0.446,True,Incluir como bloque candidato,Humidity3pm,,Variable disponible en la matriz de S1; su aporte ajustado se evalúa mediante stepwise AIC y búsqueda BIC. Su relación con RainTomorrow fue estable en S2.
+Pressure9am,-0.246,False,Excluir antes de la selección automática,Pressure3pm,0.961,Redundancia muy alta con Pressure3pm; se conserva Pressure3pm porque fue validada explícitamente en S2.
+Pressure3pm,-0.226,True,Incluir como bloque candidato,Pressure3pm,,Variable disponible en la matriz de S1; su aporte ajustado se evalúa mediante stepwise AIC y búsqueda BIC. Su relación con RainTomorrow fue estable en S2.
+Temp9am,-0.026,False,Excluir antes de la selección automática,MinTemp y MaxTemp,0.902,Alta redundancia con MinTemp y MaxTemp; ambas permanecen disponibles y MaxTemp fue validada en S2.
+Temp3pm,-0.192,False,Excluir antes de la selección automática,MaxTemp,0.985,Redundancia casi perfecta con MaxTemp; se conserva MaxTemp porque fue validada explícitamente en S2.

@@ -1,0 +1,6 @@
+variable,correlacion_pearson_s1,ic_bootstrap_95_li,ic_bootstrap_95_ls,diagnostico_correlacion
+Humidity3pm,0.4461603787913109,0.4417340521844355,0.4505991619950805,Estable: el IC bootstrap 95 % no incluye cero y conserva dirección positiva.
+RainToday_bin,0.313096745508967,0.3072303821379267,0.3187687097766478,Estable: el IC bootstrap 95 % no incluye cero y conserva dirección positiva.
+Rainfall,0.239031801450613,0.2318398758329702,0.2461071261841896,Estable: el IC bootstrap 95 % no incluye cero y conserva dirección positiva.
+Pressure3pm,-0.2260311455253977,-0.231395731492934,-0.2206141246089705,Estable: el IC bootstrap 95 % no incluye cero y conserva dirección negativa.
+MaxTemp,-0.1592366641493326,-0.1642580251615244,-0.1541497969626089,Estable: el IC bootstrap 95 % no incluye cero y conserva dirección negativa.

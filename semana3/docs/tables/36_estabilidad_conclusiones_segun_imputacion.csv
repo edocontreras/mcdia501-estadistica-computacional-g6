@@ -1,0 +1,15 @@
+termino,signo_consistente_tres_estrategias,max_cambio_beta_relativo_porcentual,cambia_conclusion_IC_incluye_cero
+Humidity3pm,True,4.446414173330209,False
+Humidity3pm_sq,True,8.649266800006,False
+Humidity9am,True,20.63676876347857,False
+MaxTemp,True,87.87513570047767,True
+MaxTemp_sq,True,95.17730030825788,True
+Pressure3pm,True,3.083334337533439,False
+Rainfall_log1p,True,27.409536937109856,False
+Rainfall_log1p_sq,True,45.67467970367983,False
+Season_Autumn,True,5.29361149473338,False
+Season_Spring,True,8.646604516029273,False
+Season_Winter,True,19.39300758758882,False
+WindGustSpeed,True,6.371927664623607,False
+WindGustSpeed_sq,True,13.590343108167065,False
+const,True,6.621019902063912,False

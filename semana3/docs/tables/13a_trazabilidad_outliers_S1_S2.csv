@@ -1,0 +1,6 @@
+fase,evidencia,aporte
+S1,semana1\docs\tables\05_estadistica_descriptiva_variables_clave.csv,"Asimetría, curtosis, IQR y rangos de variables meteorológicas priorizadas."
+S1,semana1\docs\figures\fig_04_boxplots_por_rain_tomorrow.png,Inspección visual de dispersión y observaciones extremas por categoría de RainTomorrow.
+S2,semana2\docs\tables\08b_diagnostico_outliers_iqr.csv,Diagnóstico IQR y cuantificación de observaciones extremas del contraste principal.
+S2,semana2\docs\tables\09b_sintesis_robustez.csv,"Estabilidad del hallazgo frente a filtro IQR, winsorización y medianas."
+S3,38_sensibilidad_winsorizacion.csv,Decisión principal de conservar extremos plausibles y evaluar sensibilidad predictiva 1–99 %.

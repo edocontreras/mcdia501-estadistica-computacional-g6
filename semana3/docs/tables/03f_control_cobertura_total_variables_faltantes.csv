@@ -1,0 +1,6 @@
+dimension,cantidad,variables,decision
+Variables numéricas continuas con faltantes en la base modelable,16,"Cloud3pm, Cloud9am, Evaporation, Humidity3pm, Humidity9am, MaxTemp, MinTemp, Pressure3pm, Pressure9am, Rainfall, Sunshine, Temp3pm, Temp9am, WindGustSpeed, WindSpeed3pm, WindSpeed9am",Universo completo auditado antes del tratamiento de faltantes
+Variables elegibles e imputadas explícitamente en S3,10,"MinTemp, MaxTemp, Rainfall, WindGustSpeed, Humidity9am, Humidity3pm, Pressure9am, Pressure3pm, Temp9am, Temp3pm",Presentes en la matriz de S1; regresión lineal múltiple por variable
+Variables excluidas antes de la imputación,6,"Evaporation, Sunshine, WindSpeed9am, WindSpeed3pm, Cloud9am, Cloud3pm",Ausentes de la matriz de S1 y de la validación de S2; no integran el modelo final
+Predictor binario con faltantes,1,RainToday_bin,Imputación mediante regresión logística explícita
+Variables numéricas faltantes sin decisión,0,ninguna,Cobertura exhaustiva confirmada

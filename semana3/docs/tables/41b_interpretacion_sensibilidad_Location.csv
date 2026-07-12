@@ -1,0 +1,2 @@
+decision_modelo_principal,ganancia_material_umbral_0_01,delta_ROC_AUC,delta_accuracy,delta_recall,delta_F1,fundamento
+Mantener Location fuera del modelo principal,False,0.007299369199385453,0.003188147592479762,0.0030325211753634562,0.00522333604687597,"La ganancia predictiva no alcanza 0,01 en ROC-AUC ni F1; se priorizan parsimonia, interpretación y transferibilidad entre localidades."

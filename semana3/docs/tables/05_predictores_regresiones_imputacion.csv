@@ -1,0 +1,48 @@
+variable_imputada,rol_variable,predictor,fuente_correlacion,correlacion_S1_par_imputacion,correlacion_absoluta_S1,rango_correlacion_absoluta_entre_candidatas,predictor_validado_frente_RainTomorrow_en_S2,fundamento
+MinTemp,Variable analítica heredada de la matriz de S1,Temp9am,Matriz de correlaciones entregada en S1,0.902,0.902,1,False,Par disponible en la matriz de S1.
+MinTemp,Variable analítica heredada de la matriz de S1,MaxTemp,Matriz de correlaciones entregada en S1,0.737,0.737,2,True,Par disponible en la matriz de S1; predictor además validado frente al objetivo en S2.
+MinTemp,Variable analítica heredada de la matriz de S1,Pressure3pm,Matriz de correlaciones entregada en S1,-0.461,0.461,4,True,Par disponible en la matriz de S1; predictor además validado frente al objetivo en S2.
+MinTemp,Variable analítica heredada de la matriz de S1,Humidity9am,Matriz de correlaciones entregada en S1,-0.233,0.233,6,False,Par disponible en la matriz de S1.
+MinTemp,Variable analítica heredada de la matriz de S1,WindGustSpeed,Matriz de correlaciones entregada en S1,0.177,0.177,7,False,Par disponible en la matriz de S1.
+MaxTemp,Variable analítica heredada de la matriz de S1,Temp3pm,Matriz de correlaciones entregada en S1,0.985,0.985,1,False,Par disponible en la matriz de S1.
+MaxTemp,Variable analítica heredada de la matriz de S1,MinTemp,Matriz de correlaciones entregada en S1,0.737,0.737,3,False,Par disponible en la matriz de S1.
+MaxTemp,Variable analítica heredada de la matriz de S1,Humidity3pm,Matriz de correlaciones entregada en S1,-0.509,0.509,4,True,Par disponible en la matriz de S1; predictor además validado frente al objetivo en S2.
+MaxTemp,Variable analítica heredada de la matriz de S1,Pressure3pm,Matriz de correlaciones entregada en S1,-0.427,0.427,6,True,Par disponible en la matriz de S1; predictor además validado frente al objetivo en S2.
+Rainfall,Variable analítica heredada de la matriz de S1,Humidity3pm,Matriz de correlaciones entregada en S1,0.256,0.256,1,True,Par disponible en la matriz de S1; predictor además validado frente al objetivo en S2.
+Rainfall,Variable analítica heredada de la matriz de S1,Humidity9am,Matriz de correlaciones entregada en S1,0.224,0.224,2,False,Par disponible en la matriz de S1.
+Rainfall,Variable analítica heredada de la matriz de S1,Pressure9am,Matriz de correlaciones entregada en S1,-0.168,0.168,3,False,Par disponible en la matriz de S1.
+Rainfall,Variable analítica heredada de la matriz de S1,WindGustSpeed,Matriz de correlaciones entregada en S1,0.134,0.134,4,False,Par disponible en la matriz de S1.
+Rainfall,Variable analítica heredada de la matriz de S1,MaxTemp,Matriz de correlaciones entregada en S1,-0.075,0.075,8,True,Par disponible en la matriz de S1; predictor además validado frente al objetivo en S2.
+WindGustSpeed,Variable analítica heredada de la matriz de S1,Pressure9am,Matriz de correlaciones entregada en S1,-0.459,0.459,1,False,Par disponible en la matriz de S1.
+WindGustSpeed,Variable analítica heredada de la matriz de S1,Humidity9am,Matriz de correlaciones entregada en S1,-0.215,0.215,3,False,Par disponible en la matriz de S1.
+WindGustSpeed,Variable analítica heredada de la matriz de S1,MinTemp,Matriz de correlaciones entregada en S1,0.177,0.177,4,False,Par disponible en la matriz de S1.
+WindGustSpeed,Variable analítica heredada de la matriz de S1,Temp9am,Matriz de correlaciones entregada en S1,0.15,0.15,5,False,Par disponible en la matriz de S1.
+WindGustSpeed,Variable analítica heredada de la matriz de S1,Rainfall,Matriz de correlaciones entregada en S1,0.134,0.134,6,True,Par disponible en la matriz de S1; predictor además validado frente al objetivo en S2.
+Humidity9am,Variable analítica heredada de la matriz de S1,Humidity3pm,Matriz de correlaciones entregada en S1,0.667,0.667,1,True,Par disponible en la matriz de S1; predictor además validado frente al objetivo en S2.
+Humidity9am,Variable analítica heredada de la matriz de S1,MaxTemp,Matriz de correlaciones entregada en S1,-0.504,0.504,2,True,Par disponible en la matriz de S1; predictor además validado frente al objetivo en S2.
+Humidity9am,Variable analítica heredada de la matriz de S1,MinTemp,Matriz de correlaciones entregada en S1,-0.233,0.233,5,False,Par disponible en la matriz de S1.
+Humidity9am,Variable analítica heredada de la matriz de S1,Pressure3pm,Matriz de correlaciones entregada en S1,0.187,0.187,8,True,Par disponible en la matriz de S1; predictor además validado frente al objetivo en S2.
+Humidity9am,Variable analítica heredada de la matriz de S1,Rainfall,Matriz de correlaciones entregada en S1,0.224,0.224,6,True,Par disponible en la matriz de S1; predictor además validado frente al objetivo en S2.
+Humidity3pm,Variable analítica heredada de la matriz de S1,Humidity9am,Matriz de correlaciones entregada en S1,0.667,0.667,1,False,Par disponible en la matriz de S1.
+Humidity3pm,Variable analítica heredada de la matriz de S1,Temp3pm,Matriz de correlaciones entregada en S1,-0.558,0.558,2,False,Par disponible en la matriz de S1.
+Humidity3pm,Variable analítica heredada de la matriz de S1,Rainfall,Matriz de correlaciones entregada en S1,0.256,0.256,4,True,Par disponible en la matriz de S1; predictor además validado frente al objetivo en S2.
+Humidity3pm,Variable analítica heredada de la matriz de S1,Pressure3pm,Matriz de correlaciones entregada en S1,0.052,0.052,6,True,Par disponible en la matriz de S1; predictor además validado frente al objetivo en S2.
+Pressure9am,Variable analítica heredada de la matriz de S1,Pressure3pm,Matriz de correlaciones entregada en S1,0.961,0.961,1,True,Par disponible en la matriz de S1; predictor además validado frente al objetivo en S2.
+Pressure9am,Variable analítica heredada de la matriz de S1,WindGustSpeed,Matriz de correlaciones entregada en S1,-0.459,0.459,2,False,Par disponible en la matriz de S1.
+Pressure9am,Variable analítica heredada de la matriz de S1,MinTemp,Matriz de correlaciones entregada en S1,-0.451,0.451,3,False,Par disponible en la matriz de S1.
+Pressure9am,Variable analítica heredada de la matriz de S1,Humidity9am,Matriz de correlaciones entregada en S1,0.139,0.139,8,False,Par disponible en la matriz de S1.
+Pressure9am,Variable analítica heredada de la matriz de S1,Rainfall,Matriz de correlaciones entregada en S1,-0.168,0.168,7,True,Par disponible en la matriz de S1; predictor además validado frente al objetivo en S2.
+Pressure3pm,Variable analítica heredada de la matriz de S1,Pressure9am,Matriz de correlaciones entregada en S1,0.961,0.961,1,False,Par disponible en la matriz de S1.
+Pressure3pm,Variable analítica heredada de la matriz de S1,WindGustSpeed,Matriz de correlaciones entregada en S1,-0.414,0.414,5,False,Par disponible en la matriz de S1.
+Pressure3pm,Variable analítica heredada de la matriz de S1,MinTemp,Matriz de correlaciones entregada en S1,-0.461,0.461,3,False,Par disponible en la matriz de S1.
+Pressure3pm,Variable analítica heredada de la matriz de S1,Humidity9am,Matriz de correlaciones entregada en S1,0.187,0.187,7,False,Par disponible en la matriz de S1.
+Pressure3pm,Variable analítica heredada de la matriz de S1,Rainfall,Matriz de correlaciones entregada en S1,-0.127,0.127,8,True,Par disponible en la matriz de S1; predictor además validado frente al objetivo en S2.
+Temp9am,Variable analítica heredada de la matriz de S1,MinTemp,Matriz de correlaciones entregada en S1,0.902,0.902,1,False,Par disponible en la matriz de S1.
+Temp9am,Variable analítica heredada de la matriz de S1,MaxTemp,Matriz de correlaciones entregada en S1,0.887,0.887,2,True,Par disponible en la matriz de S1; predictor además validado frente al objetivo en S2.
+Temp9am,Variable analítica heredada de la matriz de S1,Humidity9am,Matriz de correlaciones entregada en S1,-0.471,0.471,4,False,Par disponible en la matriz de S1.
+Temp9am,Variable analítica heredada de la matriz de S1,Pressure3pm,Matriz de correlaciones entregada en S1,-0.47,0.47,5,True,Par disponible en la matriz de S1; predictor además validado frente al objetivo en S2.
+Temp9am,Variable analítica heredada de la matriz de S1,Rainfall,Matriz de correlaciones entregada en S1,0.011,0.011,9,True,Par disponible en la matriz de S1; predictor además validado frente al objetivo en S2.
+Temp3pm,Variable analítica heredada de la matriz de S1,MaxTemp,Matriz de correlaciones entregada en S1,0.985,0.985,1,True,Par disponible en la matriz de S1; predictor además validado frente al objetivo en S2.
+Temp3pm,Variable analítica heredada de la matriz de S1,MinTemp,Matriz de correlaciones entregada en S1,0.709,0.709,3,False,Par disponible en la matriz de S1.
+Temp3pm,Variable analítica heredada de la matriz de S1,Humidity3pm,Matriz de correlaciones entregada en S1,-0.558,0.558,4,True,Par disponible en la matriz de S1; predictor además validado frente al objetivo en S2.
+Temp3pm,Variable analítica heredada de la matriz de S1,Pressure3pm,Matriz de correlaciones entregada en S1,-0.39,0.39,6,True,Par disponible en la matriz de S1; predictor además validado frente al objetivo en S2.

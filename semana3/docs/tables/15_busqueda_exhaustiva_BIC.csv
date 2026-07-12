@@ -1,0 +1,513 @@
+bloques,variables,n_bloques,n_parametros,logLik,AIC,BIC,convergio
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",8,11,-37037.51364589574,74097.02729179148,74201.61820261246,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",9,12,-37035.38854264147,74094.77708528294,74208.87626072399,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",7,10,-37054.40544518507,74128.81089037014,74223.89353657102,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",8,11,-37050.283432599506,74122.56686519901,74227.15777601999,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",7,10,-37057.03752611242,74134.07505222484,74229.15769842573,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",8,11,-37055.69278521389,74133.38557042778,74237.97648124876,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",8,11,-37061.95005710899,74145.90011421798,74250.49102503895,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Season","Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",6,9,-37075.64069012245,74169.2813802449,74254.85576182569,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Season","Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",7,10,-37072.55931959968,74165.11863919935,74260.20128540024,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",7,10,-37076.4914950572,74172.9829901144,74268.06563631528,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",7,10,-37078.34643852273,74176.69287704545,74271.77552324634,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, WindGustSpeed, Humidity9am, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",7,10,-37082.86582535946,74185.73165071892,74280.81429691981,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, WindGustSpeed, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",6,9,-37090.385782473866,74198.77156494773,74284.34594652853,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Season","Humidity3pm, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",6,9,-37094.69146691955,74207.3829338391,74292.95731541989,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, WindGustSpeed, Humidity9am, Season","Humidity3pm, Rainfall_log1p, Pressure3pm, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-37098.77418840361,74215.54837680722,74301.12275838801,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, WindGustSpeed, Season","Humidity3pm, Rainfall_log1p, Pressure3pm, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",5,8,-37107.69448496357,74231.38896992714,74307.45508688784,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",7,10,-37096.706085580845,74213.41217116169,74308.49481736257,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",8,11,-37095.83209440064,74213.66418880128,74318.25509962226,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, WindGustSpeed, Season","Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",6,9,-37122.58227574787,74263.16455149573,74348.73893307653,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Season","Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",7,10,-37119.95843206769,74259.91686413538,74354.99951033626,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, RainToday_bin, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",7,10,-37120.272493049226,74260.54498609845,74355.62763229934,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MinTemp, WindGustSpeed, Season","Humidity3pm, RainToday_bin, Pressure3pm, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",6,9,-37143.84385969602,74305.68771939204,74391.26210097283,True
+"Humidity3pm, RainToday_bin, Pressure3pm, WindGustSpeed, Humidity9am, Season","Humidity3pm, RainToday_bin, Pressure3pm, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-37147.18472716373,74312.36945432746,74397.94383590826,True
+"Humidity3pm, RainToday_bin, Pressure3pm, WindGustSpeed, Season","Humidity3pm, RainToday_bin, Pressure3pm, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",5,8,-37160.80397405368,74337.60794810735,74413.67406506806,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, WindGustSpeed, Humidity9am","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, WindGustSpeed, Humidity9am",6,7,-37243.86901614992,74501.73803229984,74568.29588464045,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am",8,9,-37235.16245058995,74488.3249011799,74573.8992827607,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am",7,8,-37242.32097692311,74500.64195384622,74576.70807080693,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am",7,8,-37243.75168688968,74503.50337377936,74579.56949074006,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, WindGustSpeed, Humidity9am","Humidity3pm, Rainfall_log1p, Pressure3pm, WindGustSpeed, Humidity9am",5,6,-37263.09352201151,74538.18704402303,74595.23663174355,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed",7,8,-37252.775670189825,74521.55134037965,74597.61745734036,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed",6,7,-37259.59209792927,74533.18419585854,74599.74204819916,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, WindGustSpeed","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, WindGustSpeed",5,6,-37265.72444454005,74543.4488890801,74600.49847680063,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am","Humidity3pm, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am",6,7,-37261.22572931811,74536.45145863622,74603.00931097683,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am","Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am",7,8,-37256.14303285437,74528.28606570874,74604.35218266945,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am","Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am",6,7,-37263.093031091455,74540.18606218291,74606.74391452353,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed",6,7,-37265.07723271316,74544.15446542633,74610.71231776694,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed","Humidity3pm, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed",5,6,-37280.53555053989,74573.07110107978,74630.1206888003,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed","Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed",6,7,-37275.843940224855,74565.68788044971,74632.24573279032,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, WindGustSpeed","Humidity3pm, Rainfall_log1p, Pressure3pm, WindGustSpeed",4,5,-37287.75091242773,74585.50182485546,74633.04314795589,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed","Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed",5,6,-37286.288381160986,74584.57676232197,74641.6263500425,True
+"Humidity3pm, RainToday_bin, Pressure3pm, WindGustSpeed, Humidity9am","Humidity3pm, RainToday_bin, Pressure3pm, WindGustSpeed, Humidity9am",5,6,-37300.59530243287,74613.19060486574,74670.24019258627,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am","Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am",7,8,-37294.11866648357,74604.23733296714,74680.30344992784,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am","Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am",6,7,-37299.948862045894,74613.89772409179,74680.4555764324,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am","Humidity3pm, RainToday_bin, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am",6,7,-37300.262870103164,74614.52574020633,74681.08359254694,True
+"Humidity3pm, RainToday_bin, Pressure3pm, WindGustSpeed","Humidity3pm, RainToday_bin, Pressure3pm, WindGustSpeed",4,5,-37331.495054151696,74672.99010830339,74720.53143140383,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MinTemp, WindGustSpeed","Humidity3pm, RainToday_bin, Pressure3pm, MinTemp, WindGustSpeed",5,6,-37327.37137102318,74666.74274204636,74723.79232976689,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed","Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed",6,7,-37321.681581932135,74657.36316386427,74723.92101620488,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, WindGustSpeed","Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, WindGustSpeed",5,6,-37331.20580695263,74674.41161390526,74731.46120162579,True
+"Humidity3pm, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-37480.45672152871,74978.91344305742,75064.48782463821,True
+"Humidity3pm, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",7,10,-37479.69591394837,74979.39182789675,75074.47447409763,True
+"Humidity3pm, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-37491.97554898887,75001.95109797774,75087.52547955854,True
+"Humidity3pm, Pressure3pm, WindGustSpeed, Humidity9am, Season","Humidity3pm, Pressure3pm, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-37529.2081289678,75074.4162579356,75150.48237489631,True
+"Humidity3pm, Pressure3pm, MinTemp, WindGustSpeed, Season","Humidity3pm, Pressure3pm, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",5,8,-37602.3445669775,75220.689133955,75296.75525091571,True
+"Humidity3pm, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Season","Humidity3pm, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",6,9,-37602.33413855998,75222.66827711996,75308.24265870075,True
+"Humidity3pm, Pressure3pm, MaxTemp, WindGustSpeed, Season","Humidity3pm, Pressure3pm, MaxTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",5,8,-37608.7834490689,75233.5668981378,75309.6330150985,True
+"Humidity3pm, Pressure3pm, WindGustSpeed, Season","Humidity3pm, Pressure3pm, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",4,7,-37622.41863418566,75258.83726837132,75325.39512071194,True
+"Humidity3pm, Pressure3pm, WindGustSpeed, Humidity9am","Humidity3pm, Pressure3pm, WindGustSpeed, Humidity9am",4,5,-37681.89539917062,75373.79079834124,75421.33212144168,True
+"Humidity3pm, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am","Humidity3pm, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am",5,6,-37680.900105884335,75373.80021176867,75430.8497994892,True
+"Humidity3pm, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am","Humidity3pm, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am",5,6,-37681.89224648728,75375.78449297456,75432.83408069509,True
+"Humidity3pm, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am","Humidity3pm, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am",6,7,-37678.05906626349,75370.11813252699,75436.6759848676,True
+"Humidity3pm, Pressure3pm, MaxTemp, WindGustSpeed","Humidity3pm, Pressure3pm, MaxTemp, WindGustSpeed",4,5,-37808.731341032166,75627.46268206433,75675.00400516477,True
+"Humidity3pm, Pressure3pm, WindGustSpeed","Humidity3pm, Pressure3pm, WindGustSpeed",3,4,-37818.385914802166,75644.77182960433,75682.80488808468,True
+"Humidity3pm, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed","Humidity3pm, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed",5,6,-37807.50074627604,75627.00149255208,75684.0510802726,True
+"Humidity3pm, Pressure3pm, MinTemp, WindGustSpeed","Humidity3pm, Pressure3pm, MinTemp, WindGustSpeed",4,5,-37814.02365933281,75638.04731866562,75685.58864176605,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",7,10,-38077.368130996365,76174.73626199273,76269.81890819361,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",8,11,-38076.516361083435,76175.03272216687,76279.62363298784,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, Humidity9am, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-38089.52603114755,76197.0520622951,76282.6264438759,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, Humidity9am, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",7,10,-38088.945580040265,76197.89116008053,76292.97380628141,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, Humidity9am, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",7,10,-38089.12042159717,76198.24084319433,76293.32348939522,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Humidity9am, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",8,11,-38084.30615384513,76190.61230769026,76295.20321851123,True
+"Humidity3pm, Rainfall_log1p, MaxTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, Rainfall_log1p, MaxTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-38097.22523503615,76212.4504700723,76298.0248516531,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, WindGustSpeed, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",6,9,-38101.620556874856,76221.24111374971,76306.8154953305,True
+"Humidity3pm, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",7,10,-38096.838407977026,76213.67681595405,76308.75946215494,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",7,10,-38098.90922460385,76217.8184492077,76312.90109540858,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, Humidity9am, Season","Humidity3pm, Rainfall_log1p, Pressure3pm, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-38114.81194929563,76245.62389859126,76321.69001555197,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, Season_Autumn, Season_Winter, Season_Spring",5,8,-38115.71237334548,76247.42474669096,76323.49086365166,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Season_Autumn, Season_Winter, Season_Spring",7,10,-38106.21274159612,76232.42548319224,76327.50812939313,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, Season_Autumn, Season_Winter, Season_Spring",6,9,-38111.967354376044,76241.93470875209,76327.50909033288,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Humidity9am, Season","Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",7,10,-38107.3987350039,76234.7974700078,76329.88011620869,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, Humidity9am, Season","Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-38113.86236987192,76245.72473974383,76331.29912132463,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MinTemp, Humidity9am, Season","Humidity3pm, Rainfall_log1p, Pressure3pm, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-38114.32682119952,76246.65364239903,76332.22802397983,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, Season_Autumn, Season_Winter, Season_Spring",6,9,-38115.6726350485,76249.345270097,76334.91965167779,True
+"Humidity3pm, Rainfall_log1p, MaxTemp, WindGustSpeed, Season","Humidity3pm, Rainfall_log1p, MaxTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",5,8,-38123.44040646704,76262.88081293408,76338.94692989478,True
+"Humidity3pm, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Season","Humidity3pm, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",6,9,-38121.56869144012,76261.13738288025,76346.71176446104,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, Season","Humidity3pm, Rainfall_log1p, Pressure3pm, Season_Autumn, Season_Winter, Season_Spring",4,7,-38138.369794935425,76290.73958987085,76357.29744221146,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Season","Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Season_Autumn, Season_Winter, Season_Spring",6,9,-38126.97666584897,76271.95333169794,76357.52771327873,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MinTemp, Season","Humidity3pm, Rainfall_log1p, Pressure3pm, MinTemp, Season_Autumn, Season_Winter, Season_Spring",5,8,-38135.06096602644,76286.12193205288,76362.18804901358,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, Season","Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, Season_Autumn, Season_Winter, Season_Spring",5,8,-38138.34551780778,76292.69103561556,76368.75715257626,True
+"Humidity3pm, RainToday_bin, MaxTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, RainToday_bin, MaxTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-38167.26596174156,76352.53192348313,76438.10630506392,True
+"Humidity3pm, RainToday_bin, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, RainToday_bin, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",7,10,-38167.205221937475,76354.41044387495,76449.49309007583,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, WindGustSpeed, Humidity9am","Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, WindGustSpeed, Humidity9am",6,7,-38204.22805760103,76422.45611520206,76489.01396754268,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Humidity9am","Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Humidity9am",7,8,-38198.62894315256,76413.25788630512,76489.32400326582,True
+"Humidity3pm, RainToday_bin, Pressure3pm, Humidity9am, Season","Humidity3pm, RainToday_bin, Pressure3pm, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-38203.78994610469,76423.57989220938,76499.64600917009,True
+"Humidity3pm, RainToday_bin, MaxTemp, WindGustSpeed, Season","Humidity3pm, RainToday_bin, MaxTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",5,8,-38205.156168378955,76426.31233675791,76502.37845371861,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, MinTemp, Humidity9am, Season","Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",7,10,-38194.79303528359,76409.58607056718,76504.66871676806,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MinTemp, Humidity9am, Season","Humidity3pm, RainToday_bin, Pressure3pm, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-38201.68783255587,76421.37566511174,76506.95004669254,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, Humidity9am, Season","Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-38203.667167991625,76425.33433598325,76510.90871756405,True
+"Humidity3pm, RainToday_bin, MaxTemp, MinTemp, WindGustSpeed, Season","Humidity3pm, RainToday_bin, MaxTemp, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",6,9,-38203.90320769575,76425.8064153915,76511.3807969723,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MinTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",7,10,-38200.70832466327,76421.41664932654,76516.49929552742,True
+"Humidity3pm, Rainfall_log1p, MaxTemp, WindGustSpeed, Humidity9am","Humidity3pm, Rainfall_log1p, MaxTemp, WindGustSpeed, Humidity9am",5,6,-38223.9716906112,76459.9433812224,76516.99296894293,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, MinTemp, Season","Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, MinTemp, Season_Autumn, Season_Winter, Season_Spring",6,9,-38207.23908726484,76432.47817452968,76518.05255611047,True
+"Humidity3pm, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Humidity9am","Humidity3pm, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Humidity9am",6,7,-38219.692347214674,76453.38469442935,76519.94254676996,True
+"Humidity3pm, RainToday_bin, Pressure3pm, Season","Humidity3pm, RainToday_bin, Pressure3pm, Season_Autumn, Season_Winter, Season_Spring",4,7,-38220.577187735704,76455.15437547141,76521.71222781202,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed","Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed",6,7,-38220.81070589456,76455.62141178912,76522.17926412974,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MinTemp, Season","Humidity3pm, RainToday_bin, Pressure3pm, MinTemp, Season_Autumn, Season_Winter, Season_Spring",5,8,-38215.07412929618,76446.14825859237,76522.21437555307,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, WindGustSpeed","Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, WindGustSpeed",5,6,-38230.041063864366,76472.08212772873,76529.13171544926,True
+"Humidity3pm, Rainfall_log1p, MinTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, Rainfall_log1p, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-38212.81849209561,76443.63698419122,76529.21136577202,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, Season","Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, Season_Autumn, Season_Winter, Season_Spring",5,8,-38220.48215897108,76456.96431794215,76533.03043490286,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MinTemp, WindGustSpeed, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",6,9,-38223.09776366948,76464.19552733896,76549.76990891976,True
+"Humidity3pm, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed","Humidity3pm, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed",5,6,-38244.146138711745,76500.29227742349,76557.34186514402,True
+"Humidity3pm, Rainfall_log1p, MaxTemp, WindGustSpeed","Humidity3pm, Rainfall_log1p, MaxTemp, WindGustSpeed",4,5,-38251.76116128254,76513.52232256508,76561.06364566552,True
+"Humidity3pm, Rainfall_log1p, MinTemp, WindGustSpeed, Season","Humidity3pm, Rainfall_log1p, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",5,8,-38237.05994326664,76490.11988653328,76566.18600349399,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, Humidity9am","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, Humidity9am",6,7,-38263.77038980082,76541.54077960164,76608.09863194225,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Humidity9am","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Humidity9am",7,8,-38263.303296911756,76542.60659382351,76618.67271078422,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MinTemp, WindGustSpeed, Humidity9am","Humidity3pm, RainToday_bin, Rainfall_log1p, MinTemp, WindGustSpeed, Humidity9am",6,7,-38281.112618098414,76576.22523619683,76642.78308853744,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp",5,6,-38287.15946215625,76586.3189243125,76643.36851203302,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, Humidity9am","Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, Humidity9am",5,6,-38288.139802563936,76588.27960512787,76645.3291928484,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, Humidity9am","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, Humidity9am",6,7,-38283.80846371381,76581.61692742762,76648.17477976823,True
+"Humidity3pm, RainToday_bin, MaxTemp, WindGustSpeed, Humidity9am","Humidity3pm, RainToday_bin, MaxTemp, WindGustSpeed, Humidity9am",5,6,-38290.109811141134,76592.21962228227,76649.26921000279,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp",6,7,-38284.93853728397,76583.87707456794,76650.43492690855,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Humidity9am","Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Humidity9am",6,7,-38287.083001852014,76588.16600370403,76654.72385604464,True
+"Humidity3pm, RainToday_bin, MaxTemp, MinTemp, WindGustSpeed, Humidity9am","Humidity3pm, RainToday_bin, MaxTemp, MinTemp, WindGustSpeed, Humidity9am",6,7,-38287.236487049944,76588.47297409989,76655.0308264405,True
+"Humidity3pm, Rainfall_log1p, MinTemp, WindGustSpeed, Humidity9am","Humidity3pm, Rainfall_log1p, MinTemp, WindGustSpeed, Humidity9am",5,6,-38295.02813369195,76602.0562673839,76659.10585510443,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MinTemp, WindGustSpeed","Humidity3pm, RainToday_bin, Rainfall_log1p, MinTemp, WindGustSpeed",5,6,-38302.67274751319,76617.34549502638,76674.39508274691,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp","Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp",4,5,-38309.66119894824,76629.32239789648,76676.86372099692,True
+"Humidity3pm, RainToday_bin, MinTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, RainToday_bin, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-38287.14938873743,76592.29877747486,76677.87315905566,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp","Humidity3pm, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp",5,6,-38306.46719173916,76624.93438347832,76681.98397119885,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp",5,6,-38307.51878159173,76627.03756318346,76684.08715090399,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MinTemp, Humidity9am","Humidity3pm, Rainfall_log1p, Pressure3pm, MinTemp, Humidity9am",5,6,-38312.42971990713,76636.85943981426,76693.90902753478,True
+"Humidity3pm, Rainfall_log1p, MinTemp, WindGustSpeed","Humidity3pm, Rainfall_log1p, MinTemp, WindGustSpeed",4,5,-38318.474910421544,76646.94982084309,76694.49114394352,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, Humidity9am","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm, Humidity9am",5,6,-38322.135186824846,76656.27037364969,76713.31996137022,True
+"Humidity3pm, RainToday_bin, MaxTemp, MinTemp, WindGustSpeed","Humidity3pm, RainToday_bin, MaxTemp, MinTemp, WindGustSpeed",5,6,-38323.545844457,76659.091688914,76716.14127663453,True
+"Humidity3pm, RainToday_bin, MaxTemp, WindGustSpeed","Humidity3pm, RainToday_bin, MaxTemp, WindGustSpeed",4,5,-38329.77838950865,76669.5567790173,76717.09810211773,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, MinTemp","Humidity3pm, Rainfall_log1p, Pressure3pm, MinTemp",4,5,-38333.77844841135,76677.5568968227,76725.09821992314,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm","Humidity3pm, RainToday_bin, Rainfall_log1p, Pressure3pm",4,5,-38333.96909425737,76677.93818851474,76725.47951161518,True
+"Humidity3pm, RainToday_bin, MinTemp, WindGustSpeed, Season","Humidity3pm, RainToday_bin, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",5,8,-38323.677568447405,76663.35513689481,76739.42125385551,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm, Humidity9am","Humidity3pm, Rainfall_log1p, Pressure3pm, Humidity9am",4,5,-38352.59618369309,76715.19236738617,76762.73369048661,True
+"Humidity3pm, Rainfall_log1p, Pressure3pm","Humidity3pm, Rainfall_log1p, Pressure3pm",3,4,-38362.39040900435,76732.7808180087,76770.81387648905,True
+"Humidity3pm, RainToday_bin, MinTemp, WindGustSpeed, Humidity9am","Humidity3pm, RainToday_bin, MinTemp, WindGustSpeed, Humidity9am",5,6,-38366.72642128678,76745.45284257356,76802.50243029409,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, Humidity9am","Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, Humidity9am",5,6,-38374.1474924541,76760.2949849082,76817.34457262873,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, MinTemp, Humidity9am","Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, MinTemp, Humidity9am",6,7,-38372.00727822402,76758.01455644803,76824.57240878865,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp","Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp",4,5,-38388.51392140975,76787.0278428195,76834.56916591994,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, MinTemp","Humidity3pm, RainToday_bin, Pressure3pm, MaxTemp, MinTemp",5,6,-38384.2711232233,76780.5422464466,76837.59183416712,True
+"Humidity3pm, RainToday_bin, MinTemp, WindGustSpeed","Humidity3pm, RainToday_bin, MinTemp, WindGustSpeed",4,5,-38402.16812058148,76814.33624116296,76861.8775642634,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MinTemp, Humidity9am","Humidity3pm, RainToday_bin, Pressure3pm, MinTemp, Humidity9am",5,6,-38396.85131447717,76805.70262895434,76862.75221667487,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, WindGustSpeed","Humidity3pm, RainToday_bin, Rainfall_log1p, WindGustSpeed",4,5,-38409.92878077674,76829.85756155348,76877.39888465391,True
+"Humidity3pm, RainToday_bin, Pressure3pm, MinTemp","Humidity3pm, RainToday_bin, Pressure3pm, MinTemp",4,5,-38410.716245811636,76831.43249162327,76878.97381472371,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, WindGustSpeed, Humidity9am","Humidity3pm, RainToday_bin, Rainfall_log1p, WindGustSpeed, Humidity9am",5,6,-38407.90872066696,76827.81744133391,76884.86702905444,True
+"Humidity3pm, Rainfall_log1p, WindGustSpeed","Humidity3pm, Rainfall_log1p, WindGustSpeed",3,4,-38421.39311097874,76850.78622195747,76888.81928043782,True
+"Humidity3pm, Rainfall_log1p, WindGustSpeed, Humidity9am","Humidity3pm, Rainfall_log1p, WindGustSpeed, Humidity9am",4,5,-38418.71857171834,76847.43714343668,76894.97846653711,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, WindGustSpeed, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",5,8,-38404.49168384672,76824.98336769344,76901.04948465414,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, WindGustSpeed, Humidity9am, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-38403.27457051146,76824.54914102292,76910.12352260371,True
+"Humidity3pm, RainToday_bin, Pressure3pm, Humidity9am","Humidity3pm, RainToday_bin, Pressure3pm, Humidity9am",4,5,-38426.6063652042,76863.2127304084,76910.75405350883,True
+"Humidity3pm, Rainfall_log1p, WindGustSpeed, Season","Humidity3pm, Rainfall_log1p, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",4,7,-38415.24809606693,76844.49619213385,76911.05404447447,True
+"Humidity3pm, RainToday_bin, Pressure3pm","Humidity3pm, RainToday_bin, Pressure3pm",3,4,-38432.73824571162,76873.47649142324,76911.50954990358,True
+"Humidity3pm, Rainfall_log1p, WindGustSpeed, Humidity9am, Season","Humidity3pm, Rainfall_log1p, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-38413.58512508862,76843.17025017724,76919.23636713794,True
+"Humidity3pm, RainToday_bin, WindGustSpeed, Humidity9am","Humidity3pm, RainToday_bin, WindGustSpeed, Humidity9am",4,5,-38521.37141459306,77052.74282918611,77100.28415228655,True
+"Humidity3pm, RainToday_bin, WindGustSpeed","Humidity3pm, RainToday_bin, WindGustSpeed",3,4,-38528.00961235701,77064.01922471402,77102.05228319437,True
+"Humidity3pm, RainToday_bin, WindGustSpeed, Season","Humidity3pm, RainToday_bin, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",4,7,-38524.122568921586,77062.24513784317,77128.80299018379,True
+"Humidity3pm, RainToday_bin, WindGustSpeed, Humidity9am, Season","Humidity3pm, RainToday_bin, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-38518.59665975627,77053.19331951255,77129.25943647325,True
+"Humidity3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-38659.02805672181,77336.05611344361,77421.63049502441,True
+"Humidity3pm, MaxTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, MaxTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-38683.517529676064,77383.03505935213,77459.10117631283,True
+"Humidity3pm, MinTemp, WindGustSpeed, Humidity9am, Season","Humidity3pm, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-38702.50272970555,77421.0054594111,77497.0715763718,True
+"Humidity3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am","Humidity3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am",5,6,-38779.30404471188,77570.60808942375,77627.65767714428,True
+"Humidity3pm, MaxTemp, WindGustSpeed, Humidity9am","Humidity3pm, MaxTemp, WindGustSpeed, Humidity9am",4,5,-38791.16700605568,77592.33401211136,77639.8753352118,True
+"Humidity3pm, MinTemp, WindGustSpeed, Humidity9am","Humidity3pm, MinTemp, WindGustSpeed, Humidity9am",4,5,-38799.35013393663,77608.70026787325,77656.24159097369,True
+"Humidity3pm, Pressure3pm, MaxTemp, MinTemp, Humidity9am, Season","Humidity3pm, Pressure3pm, MaxTemp, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-38791.584702639346,77601.16940527869,77686.74378685949,True
+"Humidity3pm, Pressure3pm, MaxTemp, MinTemp, Season","Humidity3pm, Pressure3pm, MaxTemp, MinTemp, Season_Autumn, Season_Winter, Season_Spring",5,8,-38801.21143672097,77618.42287344194,77694.48899040265,True
+"Humidity3pm, MaxTemp, MinTemp, WindGustSpeed, Season","Humidity3pm, MaxTemp, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",5,8,-38830.875498613306,77677.75099722661,77753.81711418732,True
+"Humidity3pm, MaxTemp, WindGustSpeed, Season","Humidity3pm, MaxTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",4,7,-38844.79300519917,77703.58601039834,77770.14386273896,True
+"Humidity3pm, MinTemp, WindGustSpeed, Season","Humidity3pm, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",4,7,-38865.2766795924,77744.5533591848,77811.11121152542,True
+"Humidity3pm, Pressure3pm, MinTemp, Humidity9am, Season","Humidity3pm, Pressure3pm, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-38871.09623810468,77758.19247620935,77834.25859317006,True
+"Humidity3pm, Pressure3pm, MaxTemp, Season","Humidity3pm, Pressure3pm, MaxTemp, Season_Autumn, Season_Winter, Season_Spring",4,7,-38879.4053907017,77772.8107814034,77839.36863374402,True
+"Humidity3pm, Pressure3pm, MinTemp, Season","Humidity3pm, Pressure3pm, MinTemp, Season_Autumn, Season_Winter, Season_Spring",4,7,-38881.33072000112,77776.66144000224,77843.21929234285,True
+"Humidity3pm, Pressure3pm, MaxTemp, Humidity9am, Season","Humidity3pm, Pressure3pm, MaxTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-38875.5873833378,77767.1747666756,77843.2408836363,True
+"Humidity3pm, Pressure3pm, Humidity9am, Season","Humidity3pm, Pressure3pm, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",4,7,-38882.4640784711,77778.9281569422,77845.48600928282,True
+"Humidity3pm, Pressure3pm, Season","Humidity3pm, Pressure3pm, Season_Autumn, Season_Winter, Season_Spring",3,6,-38888.702615764945,77789.40523152989,77846.45481925042,True
+"Humidity3pm, MaxTemp, WindGustSpeed","Humidity3pm, MaxTemp, WindGustSpeed",3,4,-38954.063459685705,77916.12691937141,77954.15997785176,True
+"Humidity3pm, MaxTemp, MinTemp, WindGustSpeed","Humidity3pm, MaxTemp, MinTemp, WindGustSpeed",4,5,-38948.32402370136,77906.64804740272,77954.18937050315,True
+"Humidity3pm, MinTemp, WindGustSpeed","Humidity3pm, MinTemp, WindGustSpeed",3,4,-38961.76897788333,77931.53795576666,77969.571014247,True
+"Humidity3pm, Pressure3pm, MaxTemp, MinTemp, Humidity9am","Humidity3pm, Pressure3pm, MaxTemp, MinTemp, Humidity9am",5,6,-38970.10200550759,77952.20401101519,78009.25359873571,True
+"Humidity3pm, Pressure3pm, MaxTemp, MinTemp","Humidity3pm, Pressure3pm, MaxTemp, MinTemp",4,5,-38979.385477367134,77968.77095473427,78016.3122778347,True
+"Humidity3pm, WindGustSpeed, Humidity9am","Humidity3pm, WindGustSpeed, Humidity9am",3,4,-39013.98438815202,78035.96877630404,78074.00183478439,True
+"Humidity3pm, WindGustSpeed, Humidity9am, Season","Humidity3pm, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",4,7,-39011.56091998114,78037.12183996227,78103.67969230289,True
+"Humidity3pm, Pressure3pm, MaxTemp","Humidity3pm, Pressure3pm, MaxTemp",3,4,-39032.36230365055,78072.7246073011,78110.75766578145,True
+"Humidity3pm, Pressure3pm, MaxTemp, Humidity9am","Humidity3pm, Pressure3pm, MaxTemp, Humidity9am",4,5,-39027.673709651724,78065.34741930345,78112.88874240388,True
+"Humidity3pm, WindGustSpeed","Humidity3pm, WindGustSpeed",2,3,-39096.9645835397,78199.9291670794,78228.45396093967,True
+"Humidity3pm, WindGustSpeed, Season","Humidity3pm, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",3,6,-39090.15912022708,78192.31824045416,78249.36782817468,True
+"Humidity3pm, Pressure3pm, MinTemp, Humidity9am","Humidity3pm, Pressure3pm, MinTemp, Humidity9am",4,5,-39100.173835109315,78210.34767021863,78257.88899331907,True
+"Humidity3pm, Pressure3pm, MinTemp","Humidity3pm, Pressure3pm, MinTemp",3,4,-39110.48825081188,78228.97650162377,78267.00956010411,True
+"Humidity3pm, Pressure3pm, Humidity9am","Humidity3pm, Pressure3pm, Humidity9am",3,4,-39115.81117204492,78239.62234408985,78277.65540257019,True
+"Humidity3pm, Pressure3pm","Humidity3pm, Pressure3pm",2,3,-39134.475877629724,78274.95175525945,78303.47654911972,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, Humidity9am, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",7,10,-40313.12324373011,80646.24648746022,80741.3291336611,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MinTemp, Humidity9am, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-40323.22804013137,80664.45608026274,80750.03046184353,True
+"Humidity3pm, Rainfall_log1p, MaxTemp, MinTemp, Humidity9am, Season","Humidity3pm, Rainfall_log1p, MaxTemp, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-40339.123396558025,80696.24679311605,80781.82117469684,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, Humidity9am, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-40339.38390592279,80696.76781184558,80782.34219342638,True
+"Humidity3pm, Rainfall_log1p, MinTemp, Humidity9am, Season","Humidity3pm, Rainfall_log1p, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-40346.41293784678,80708.82587569355,80784.89199265426,True
+"Humidity3pm, Rainfall_log1p, MaxTemp, Humidity9am, Season","Humidity3pm, Rainfall_log1p, MaxTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-40369.52731137722,80755.05462275444,80831.12073971514,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, Season_Autumn, Season_Winter, Season_Spring",6,9,-40382.39718605625,80782.7943721125,80868.3687536933,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MinTemp, Humidity9am","Humidity3pm, RainToday_bin, Rainfall_log1p, MinTemp, Humidity9am",5,6,-40400.00780078423,80812.01560156846,80869.06518928899,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MinTemp, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, MinTemp, Season_Autumn, Season_Winter, Season_Spring",5,8,-40390.140406802646,80796.28081360529,80872.346930566,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, Humidity9am","Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, Humidity9am",6,7,-40397.14372055331,80808.28744110662,80874.84529344723,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, Humidity9am","Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, Humidity9am",5,6,-40411.27478076862,80834.54956153723,80891.59914925776,True
+"Humidity3pm, Rainfall_log1p, MinTemp, Season","Humidity3pm, Rainfall_log1p, MinTemp, Season_Autumn, Season_Winter, Season_Spring",4,7,-40409.88779217596,80833.77558435193,80900.33343669254,True
+"Humidity3pm, Rainfall_log1p, MaxTemp, MinTemp, Season","Humidity3pm, Rainfall_log1p, MaxTemp, MinTemp, Season_Autumn, Season_Winter, Season_Spring",5,8,-40404.36925261828,80824.73850523656,80900.80462219726,True
+"Humidity3pm, Rainfall_log1p, MinTemp, Humidity9am","Humidity3pm, Rainfall_log1p, MinTemp, Humidity9am",4,5,-40425.45395031319,80860.90790062638,80908.44922372681,True
+"Humidity3pm, Rainfall_log1p, MaxTemp, MinTemp, Humidity9am","Humidity3pm, Rainfall_log1p, MaxTemp, MinTemp, Humidity9am",5,6,-40424.04910671216,80860.09821342432,80917.14780114485,True
+"Humidity3pm, Rainfall_log1p, MaxTemp, Humidity9am","Humidity3pm, Rainfall_log1p, MaxTemp, Humidity9am",4,5,-40441.25757582297,80892.51515164594,80940.05647474638,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, Season_Autumn, Season_Winter, Season_Spring",5,8,-40429.40569838064,80874.81139676127,80950.87751372198,True
+"Humidity3pm, Rainfall_log1p, MaxTemp, Season","Humidity3pm, Rainfall_log1p, MaxTemp, Season_Autumn, Season_Winter, Season_Spring",4,7,-40456.01677781421,80926.03355562843,80992.59140796904,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MinTemp","Humidity3pm, RainToday_bin, Rainfall_log1p, MinTemp",4,5,-40482.91618254533,80975.83236509065,81023.37368819109,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp","Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp",5,6,-40481.18975249319,80974.37950498638,81031.42909270691,True
+"Humidity3pm, Rainfall_log1p, MinTemp","Humidity3pm, Rainfall_log1p, MinTemp",3,4,-40504.52171920779,81017.04343841558,81055.07649689593,True
+"Humidity3pm, Rainfall_log1p, MaxTemp, MinTemp","Humidity3pm, Rainfall_log1p, MaxTemp, MinTemp",4,5,-40503.792823531476,81017.58564706295,81065.12697016339,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp","Humidity3pm, RainToday_bin, Rainfall_log1p, MaxTemp",4,5,-40512.41405658013,81034.82811316026,81082.36943626069,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Humidity9am","Humidity3pm, RainToday_bin, Rainfall_log1p, Humidity9am",4,5,-40515.36943305255,81040.7388661051,81088.28018920553,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Humidity9am, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-40506.669450846624,81029.33890169325,81105.40501865395,True
+"Humidity3pm, Rainfall_log1p, Humidity9am","Humidity3pm, Rainfall_log1p, Humidity9am",3,4,-40537.743834042165,81083.48766808433,81121.52072656467,True
+"Humidity3pm, Rainfall_log1p, MaxTemp","Humidity3pm, Rainfall_log1p, MaxTemp",3,4,-40538.85231909042,81085.70463818085,81123.73769666119,True
+"Humidity3pm, Rainfall_log1p, Humidity9am, Season","Humidity3pm, Rainfall_log1p, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",4,7,-40528.3525192531,81070.7050385062,81137.26289084682,True
+"Humidity3pm, RainToday_bin, MaxTemp, MinTemp, Humidity9am, Season","Humidity3pm, RainToday_bin, MaxTemp, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-40529.394086760396,81076.78817352079,81162.36255510159,True
+"Humidity3pm, RainToday_bin, MinTemp, Humidity9am, Season","Humidity3pm, RainToday_bin, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-40536.49517986474,81088.99035972948,81165.05647669018,True
+"Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season","Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",7,10,-40540.39195113706,81100.78390227412,81195.86654847501,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season","RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",8,11,-40537.21746418842,81096.43492837684,81201.02583919781,True
+"Humidity3pm, RainToday_bin, MaxTemp, Humidity9am, Season","Humidity3pm, RainToday_bin, MaxTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-40569.33832630832,81154.67665261665,81230.74276957735,True
+"Humidity3pm, RainToday_bin, MinTemp, Season","Humidity3pm, RainToday_bin, MinTemp, Season_Autumn, Season_Winter, Season_Spring",4,7,-40580.44271325563,81174.88542651126,81241.44327885188,True
+"Humidity3pm, RainToday_bin, MaxTemp, MinTemp, Season","Humidity3pm, RainToday_bin, MaxTemp, MinTemp, Season_Autumn, Season_Winter, Season_Spring",5,8,-40574.88660270255,81165.7732054051,81241.8393223658,True
+"Humidity3pm, RainToday_bin, MinTemp, Humidity9am","Humidity3pm, RainToday_bin, MinTemp, Humidity9am",4,5,-40613.813453624156,81237.62690724831,81285.16823034875,True
+"Humidity3pm, RainToday_bin, MaxTemp, MinTemp, Humidity9am","Humidity3pm, RainToday_bin, MaxTemp, MinTemp, Humidity9am",5,6,-40612.32202774968,81236.64405549936,81293.69364321989,True
+"Humidity3pm, RainToday_bin, MaxTemp, Humidity9am","Humidity3pm, RainToday_bin, MaxTemp, Humidity9am",4,5,-40637.01658150188,81284.03316300375,81331.57448610419,True
+"Humidity3pm, RainToday_bin, MaxTemp, Season","Humidity3pm, RainToday_bin, MaxTemp, Season_Autumn, Season_Winter, Season_Spring",4,7,-40634.374329089325,81282.74865817865,81349.30651051927,True
+"RainToday_bin, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season","RainToday_bin, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",7,10,-40626.56405278979,81273.12810557958,81368.21075178047,True
+"Humidity3pm, RainToday_bin, MinTemp","Humidity3pm, RainToday_bin, MinTemp",3,4,-40671.140022501386,81350.28004500277,81388.31310348312,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p, Season","Humidity3pm, RainToday_bin, Rainfall_log1p, Season_Autumn, Season_Winter, Season_Spring",4,7,-40657.92359299038,81329.84718598076,81396.40503832138,True
+"Humidity3pm, RainToday_bin, MaxTemp, MinTemp","Humidity3pm, RainToday_bin, MaxTemp, MinTemp",4,5,-40670.29769676912,81350.59539353824,81398.13671663868,True
+"Humidity3pm, Rainfall_log1p, Season","Humidity3pm, Rainfall_log1p, Season_Autumn, Season_Winter, Season_Spring",3,6,-40674.5944617183,81361.1889234366,81418.23851115712,True
+"Humidity3pm, RainToday_bin, Rainfall_log1p","Humidity3pm, RainToday_bin, Rainfall_log1p",3,4,-40689.25973483114,81386.51946966228,81424.55252814262,True
+"Humidity3pm, Rainfall_log1p","Humidity3pm, Rainfall_log1p",2,3,-40705.64197743751,81417.28395487502,81445.80874873529,True
+"Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am","Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am",6,7,-40683.67960963905,81381.3592192781,81447.91707161872,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am","RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am",7,8,-40680.06376275852,81376.12752551703,81452.19364247774,True
+"Humidity3pm, RainToday_bin, MaxTemp","Humidity3pm, RainToday_bin, MaxTemp",3,4,-40712.09496112986,81432.18992225971,81470.22298074006,True
+"Humidity3pm, RainToday_bin, Humidity9am","Humidity3pm, RainToday_bin, Humidity9am",3,4,-40769.32222641756,81546.64445283511,81584.67751131546,True
+"Humidity3pm, RainToday_bin, Humidity9am, Season","Humidity3pm, RainToday_bin, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",4,7,-40760.57631452506,81535.15262905012,81601.71048139074,True
+"RainToday_bin, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am","RainToday_bin, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am",6,7,-40768.04861813017,81550.09723626034,81616.65508860095,True
+"Humidity3pm, RainToday_bin, Season","Humidity3pm, RainToday_bin, Season_Autumn, Season_Winter, Season_Spring",3,6,-40880.39889851784,81772.79779703567,81829.8473847562,True
+"Humidity3pm, RainToday_bin","Humidity3pm, RainToday_bin",2,3,-40913.22273840069,81832.44547680138,81860.97027066165,True
+"Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season","Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-40918.41157988344,81854.82315976688,81940.39754134767,True
+"Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am","Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Humidity9am",5,6,-41064.23620111954,82140.47240223907,82197.5219899596,True
+"Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Humidity9am, Season","Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-41370.662871726716,82759.32574345343,82844.90012503423,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Humidity9am, Season","RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",7,10,-41366.65949938791,82753.31899877582,82848.40164497671,True
+"Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Humidity9am","Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Humidity9am",5,6,-41505.90722094183,83023.81444188366,83080.86402960418,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Humidity9am","RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Humidity9am",6,7,-41501.37747488413,83016.75494976826,83083.31280210888,True
+"Humidity3pm, MaxTemp, MinTemp, Season","Humidity3pm, MaxTemp, MinTemp, Season_Autumn, Season_Winter, Season_Spring",4,7,-41517.356258763604,83048.71251752721,83115.27036986782,True
+"RainToday_bin, Pressure3pm, MaxTemp, MinTemp, Humidity9am, Season","RainToday_bin, Pressure3pm, MaxTemp, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-41508.624703611866,83035.24940722373,83120.82378880453,True
+"Humidity3pm, MaxTemp, MinTemp, Humidity9am, Season","Humidity3pm, MaxTemp, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-41515.41370960232,83046.82741920464,83122.89353616534,True
+"Humidity3pm, MinTemp, Season","Humidity3pm, MinTemp, Season_Autumn, Season_Winter, Season_Spring",3,6,-41540.73916299937,83093.47832599875,83150.52791371927,True
+"Humidity3pm, MinTemp, Humidity9am, Season","Humidity3pm, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",4,7,-41538.70115974285,83091.4023194857,83157.96017182631,True
+"Humidity3pm, MaxTemp, MinTemp","Humidity3pm, MaxTemp, MinTemp",3,4,-41608.65109548926,83225.30219097852,83263.33524945886,True
+"Humidity3pm, MaxTemp, MinTemp, Humidity9am","Humidity3pm, MaxTemp, MinTemp, Humidity9am",4,5,-41608.52934657428,83227.05869314856,83274.600016249,True
+"Humidity3pm, MinTemp","Humidity3pm, MinTemp",2,3,-41649.40999380393,83304.81998760786,83333.34478146813,True
+"Humidity3pm, MinTemp, Humidity9am","Humidity3pm, MinTemp, Humidity9am",3,4,-41649.232057604975,83306.46411520995,83344.4971736903,True
+"RainToday_bin, Pressure3pm, MaxTemp, MinTemp, Humidity9am","RainToday_bin, Pressure3pm, MaxTemp, MinTemp, Humidity9am",5,6,-41641.726327974226,83295.45265594845,83352.50224366898,True
+"Humidity3pm, MaxTemp, Season","Humidity3pm, MaxTemp, Season_Autumn, Season_Winter, Season_Spring",3,6,-41738.69693433641,83489.39386867282,83546.44345639335,True
+"Humidity3pm, MaxTemp, Humidity9am, Season","Humidity3pm, MaxTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",4,7,-41738.09201926,83490.18403852,83556.74189086062,True
+"Humidity3pm, MaxTemp","Humidity3pm, MaxTemp",2,3,-41796.95352516148,83599.90705032296,83628.43184418323,True
+"Humidity3pm, MaxTemp, Humidity9am","Humidity3pm, MaxTemp, Humidity9am",3,4,-41794.388423554854,83596.77684710971,83634.80990559005,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Season","RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",7,10,-41761.41399209611,83542.82798419222,83637.9106303931,True
+"Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Season","Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",6,9,-41772.544244499455,83563.08848899891,83648.6628705797,True
+"Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season","Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-41861.99948376641,83741.99896753283,83827.57334911362,True
+"RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season","RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",7,10,-41858.609683480434,83737.21936696087,83832.30201316175,True
+"Humidity3pm, Humidity9am, Season","Humidity3pm, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",3,6,-41894.60155102096,83801.20310204192,83858.25268976245,True
+"Humidity3pm, Humidity9am","Humidity3pm, Humidity9am",2,3,-41914.60693540473,83835.21387080946,83863.73866466973,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed","RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed",6,7,-41893.11937942499,83800.23875884998,83866.7966111906,True
+"Humidity3pm, Season","Humidity3pm, Season_Autumn, Season_Winter, Season_Spring",2,5,-41907.24862840759,83824.49725681519,83872.03857991562,True
+"Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed","Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed",5,6,-41904.37214224674,83820.74428449348,83877.79387221401,True
+Humidity3pm,Humidity3pm,1,2,-41937.78708706244,83879.57417412488,83898.59070336506,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am, Season","RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",7,10,-41912.471987115794,83844.94397423159,83940.02662043247,True
+"Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am, Season","Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-41937.85547938003,83893.71095876006,83979.28534034085,True
+"Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Humidity9am","Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Humidity9am",5,6,-41956.46954613249,83924.93909226498,83981.9886799855,True
+"RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Humidity9am","RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Humidity9am",6,7,-41952.64367234822,83919.28734469644,83985.84519703705,True
+"Pressure3pm, MaxTemp, MinTemp, Humidity9am, Season","Pressure3pm, MaxTemp, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-41962.703085604786,83941.40617120957,84017.47228817028,True
+"RainToday_bin, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season","RainToday_bin, MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-41987.6940201583,83993.3880403166,84078.96242189739,True
+"RainToday_bin, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Season","RainToday_bin, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",6,9,-41994.070811052836,84006.14162210567,84091.71600368647,True
+"RainToday_bin, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am, Season","RainToday_bin, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-42048.47971474254,84114.95942948508,84200.53381106588,True
+"RainToday_bin, MaxTemp, MinTemp, WindGustSpeed, Humidity9am","RainToday_bin, MaxTemp, MinTemp, WindGustSpeed, Humidity9am",5,6,-42080.82776564178,84173.65553128356,84230.70511900408,True
+"Pressure3pm, MaxTemp, MinTemp, Humidity9am","Pressure3pm, MaxTemp, MinTemp, Humidity9am",4,5,-42102.73845012952,84215.47690025903,84263.01822335947,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am, Season","RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",7,10,-42079.27443042483,84178.54886084967,84273.63150705055,True
+"Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am, Season","Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-42095.01764747596,84208.03529495191,84293.60967653271,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am","RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am",6,7,-42115.658214234136,84245.31642846827,84311.87428080889,True
+"RainToday_bin, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed","RainToday_bin, Pressure3pm, MaxTemp, MinTemp, WindGustSpeed",5,6,-42124.57730486898,84261.15460973796,84318.20419745849,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Season","RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Season_Autumn, Season_Winter, Season_Spring",6,9,-42112.266209066394,84242.53241813279,84328.10679971358,True
+"Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am","Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am",5,6,-42131.354891407456,84274.70978281491,84331.75937053544,True
+"Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Season","Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp, Season_Autumn, Season_Winter, Season_Spring",5,8,-42122.39868977731,84260.79737955461,84336.86349651532,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp","RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp",5,6,-42229.22411476249,84470.44822952498,84527.4978172455,True
+"Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp","Rainfall_log1p, Pressure3pm, MaxTemp, MinTemp",4,5,-42239.57012316069,84489.14024632137,84536.68156942181,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, WindGustSpeed, Humidity9am, Season","RainToday_bin, Rainfall_log1p, Pressure3pm, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-42268.41967084681,84554.83934169362,84640.41372327441,True
+"RainToday_bin, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am, Season","RainToday_bin, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-42271.65481794812,84561.30963589624,84646.88401747703,True
+"RainToday_bin, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am","RainToday_bin, Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am",5,6,-42304.15813407807,84620.31626815614,84677.36585587666,True
+"Rainfall_log1p, Pressure3pm, WindGustSpeed, Humidity9am, Season","Rainfall_log1p, Pressure3pm, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-42293.06867591077,84602.13735182154,84678.20346878225,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am","RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am",6,7,-42328.019343330714,84670.03868666143,84736.59653900204,True
+"Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am","Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am",5,6,-42359.34910154066,84730.69820308132,84787.74779080185,True
+"RainToday_bin, Pressure3pm, MaxTemp, MinTemp, Season","RainToday_bin, Pressure3pm, MaxTemp, MinTemp, Season_Autumn, Season_Winter, Season_Spring",5,8,-42367.22596875196,84750.45193750392,84826.51805446463,True
+"MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season","MaxTemp, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-42385.83312896458,84787.66625792916,84863.73237488986,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, WindGustSpeed, Humidity9am","RainToday_bin, Rainfall_log1p, Pressure3pm, WindGustSpeed, Humidity9am",5,6,-42445.326284852,84902.652569704,84959.70215742453,True
+"RainToday_bin, Pressure3pm, WindGustSpeed, Humidity9am, Season","RainToday_bin, Pressure3pm, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-42450.84074036726,84917.68148073452,84993.74759769523,True
+"RainToday_bin, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am","RainToday_bin, Pressure3pm, MinTemp, WindGustSpeed, Humidity9am",5,6,-42466.878135791834,84945.75627158367,85002.8058593042,True
+"Rainfall_log1p, Pressure3pm, WindGustSpeed, Humidity9am","Rainfall_log1p, Pressure3pm, WindGustSpeed, Humidity9am",4,5,-42474.44349419196,84958.88698838392,85006.42831148436,True
+"RainToday_bin, Pressure3pm, MaxTemp, MinTemp","RainToday_bin, Pressure3pm, MaxTemp, MinTemp",4,5,-42481.53490334104,84973.06980668208,85020.61112978251,True
+"MaxTemp, MinTemp, WindGustSpeed, Humidity9am","MaxTemp, MinTemp, WindGustSpeed, Humidity9am",4,5,-42485.875208293975,84981.75041658795,85029.29173968839,True
+"RainToday_bin, Pressure3pm, WindGustSpeed, Humidity9am","RainToday_bin, Pressure3pm, WindGustSpeed, Humidity9am",4,5,-42613.12373972238,85236.24747944476,85283.7888025452,True
+"Pressure3pm, MinTemp, WindGustSpeed, Humidity9am, Season","Pressure3pm, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-42788.90357555609,85593.80715111218,85669.87326807289,True
+"RainToday_bin, Rainfall_log1p, MinTemp, WindGustSpeed, Humidity9am, Season","RainToday_bin, Rainfall_log1p, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-42820.15557056277,85658.31114112554,85743.88552270633,True
+"Rainfall_log1p, MinTemp, WindGustSpeed, Humidity9am, Season","Rainfall_log1p, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-42841.663901166714,85699.32780233343,85775.39391929413,True
+"Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Season","Pressure3pm, MaxTemp, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",5,8,-42909.49263096778,85834.98526193557,85911.05137889627,True
+"RainToday_bin, MinTemp, WindGustSpeed, Humidity9am, Season","RainToday_bin, MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-42988.87926662482,85993.75853324964,86069.82465021034,True
+"Pressure3pm, MaxTemp, MinTemp, WindGustSpeed","Pressure3pm, MaxTemp, MinTemp, WindGustSpeed",4,5,-43038.99131040074,86087.98262080149,86135.52394390192,True
+"Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am, Season","Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-43101.649973418964,86219.29994683793,86295.36606379863,True
+"Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am","Pressure3pm, MaxTemp, WindGustSpeed, Humidity9am",4,5,-43124.04273666771,86258.08547333542,86305.62679643586,True
+"RainToday_bin, Rainfall_log1p, MinTemp, WindGustSpeed, Humidity9am","RainToday_bin, Rainfall_log1p, MinTemp, WindGustSpeed, Humidity9am",5,6,-43119.50978853426,86251.01957706852,86308.06916478905,True
+"Rainfall_log1p, MinTemp, WindGustSpeed, Humidity9am","Rainfall_log1p, MinTemp, WindGustSpeed, Humidity9am",4,5,-43146.33313347178,86302.66626694356,86350.207590044,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, Humidity9am, Season","RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-43149.046243540084,86316.09248708017,86401.66686866096,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, Humidity9am","RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, Humidity9am",5,6,-43175.16169595867,86362.32339191734,86419.37297963786,True
+"Rainfall_log1p, Pressure3pm, MaxTemp, Humidity9am, Season","Rainfall_log1p, Pressure3pm, MaxTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-43169.20994449327,86354.41988898654,86430.48600594724,True
+"Rainfall_log1p, Pressure3pm, MaxTemp, Humidity9am","Rainfall_log1p, Pressure3pm, MaxTemp, Humidity9am",4,5,-43195.52092148963,86401.04184297926,86448.5831660797,True
+"Pressure3pm, MinTemp, WindGustSpeed, Humidity9am","Pressure3pm, MinTemp, WindGustSpeed, Humidity9am",4,5,-43281.358858398635,86572.71771679727,86620.2590398977,True
+"RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Season","RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",6,9,-43265.858615227284,86549.71723045457,86635.29161203536,True
+"RainToday_bin, MinTemp, WindGustSpeed, Humidity9am","RainToday_bin, MinTemp, WindGustSpeed, Humidity9am",4,5,-43290.23579218341,86590.47158436682,86638.01290746726,True
+"Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Season","Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",5,8,-43278.08070835392,86572.16141670784,86648.22753366854,True
+"RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed","RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed",5,6,-43327.047525320166,86666.09505064033,86723.14463836086,True
+"Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed","Rainfall_log1p, MaxTemp, MinTemp, WindGustSpeed",4,5,-43339.2394330531,86688.4788661062,86736.02018920664,True
+"Pressure3pm, MaxTemp, MinTemp, Season","Pressure3pm, MaxTemp, MinTemp, Season_Autumn, Season_Winter, Season_Spring",4,7,-43333.458427742866,86680.91685548573,86747.47470782635,True
+"Pressure3pm, WindGustSpeed, Humidity9am, Season","Pressure3pm, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",4,7,-43364.31306213901,86742.62612427802,86809.18397661863,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, Humidity9am, Season","RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-43408.493446856715,86834.98689371343,86920.56127529423,True
+"Pressure3pm, MaxTemp, MinTemp","Pressure3pm, MaxTemp, MinTemp",3,4,-43444.23841397415,86896.4768279483,86934.50988642864,True
+"RainToday_bin, Pressure3pm, MaxTemp, Humidity9am, Season","RainToday_bin, Pressure3pm, MaxTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-43434.4005257738,86884.8010515476,86960.86716850831,True
+"RainToday_bin, Pressure3pm, MaxTemp, Humidity9am","RainToday_bin, Pressure3pm, MaxTemp, Humidity9am",4,5,-43456.44618975258,86922.89237950517,86970.4337026056,True
+"Rainfall_log1p, Pressure3pm, MinTemp, Humidity9am, Season","Rainfall_log1p, Pressure3pm, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-43446.56317216462,86909.12634432924,86985.19246128995,True
+"Pressure3pm, WindGustSpeed, Humidity9am","Pressure3pm, WindGustSpeed, Humidity9am",3,4,-43524.89756010975,87057.7951202195,87095.82817869984,True
+"RainToday_bin, MaxTemp, MinTemp, WindGustSpeed, Season","RainToday_bin, MaxTemp, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",5,8,-43583.177976372775,87182.35595274555,87258.42206970626,True
+"RainToday_bin, Rainfall_log1p, MaxTemp, WindGustSpeed, Humidity9am","RainToday_bin, Rainfall_log1p, MaxTemp, WindGustSpeed, Humidity9am",5,6,-43634.01042383157,87280.02084766314,87337.07043538366,True
+"RainToday_bin, MaxTemp, MinTemp, WindGustSpeed","RainToday_bin, MaxTemp, MinTemp, WindGustSpeed",4,5,-43641.92672930785,87293.8534586157,87341.39478171614,True
+"RainToday_bin, Rainfall_log1p, WindGustSpeed, Humidity9am","RainToday_bin, Rainfall_log1p, WindGustSpeed, Humidity9am",4,5,-43642.249367611075,87294.49873522215,87342.04005832259,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, Humidity9am, Season","RainToday_bin, Rainfall_log1p, Pressure3pm, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-43631.37522920925,87278.7504584185,87354.8165753792,True
+"RainToday_bin, Rainfall_log1p, WindGustSpeed, Humidity9am, Season","RainToday_bin, Rainfall_log1p, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-43633.667213481924,87283.33442696385,87359.40054392455,True
+"Rainfall_log1p, MaxTemp, WindGustSpeed, Humidity9am","Rainfall_log1p, MaxTemp, WindGustSpeed, Humidity9am",4,5,-43652.49783593613,87314.99567187225,87362.53699497269,True
+"RainToday_bin, Rainfall_log1p, MaxTemp, WindGustSpeed, Humidity9am, Season","RainToday_bin, Rainfall_log1p, MaxTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-43630.88153723892,87279.76307447784,87365.33745605864,True
+"Rainfall_log1p, WindGustSpeed, Humidity9am","Rainfall_log1p, WindGustSpeed, Humidity9am",3,4,-43663.071540496654,87334.14308099331,87372.17613947365,True
+"Rainfall_log1p, WindGustSpeed, Humidity9am, Season","Rainfall_log1p, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",4,7,-43653.255170324854,87320.51034064971,87387.06819299032,True
+"RainToday_bin, Pressure3pm, MinTemp, Humidity9am, Season","RainToday_bin, Pressure3pm, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-43648.85649844472,87313.71299688944,87389.77911385015,True
+"Rainfall_log1p, MaxTemp, WindGustSpeed, Humidity9am, Season","Rainfall_log1p, MaxTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-43649.25791054655,87314.5158210931,87390.5819380538,True
+"Rainfall_log1p, Pressure3pm, Humidity9am, Season","Rainfall_log1p, Pressure3pm, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",4,7,-43669.06083127499,87352.12166254998,87418.6795148906,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Season","RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",6,9,-43689.11230965577,87396.22461931154,87481.79900089234,True
+"Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Season","Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",5,8,-43722.7485131308,87461.4970262616,87537.5631432223,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed","RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed",5,6,-43773.91895867387,87559.83791734774,87616.88750506827,True
+"Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed","Rainfall_log1p, Pressure3pm, MaxTemp, WindGustSpeed",4,5,-43807.024254802265,87624.04850960453,87671.58983270497,True
+"MinTemp, WindGustSpeed, Humidity9am, Season","MinTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",4,7,-43795.77301604878,87605.54603209755,87672.10388443817,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, Humidity9am","RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, Humidity9am",5,6,-43875.59412847874,87763.18825695748,87820.237844678,True
+"RainToday_bin, WindGustSpeed, Humidity9am","RainToday_bin, WindGustSpeed, Humidity9am",3,4,-43903.97201331983,87815.94402663966,87853.97708512,True
+"RainToday_bin, MaxTemp, WindGustSpeed, Humidity9am","RainToday_bin, MaxTemp, WindGustSpeed, Humidity9am",4,5,-43901.34481787307,87812.68963574614,87860.23095884657,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, Humidity9am","RainToday_bin, Rainfall_log1p, Pressure3pm, Humidity9am",4,5,-43907.06168548095,87824.1233709619,87871.66469406233,True
+"RainToday_bin, WindGustSpeed, Humidity9am, Season","RainToday_bin, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",4,7,-43899.901599781566,87813.80319956313,87880.36105190375,True
+"RainToday_bin, MaxTemp, WindGustSpeed, Humidity9am, Season","RainToday_bin, MaxTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-43899.10301448924,87814.20602897849,87890.27214593919,True
+"Rainfall_log1p, Pressure3pm, MinTemp, Humidity9am","Rainfall_log1p, Pressure3pm, MinTemp, Humidity9am",4,5,-43921.42789925169,87852.85579850338,87900.39712160382,True
+"RainToday_bin, Pressure3pm, Humidity9am, Season","RainToday_bin, Pressure3pm, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",4,7,-43912.62264904343,87839.24529808685,87905.80315042747,True
+"Rainfall_log1p, Pressure3pm, Humidity9am","Rainfall_log1p, Pressure3pm, Humidity9am",3,4,-43951.704116500114,87911.40823300023,87949.44129148057,True
+"RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, Humidity9am, Season","RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",6,9,-43926.93744304245,87871.8748860849,87957.4492676657,True
+"Rainfall_log1p, MaxTemp, MinTemp, Humidity9am, Season","Rainfall_log1p, MaxTemp, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-43932.88315110609,87881.76630221219,87957.83241917289,True
+"RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, Humidity9am","RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, Humidity9am",5,6,-44023.807331739896,88059.61466347979,88116.66425120032,True
+"Rainfall_log1p, MaxTemp, MinTemp, Humidity9am","Rainfall_log1p, MaxTemp, MinTemp, Humidity9am",4,5,-44030.38030022317,88070.76060044635,88118.30192354678,True
+"RainToday_bin, Pressure3pm, MinTemp, Humidity9am","RainToday_bin, Pressure3pm, MinTemp, Humidity9am",4,5,-44121.95479805849,88253.90959611698,88301.45091921742,True
+"RainToday_bin, Pressure3pm, MaxTemp, WindGustSpeed, Season","RainToday_bin, Pressure3pm, MaxTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",5,8,-44133.90765855002,88283.81531710004,88359.88143406075,True
+"MinTemp, WindGustSpeed, Humidity9am","MinTemp, WindGustSpeed, Humidity9am",3,4,-44168.54195529807,88345.08391059613,88383.11696907648,True
+"RainToday_bin, Pressure3pm, Humidity9am","RainToday_bin, Pressure3pm, Humidity9am",3,4,-44170.58620316667,88349.17240633334,88387.20546481368,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, Season","RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp, Season_Autumn, Season_Winter, Season_Spring",5,8,-44156.05456020064,88328.10912040128,88404.17523736198,True
+"Rainfall_log1p, Pressure3pm, MaxTemp, Season","Rainfall_log1p, Pressure3pm, MaxTemp, Season_Autumn, Season_Winter, Season_Spring",4,7,-44190.06586386908,88394.13172773816,88460.68958007878,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp","RainToday_bin, Rainfall_log1p, Pressure3pm, MaxTemp",4,5,-44207.583309417954,88425.16661883591,88472.70794193634,True
+"RainToday_bin, MaxTemp, MinTemp, Humidity9am, Season","RainToday_bin, MaxTemp, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-44195.28347230116,88406.56694460232,88482.63306156303,True
+"RainToday_bin, Pressure3pm, MaxTemp, WindGustSpeed","RainToday_bin, Pressure3pm, MaxTemp, WindGustSpeed",4,5,-44225.96958271409,88461.93916542818,88509.48048852861,True
+"Rainfall_log1p, Pressure3pm, MaxTemp","Rainfall_log1p, Pressure3pm, MaxTemp",3,4,-44241.258730642105,88490.51746128421,88528.55051976455,True
+"RainToday_bin, MaxTemp, MinTemp, Humidity9am","RainToday_bin, MaxTemp, MinTemp, Humidity9am",4,5,-44294.590613747445,88599.18122749489,88646.72255059532,True
+"RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, Season","RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp, Season_Autumn, Season_Winter, Season_Spring",5,8,-44527.360628492184,89070.72125698437,89146.78737394507,True
+"Rainfall_log1p, MaxTemp, MinTemp, Season","Rainfall_log1p, MaxTemp, MinTemp, Season_Autumn, Season_Winter, Season_Spring",4,7,-44538.995641069865,89091.99128213973,89158.54913448034,True
+"RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp","RainToday_bin, Rainfall_log1p, MaxTemp, MinTemp",4,5,-44574.662808648245,89159.32561729649,89206.86694039693,True
+"Rainfall_log1p, MaxTemp, MinTemp","Rainfall_log1p, MaxTemp, MinTemp",3,4,-44586.38931988793,89180.77863977586,89218.8116982562,True
+"RainToday_bin, Pressure3pm, MaxTemp, Season","RainToday_bin, Pressure3pm, MaxTemp, Season_Autumn, Season_Winter, Season_Spring",4,7,-44640.8396095421,89295.6792190842,89362.23707142481,True
+"Pressure3pm, MaxTemp, Humidity9am, Season","Pressure3pm, MaxTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",4,7,-44654.30462147655,89322.6092429531,89389.16709529371,True
+"Pressure3pm, MaxTemp, Humidity9am","Pressure3pm, MaxTemp, Humidity9am",3,4,-44672.98564834055,89353.9712966811,89392.00435516145,True
+"RainToday_bin, Pressure3pm, MaxTemp","RainToday_bin, Pressure3pm, MaxTemp",3,4,-44695.894372344905,89399.78874468981,89437.82180317015,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Season","RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",6,9,-44686.51883475619,89391.03766951239,89476.61205109318,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, WindGustSpeed, Season","RainToday_bin, Rainfall_log1p, Pressure3pm, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",5,8,-44758.74244269645,89533.4848853929,89609.5510023536,True
+"MaxTemp, MinTemp, WindGustSpeed, Season","MaxTemp, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",4,7,-44780.56492147519,89575.12984295038,89641.687695291,True
+"Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Season","Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",5,8,-44778.03147245523,89572.06294491046,89648.12906187116,True
+"MaxTemp, MinTemp, WindGustSpeed","MaxTemp, MinTemp, WindGustSpeed",3,4,-44831.90197264553,89671.80394529106,89709.8370037714,True
+"Rainfall_log1p, Pressure3pm, WindGustSpeed, Season","Rainfall_log1p, Pressure3pm, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",4,7,-44845.79976017671,89705.59952035343,89772.15737269404,True
+"RainToday_bin, MaxTemp, MinTemp, Season","RainToday_bin, MaxTemp, MinTemp, Season_Autumn, Season_Winter, Season_Spring",4,7,-44930.777825182115,89875.55565036423,89942.11350270484,True
+"Pressure3pm, MinTemp, Humidity9am, Season","Pressure3pm, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",4,7,-44940.22064526469,89894.44129052939,89960.99914287,True
+"RainToday_bin, MaxTemp, MinTemp","RainToday_bin, MaxTemp, MinTemp",3,4,-44974.67646406619,89957.35292813239,89995.38598661273,True
+"MaxTemp, WindGustSpeed, Humidity9am","MaxTemp, WindGustSpeed, Humidity9am",3,4,-45019.740593547,90047.481187094,90085.51424557435,True
+"WindGustSpeed, Humidity9am","WindGustSpeed, Humidity9am",2,3,-45030.55598562637,90067.11197125274,90095.63676511301,True
+"MaxTemp, WindGustSpeed, Humidity9am, Season","MaxTemp, WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",4,7,-45012.092155848935,90038.18431169787,90104.74216403849,True
+"WindGustSpeed, Humidity9am, Season","WindGustSpeed, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",3,6,-45023.46623293014,90058.93246586029,90115.98205358081,True
+"MaxTemp, MinTemp, Humidity9am, Season","MaxTemp, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",4,7,-45021.40060745982,90056.80121491964,90123.35906726026,True
+"MaxTemp, MinTemp, Humidity9am","MaxTemp, MinTemp, Humidity9am",3,4,-45143.40108485691,90294.80216971382,90332.83522819416,True
+"RainToday_bin, Pressure3pm, MinTemp, WindGustSpeed, Season","RainToday_bin, Pressure3pm, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",5,8,-45164.42000000709,90344.84000001418,90420.90611697489,True
+"RainToday_bin, Pressure3pm, WindGustSpeed, Season","RainToday_bin, Pressure3pm, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",4,7,-45260.88729438004,90535.77458876008,90602.33244110069,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, WindGustSpeed","RainToday_bin, Rainfall_log1p, Pressure3pm, WindGustSpeed",4,5,-45313.29728639538,90636.59457279075,90684.13589589119,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed","RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed",5,6,-45308.92640107508,90629.85280215016,90686.90238987068,True
+"Pressure3pm, Humidity9am, Season","Pressure3pm, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",3,6,-45370.96595878692,90753.93191757383,90810.98150529436,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, Season","RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp, Season_Autumn, Season_Winter, Season_Spring",5,8,-45378.613366986654,90773.22673397331,90849.29285093401,True
+"Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed","Rainfall_log1p, Pressure3pm, MinTemp, WindGustSpeed",4,5,-45413.86398076674,90837.72796153348,90885.26928463392,True
+"Rainfall_log1p, Pressure3pm, WindGustSpeed","Rainfall_log1p, Pressure3pm, WindGustSpeed",3,4,-45420.44158822421,90848.88317644842,90886.91623492877,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, Season","RainToday_bin, Rainfall_log1p, Pressure3pm, Season_Autumn, Season_Winter, Season_Spring",4,7,-45430.01639956083,90874.03279912166,90940.59065146228,True
+"Rainfall_log1p, Pressure3pm, MinTemp, Season","Rainfall_log1p, Pressure3pm, MinTemp, Season_Autumn, Season_Winter, Season_Spring",4,7,-45474.148199556825,90962.29639911365,91028.85425145426,True
+"RainToday_bin, Rainfall_log1p, MaxTemp, WindGustSpeed, Season","RainToday_bin, Rainfall_log1p, MaxTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",5,8,-45472.166086777484,90960.33217355497,91036.39829051567,True
+"RainToday_bin, Rainfall_log1p, MaxTemp, WindGustSpeed","RainToday_bin, Rainfall_log1p, MaxTemp, WindGustSpeed",4,5,-45511.75591928486,91033.51183856971,91081.05316167015,True
+"Rainfall_log1p, MaxTemp, WindGustSpeed, Season","Rainfall_log1p, MaxTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",4,7,-45510.038740376614,91034.07748075323,91100.63533309384,True
+"Pressure3pm, MinTemp, Humidity9am","Pressure3pm, MinTemp, Humidity9am",3,4,-45530.314775545485,91068.62955109097,91106.66260957131,True
+"Rainfall_log1p, Pressure3pm, Season","Rainfall_log1p, Pressure3pm, Season_Autumn, Season_Winter, Season_Spring",3,6,-45522.31417346093,91056.62834692186,91113.67793464239,True
+"Rainfall_log1p, MaxTemp, WindGustSpeed","Rainfall_log1p, MaxTemp, WindGustSpeed",3,4,-45549.11686773849,91106.23373547698,91144.26679395733,True
+"RainToday_bin, Rainfall_log1p, MinTemp, Humidity9am, Season","RainToday_bin, Rainfall_log1p, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-45554.0657962186,91124.1315924372,91200.19770939791,True
+"RainToday_bin, Rainfall_log1p, MinTemp, WindGustSpeed, Season","RainToday_bin, Rainfall_log1p, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",5,8,-45562.91378182469,91141.82756364938,91217.89368061008,True
+"Rainfall_log1p, MinTemp, Humidity9am, Season","Rainfall_log1p, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",4,7,-45593.817954402286,91201.63590880457,91268.19376114519,True
+"Pressure3pm, Humidity9am","Pressure3pm, Humidity9am",2,3,-45647.21079557384,91300.42159114768,91328.94638500795,True
+"Rainfall_log1p, MinTemp, WindGustSpeed, Season","Rainfall_log1p, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",4,7,-45644.95060357802,91303.90120715604,91370.45905949666,True
+"RainToday_bin, Pressure3pm, WindGustSpeed","RainToday_bin, Pressure3pm, WindGustSpeed",3,4,-45812.630566866814,91633.26113373363,91671.29419221397,True
+"RainToday_bin, Pressure3pm, MinTemp, WindGustSpeed","RainToday_bin, Pressure3pm, MinTemp, WindGustSpeed",4,5,-45812.141135773876,91634.28227154775,91681.82359464819,True
+"RainToday_bin, Rainfall_log1p, MinTemp, Humidity9am","RainToday_bin, Rainfall_log1p, MinTemp, Humidity9am",4,5,-45878.70468420547,91767.40936841094,91814.95069151137,True
+"RainToday_bin, Rainfall_log1p, WindGustSpeed, Season","RainToday_bin, Rainfall_log1p, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",4,7,-45887.64097451573,91789.28194903146,91855.83980137207,True
+"Rainfall_log1p, MinTemp, Humidity9am","Rainfall_log1p, MinTemp, Humidity9am",3,4,-45925.77327321863,91859.54654643725,91897.5796049176,True
+"RainToday_bin, Pressure3pm, MinTemp, Season","RainToday_bin, Pressure3pm, MinTemp, Season_Autumn, Season_Winter, Season_Spring",4,7,-45921.237746244835,91856.47549248967,91923.03334483028,True
+"RainToday_bin, MinTemp, Humidity9am, Season","RainToday_bin, MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",4,7,-45922.09417393515,91858.1883478703,91924.74620021091,True
+"Rainfall_log1p, WindGustSpeed, Season","Rainfall_log1p, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",3,6,-45959.13210211307,91930.26420422614,91987.31379194667,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp","RainToday_bin, Rainfall_log1p, Pressure3pm, MinTemp",4,5,-45990.03461663244,91990.06923326488,92037.61055636531,True
+"RainToday_bin, Pressure3pm, Season","RainToday_bin, Pressure3pm, Season_Autumn, Season_Winter, Season_Spring",3,6,-45992.66859509388,91997.33719018775,92054.38677790828,True
+"RainToday_bin, Rainfall_log1p, Pressure3pm","RainToday_bin, Rainfall_log1p, Pressure3pm",3,4,-46006.96950083596,92021.93900167193,92059.97206015227,True
+"RainToday_bin, Rainfall_log1p, MinTemp, WindGustSpeed","RainToday_bin, Rainfall_log1p, MinTemp, WindGustSpeed",4,5,-46011.22928017948,92032.45856035897,92079.9998834594,True
+"RainToday_bin, MaxTemp, WindGustSpeed, Season","RainToday_bin, MaxTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",4,7,-46066.79450937093,92147.58901874186,92214.14687108247,True
+"RainToday_bin, Rainfall_log1p, WindGustSpeed","RainToday_bin, Rainfall_log1p, WindGustSpeed",3,4,-46091.07620085292,92190.15240170584,92228.18546018619,True
+"Rainfall_log1p, Pressure3pm, MinTemp","Rainfall_log1p, Pressure3pm, MinTemp",3,4,-46099.419327691205,92206.83865538241,92244.87171386275,True
+"Rainfall_log1p, MinTemp, WindGustSpeed","Rainfall_log1p, MinTemp, WindGustSpeed",3,4,-46105.51917414101,92219.03834828202,92257.07140676236,True
+"Rainfall_log1p, Pressure3pm","Rainfall_log1p, Pressure3pm",2,3,-46120.11176420405,92246.2235284081,92274.74832226837,True
+"RainToday_bin, MaxTemp, WindGustSpeed","RainToday_bin, MaxTemp, WindGustSpeed",3,4,-46119.418669566985,92246.83733913397,92284.87039761432,True
+"RainToday_bin, MinTemp, WindGustSpeed, Season","RainToday_bin, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",4,7,-46103.65929456358,92221.31858912716,92287.87644146777,True
+"Rainfall_log1p, WindGustSpeed","Rainfall_log1p, WindGustSpeed",2,3,-46175.76359183793,92357.52718367586,92386.05197753613,True
+"RainToday_bin, MinTemp, Humidity9am","RainToday_bin, MinTemp, Humidity9am",3,4,-46254.15106579658,92516.30213159315,92554.3351900735,True
+"Pressure3pm, MaxTemp, WindGustSpeed, Season","Pressure3pm, MaxTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",4,7,-46285.66966666561,92585.33933333123,92651.89718567184,True
+"MaxTemp, MinTemp, Season","MaxTemp, MinTemp, Season_Autumn, Season_Winter, Season_Spring",3,6,-46371.44103327425,92754.8820665485,92811.93165426902,True
+"RainToday_bin, Rainfall_log1p, MaxTemp, Humidity9am, Season","RainToday_bin, Rainfall_log1p, MaxTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",5,8,-46360.06509666952,92736.13019333904,92812.19631029974,True
+"MaxTemp, MinTemp","MaxTemp, MinTemp",2,3,-46407.44354433856,92820.88708867712,92849.41188253739,True
+"RainToday_bin, Rainfall_log1p, MaxTemp, Humidity9am","RainToday_bin, Rainfall_log1p, MaxTemp, Humidity9am",4,5,-46403.60585803094,92817.21171606188,92864.75303916231,True
+"Pressure3pm, MaxTemp, WindGustSpeed","Pressure3pm, MaxTemp, WindGustSpeed",3,4,-46410.50990694598,92829.01981389197,92867.05287237231,True
+"Rainfall_log1p, MaxTemp, Humidity9am, Season","Rainfall_log1p, MaxTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",4,7,-46394.24763104132,92802.49526208264,92869.05311442325,True
+"RainToday_bin, Rainfall_log1p, Humidity9am, Season","RainToday_bin, Rainfall_log1p, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",4,7,-46418.65625244703,92851.31250489406,92917.87035723467,True
+"Rainfall_log1p, MaxTemp, Humidity9am","Rainfall_log1p, MaxTemp, Humidity9am",3,4,-46439.432813433654,92886.86562686731,92924.89868534765,True
+"RainToday_bin, Rainfall_log1p, Humidity9am","RainToday_bin, Rainfall_log1p, Humidity9am",3,4,-46458.11784543486,92924.23569086973,92962.26874935007,True
+"Rainfall_log1p, Humidity9am, Season","Rainfall_log1p, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",3,6,-46460.09171589086,92932.18343178173,92989.23301950225,True
+"Rainfall_log1p, Humidity9am","Rainfall_log1p, Humidity9am",2,3,-46501.649614405265,93009.29922881053,93037.8240226708,True
+"RainToday_bin, WindGustSpeed, Season","RainToday_bin, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",3,6,-46499.66982662424,93011.33965324848,93068.389240969,True
+"RainToday_bin, Pressure3pm, MinTemp","RainToday_bin, Pressure3pm, MinTemp",3,4,-46557.37530888151,93122.75061776301,93160.78367624336,True
+"RainToday_bin, Pressure3pm","RainToday_bin, Pressure3pm",2,3,-46565.31549703472,93136.63099406943,93165.1557879297,True
+"RainToday_bin, MinTemp, WindGustSpeed","RainToday_bin, MinTemp, WindGustSpeed",3,4,-46569.09120973714,93146.18241947428,93184.21547795463,True
+"RainToday_bin, WindGustSpeed","RainToday_bin, WindGustSpeed",2,3,-46691.05830710639,93388.11661421278,93416.64140807305,True
+"RainToday_bin, MaxTemp, Humidity9am, Season","RainToday_bin, MaxTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",4,7,-46885.347309411656,93784.69461882331,93851.25247116393,True
+"RainToday_bin, MaxTemp, Humidity9am","RainToday_bin, MaxTemp, Humidity9am",3,4,-46941.20878692193,93890.41757384386,93928.45063232421,True
+"RainToday_bin, Humidity9am, Season","RainToday_bin, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",3,6,-46931.515411417255,93875.03082283451,93932.08041055503,True
+"Pressure3pm, MaxTemp, Season","Pressure3pm, MaxTemp, Season_Autumn, Season_Winter, Season_Spring",3,6,-46951.43023104805,93914.8604620961,93971.91004981662,True
+"RainToday_bin, Humidity9am","RainToday_bin, Humidity9am",2,3,-46974.608558244516,93955.21711648903,93983.7419103493,True
+"Pressure3pm, MaxTemp","Pressure3pm, MaxTemp",2,3,-47029.6607688497,94065.3215376994,94093.84633155967,True
+"RainToday_bin, Rainfall_log1p, MinTemp, Season","RainToday_bin, Rainfall_log1p, MinTemp, Season_Autumn, Season_Winter, Season_Spring",4,7,-47141.70883725898,94297.41767451796,94363.97552685857,True
+"RainToday_bin, Rainfall_log1p, MaxTemp, Season","RainToday_bin, Rainfall_log1p, MaxTemp, Season_Autumn, Season_Winter, Season_Spring",4,7,-47187.85579330869,94389.71158661738,94456.269438958,True
+"RainToday_bin, Rainfall_log1p, MaxTemp","RainToday_bin, Rainfall_log1p, MaxTemp",3,4,-47207.250793008105,94422.50158601621,94460.53464449655,True
+"Rainfall_log1p, MinTemp, Season","Rainfall_log1p, MinTemp, Season_Autumn, Season_Winter, Season_Spring",3,6,-47230.240126422534,94472.48025284507,94529.52984056559,True
+"Rainfall_log1p, MaxTemp, Season","Rainfall_log1p, MaxTemp, Season_Autumn, Season_Winter, Season_Spring",3,6,-47234.74970393426,94481.49940786853,94538.54899558905,True
+"Rainfall_log1p, MaxTemp","Rainfall_log1p, MaxTemp",2,3,-47254.585368763415,94515.17073752683,94543.6955313871,True
+"RainToday_bin, Rainfall_log1p, MinTemp","RainToday_bin, Rainfall_log1p, MinTemp",3,4,-47516.6200310187,95041.2400620374,95079.27312051774,True
+"RainToday_bin, Rainfall_log1p, Season","RainToday_bin, Rainfall_log1p, Season_Autumn, Season_Winter, Season_Spring",3,6,-47594.885550109204,95201.77110021841,95258.82068793893,True
+"Rainfall_log1p, MinTemp","Rainfall_log1p, MinTemp",2,3,-47616.66356333516,95239.32712667032,95267.8519205306,True
+"RainToday_bin, Rainfall_log1p","RainToday_bin, Rainfall_log1p",2,3,-47685.72130773557,95377.44261547114,95405.96740933141,True
+"Rainfall_log1p, Season","Rainfall_log1p, Season_Autumn, Season_Winter, Season_Spring",2,5,-47675.70728274867,95361.41456549734,95408.95588859777,True
+"MinTemp, Humidity9am, Season","MinTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",3,6,-47673.44277127407,95358.88554254815,95415.93513026867,True
+Rainfall_log1p,Rainfall_log1p,1,2,-47775.05111408318,95554.10222816636,95573.11875740654,True
+"RainToday_bin, MinTemp, Season","RainToday_bin, MinTemp, Season_Autumn, Season_Winter, Season_Spring",3,6,-47826.70066672064,95665.40133344127,95722.4509211618,True
+"RainToday_bin, MaxTemp, Season","RainToday_bin, MaxTemp, Season_Autumn, Season_Winter, Season_Spring",3,6,-47951.3525357101,95914.7050714202,95971.75465914073,True
+"RainToday_bin, MaxTemp","RainToday_bin, MaxTemp",2,3,-47985.49678824515,95976.9935764903,96005.51837035058,True
+"MinTemp, Humidity9am","MinTemp, Humidity9am",2,3,-48136.53173458766,96279.06346917532,96307.58826303559,True
+"RainToday_bin, MinTemp","RainToday_bin, MinTemp",2,3,-48214.827741923094,96435.65548384619,96464.18027770646,True
+"RainToday_bin, Season","RainToday_bin, Season_Autumn, Season_Winter, Season_Spring",2,5,-48378.434046268885,96766.86809253777,96814.4094156382,True
+RainToday_bin,RainToday_bin,1,2,-48453.972018238266,96911.94403647653,96930.96056571671,True
+"Pressure3pm, MinTemp, WindGustSpeed, Season","Pressure3pm, MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",4,7,-48491.22613640785,96996.4522728157,97063.01012515632,True
+"Pressure3pm, WindGustSpeed, Season","Pressure3pm, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",3,6,-48630.06961795818,97272.13923591636,97329.18882363688,True
+"MaxTemp, WindGustSpeed, Season","MaxTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",3,6,-48837.0126874166,97686.0253748332,97743.07496255373,True
+"MaxTemp, WindGustSpeed","MaxTemp, WindGustSpeed",2,3,-48950.94873088714,97907.89746177428,97936.42225563455,True
+"MaxTemp, Humidity9am, Season","MaxTemp, Humidity9am, Season_Autumn, Season_Winter, Season_Spring",3,6,-49139.70004053459,98291.40008106918,98348.4496687897,True
+"Humidity9am, Season","Humidity9am, Season_Autumn, Season_Winter, Season_Spring",2,5,-49262.384706693745,98534.76941338749,98582.31073648793,True
+"MaxTemp, Humidity9am","MaxTemp, Humidity9am",2,3,-49294.67027203724,98595.34054407448,98623.86533793475,True
+Humidity9am,Humidity9am,1,2,-49363.64920699408,98731.29841398816,98750.31494322834,True
+"Pressure3pm, WindGustSpeed","Pressure3pm, WindGustSpeed",2,3,-49443.04654464309,98892.09308928618,98920.61788314645,True
+"Pressure3pm, MinTemp, WindGustSpeed","Pressure3pm, MinTemp, WindGustSpeed",3,4,-49442.523215071844,98893.04643014369,98931.07948862403,True
+"MinTemp, WindGustSpeed, Season","MinTemp, WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",3,6,-49558.26107283199,99128.52214566398,99185.57173338451,True
+"Pressure3pm, MinTemp, Season","Pressure3pm, MinTemp, Season_Autumn, Season_Winter, Season_Spring",3,6,-49615.473915306895,99242.94783061379,99299.99741833431,True
+"Pressure3pm, Season","Pressure3pm, Season_Autumn, Season_Winter, Season_Spring",2,5,-49727.79179804762,99465.58359609524,99513.12491919567,True
+"WindGustSpeed, Season","WindGustSpeed, Season_Autumn, Season_Winter, Season_Spring",2,5,-50081.45439754688,100172.90879509375,100220.45011819419,True
+"MinTemp, WindGustSpeed","MinTemp, WindGustSpeed",2,3,-50283.18420452432,100572.36840904863,100600.8932029089,True
+WindGustSpeed,WindGustSpeed,1,2,-50422.17013591588,100848.34027183177,100867.35680107195,True
+"Pressure3pm, MinTemp","Pressure3pm, MinTemp",2,3,-50564.2182274563,101134.4364549126,101162.96124877287,True
+Pressure3pm,Pressure3pm,1,2,-50572.982433228404,101149.96486645681,101168.98139569699,True
+"MaxTemp, Season","MaxTemp, Season_Autumn, Season_Winter, Season_Spring",2,5,-51513.61021761434,103037.22043522868,103084.76175832911,True
+MaxTemp,MaxTemp,1,2,-51648.77559692627,103301.55119385255,103320.56772309272,True
+"MinTemp, Season","MinTemp, Season_Autumn, Season_Winter, Season_Spring",2,5,-51996.26952594089,104002.53905188177,104050.08037498221,True
+MinTemp,MinTemp,1,2,-52624.25371257482,105252.50742514964,105271.52395438982,True
+Season,"Season_Autumn, Season_Winter, Season_Spring",1,4,-52822.888885816035,105653.77777163207,105691.81083011242,True
+intercepto,intercepto,0,1,-52967.63041493782,105937.26082987564,105946.76909449573,True

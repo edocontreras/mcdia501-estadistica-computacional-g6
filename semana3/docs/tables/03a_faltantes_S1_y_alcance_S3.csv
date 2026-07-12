@@ -1,0 +1,29 @@
+variable,n_faltantes,porcentaje_faltantes,seleccion_S3,fundamento_S3
+Sunshine,69835,48.00976213391998,Excluida antes de imputación y modelamiento por trazabilidad S1/S2,"Variable auditada en S1, pero ausente de la matriz de correlaciones de S1 y de la validación de S2. Se excluye para no reconstruir evidencia retrospectiva."
+Evaporation,62790,43.1665062560154,Excluida antes de imputación y modelamiento por trazabilidad S1/S2,"Variable auditada en S1, pero ausente de la matriz de correlaciones de S1 y de la validación de S2. Se excluye para no reconstruir evidencia retrospectiva."
+Cloud3pm,59358,40.80709473394747,Excluida antes de imputación y modelamiento por trazabilidad S1/S2,"Variable auditada en S1, pero ausente de la matriz de correlaciones de S1 y de la validación de S2. Se excluye para no reconstruir evidencia retrospectiva."
+Cloud9am,55888,38.42155919153032,Excluida antes de imputación y modelamiento por trazabilidad S1/S2,"Variable auditada en S1, pero ausente de la matriz de correlaciones de S1 y de la validación de S2. Se excluye para no reconstruir evidencia retrospectiva."
+Pressure9am,15065,10.356799120033,Incluida: imputación explícita y candidata de modelamiento,Variable numérica incluida en la matriz de correlaciones entregada en S1; recibe imputación explícita y puede integrar los modelos logísticos.
+Pressure3pm,15028,10.331362573903478,Incluida: imputación explícita y candidata de modelamiento,Variable numérica incluida en la matriz de correlaciones entregada en S1; recibe imputación explícita y puede integrar los modelos logísticos.
+WindDir9am,10566,7.263852605527293,Excluida del modelamiento de S3,Variable no requerida por la especificación predictiva heredada de S1/S2.
+WindGustDir,10326,7.098858792795271,Excluida del modelamiento de S3,Variable no requerida por la especificación predictiva heredada de S1/S2.
+WindGustSpeed,10263,7.055547916953114,Incluida: imputación explícita y candidata de modelamiento,Variable numérica incluida en la matriz de correlaciones entregada en S1; recibe imputación explícita y puede integrar los modelos logísticos.
+Humidity3pm,4507,3.09844630826344,Incluida: imputación explícita y candidata de modelamiento,Variable numérica incluida en la matriz de correlaciones entregada en S1; recibe imputación explícita y puede integrar los modelos logísticos.
+WindDir3pm,4228,2.906641000962464,Excluida del modelamiento de S3,Variable no requerida por la especificación predictiva heredada de S1/S2.
+Temp3pm,3609,2.481094458957789,Incluida: imputación explícita y candidata de modelamiento,Variable numérica incluida en la matriz de correlaciones entregada en S1; recibe imputación explícita y puede integrar los modelos logísticos.
+RainTomorrow,3267,2.245978275814657,Objetivo: excluir faltantes y no imputar,Variable objetivo; se eliminan las observaciones sin respuesta y nunca se imputa.
+RainTomorrow_bin,3267,2.245978275814657,Objetivo: excluir faltantes y no imputar,Variable objetivo; se eliminan las observaciones sin respuesta y nunca se imputa.
+RainToday_bin,3261,2.2418534304963567,Incluida: imputación logística del predictor binario,Predictor binario respaldado en S1 y S2; se imputa mediante regresión logística sin utilizar RainTomorrow.
+RainToday,3261,2.2418534304963567,Incluida: imputación logística del predictor binario,Predictor binario respaldado en S1 y S2; se imputa mediante regresión logística sin utilizar RainTomorrow.
+Rainfall,3261,2.2418534304963567,Incluida: imputación explícita y candidata de modelamiento,Variable numérica incluida en la matriz de correlaciones entregada en S1; recibe imputación explícita y puede integrar los modelos logísticos.
+WindSpeed3pm,3062,2.105046060772721,Excluida antes de imputación y modelamiento por trazabilidad S1/S2,"Variable auditada en S1, pero ausente de la matriz de correlaciones de S1 y de la validación de S2. Se excluye para no reconstruir evidencia retrospectiva."
+Humidity9am,2654,1.8245565791282825,Incluida: imputación explícita y candidata de modelamiento,Variable numérica incluida en la matriz de correlaciones entregada en S1; recibe imputación explícita y puede integrar los modelos logísticos.
+WindSpeed9am,1767,1.214766946239516,Excluida antes de imputación y modelamiento por trazabilidad S1/S2,"Variable auditada en S1, pero ausente de la matriz de correlaciones de S1 y de la validación de S2. Se excluye para no reconstruir evidencia retrospectiva."
+Temp9am,1767,1.214766946239516,Incluida: imputación explícita y candidata de modelamiento,Variable numérica incluida en la matriz de correlaciones entregada en S1; recibe imputación explícita y puede integrar los modelos logísticos.
+MinTemp,1485,1.0208992162793895,Incluida: imputación explícita y candidata de modelamiento,Variable numérica incluida en la matriz de correlaciones entregada en S1; recibe imputación explícita y puede integrar los modelos logísticos.
+MaxTemp,1261,0.8669049910628353,Incluida: imputación explícita y candidata de modelamiento,Variable numérica incluida en la matriz de correlaciones entregada en S1; recibe imputación explícita y puede integrar los modelos logísticos.
+Date,0,0.0,Excluida del modelamiento de S3,Variable no requerida por la especificación predictiva heredada de S1/S2.
+Location,0,0.0,Excluida del modelamiento de S3,Variable no requerida por la especificación predictiva heredada de S1/S2.
+Year,0,0.0,Excluida del modelamiento de S3,Variable no requerida por la especificación predictiva heredada de S1/S2.
+Month,0,0.0,Excluida del modelamiento de S3,Variable no requerida por la especificación predictiva heredada de S1/S2.
+Season,0,0.0,Excluida del modelamiento de S3,Variable no requerida por la especificación predictiva heredada de S1/S2.

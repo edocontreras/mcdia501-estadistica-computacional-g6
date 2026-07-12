@@ -1,0 +1,7 @@
+variable,termino_Box_Tidwell,desplazamiento_aplicado,p_raw,p_Holm,evidencia_no_linealidad
+Humidity3pm,BT_Humidity3pm,1.0,4.251046469016711e-87,2.5506278814100267e-86,True
+Rainfall_log1p,BT_Rainfall_log1p,1.0,2.6599730684203493e-18,1.0639892273681397e-17,True
+Pressure3pm,BT_Pressure3pm,0.0,0.0039231169803426655,0.007846233960685331,True
+MaxTemp,BT_MaxTemp,5.8,7.821427473766281e-42,3.9107137368831405e-41,True
+WindGustSpeed,BT_WindGustSpeed,0.0,1.81553806878301e-05,5.44661420634903e-05,True
+Humidity9am,BT_Humidity9am,1.0,0.17196402349723527,0.17196402349723527,False
